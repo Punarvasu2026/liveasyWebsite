@@ -95,7 +95,7 @@ const readMoreLinks = [
 const data = [];
 //modify i for additional blogs 
 for (let i = 1; i <= 24; i++) {
-    const imageURL = `../files/blog_${i}_thumbnail.png`; //retain image format as blog_[num]_carousel
+    const imageURL = `../files/blog_${i}_thumbnail.webp`; //retain image format as blog_[num]_carousel
 
     data.push({
         image: imageURL,
@@ -109,25 +109,25 @@ console.log(data);
 // Define an array of data for the additional div
 const additionalDivData = [
     {
-        image: '../files/blog_header_1.png',
+        image: '../files/blog_header_1.webp',
         title: 'Revolutionizing logistics: how automation is transforming the freight transport industry',
         description: 'Discover the game-changing impact of CargoPro automation on freight transportation. From boosting efficiency and cutting costs to elevating customer satisfaction, our technology.',
         link: '../blogs/blog24_revolutionizingLogistics.html',
     },
     {
-        image: '../files/blog_header_2.png',
+        image: '../files/blog_header_2.webp',
         title: 'Streamlining logistics operations: the benefits of automated indent management',
         description: 'Revolutionize logistics with CargoPro Automated Indent Management, ensuring accuracy, efficiency, and time savings. Seamlessly collaborate, optimize inventory, and scale operations with adaptability.',
         link: '../blogs/blog21_StreamliningOperations.html',
     },
     {
-        image: '../files/blog_header_3.png',
+        image: '../files/blog_header_3.webp',
         title: 'How Freight Sourcing and Reverse Auctions Cut Transportation Spending',
         description: 'CargoPro redefines logistics efficiency with freight sourcing and reverse auctions, cutting costs through carrier competition. Embrace innovation, optimize your supply chain.',
         link: '../blogs/blog22_FreightSourcing.html',
     },
     {
-        image: '../files/blog_header_4.png',
+        image: '../files/blog_header_4.webp',
         title: 'Mastering Multi-Carrier Shipments and Orders: Best Practices',
         description: 'CargoPro revolutionizes multi-carrier logistics with a centralized platform, optimizing processes and ensuring transparency.',
         link: '../blogs/blog23_multiCarrier.html',
