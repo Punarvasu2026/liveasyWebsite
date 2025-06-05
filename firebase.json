@@ -12,6 +12,18 @@
         "source": "**",
         "destination": "/index.html"
       }
+    ],
+    "redirects": [
+      {
+        "source": "https://cargopro.ai/**",
+        "destination": "https://www.cargopro.ai",
+        "type": 301
+      },
+      {
+        "source": "https://cargopro.co.in/**",
+        "destination": "https://www.cargopro.ai",
+        "type": 301
+      }
     ]
   }
 }
