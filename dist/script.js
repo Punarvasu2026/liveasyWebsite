@@ -197,33 +197,33 @@ for (let pageIndex = 0; pageIndex < totalPages; pageIndex++) {
     paginationDiv.appendChild(button);
 }
 
-// Event listener for the "Next" button
-document.getElementById('next-blog-btn').addEventListener('click', () => {
-    // Increment the start index by the number of blogs per page
-    currentBlogStartIndex += blogsPerPage;
+// // Event listener for the "Next" button
+// document.getElementById('next-blog-btn').addEventListener('click', () => {
+//     // Increment the start index by the number of blogs per page
+//     currentBlogStartIndex += blogsPerPage;
 
-    // Wrap around if we reach the end of the list
-    if (currentBlogStartIndex >= totalBlogs) {
-        currentBlogStartIndex = 0;
-    }
+//     // Wrap around if we reach the end of the list
+//     if (currentBlogStartIndex >= totalBlogs) {
+//         currentBlogStartIndex = 0;
+//     }
 
-    // Update the carousel to show the current range of blogs
-    updateCarousel();
-});
+//     // Update the carousel to show the current range of blogs
+//     updateCarousel();
+// });
 
-// Event listener for the "Previous" button
-document.getElementById('prev-blog-btn').addEventListener('click', () => {
-    // Decrement the start index by the number of blogs per page
-    currentBlogStartIndex -= blogsPerPage;
+// // Event listener for the "Previous" button
+// document.getElementById('prev-blog-btn').addEventListener('click', () => {
+//     // Decrement the start index by the number of blogs per page
+//     currentBlogStartIndex -= blogsPerPage;
 
-    // Wrap around if we go before the start of the list
-    if (currentBlogStartIndex < 0) {
-        currentBlogStartIndex = totalBlogs - blogsPerPage;
-    }
+//     // Wrap around if we go before the start of the list
+//     if (currentBlogStartIndex < 0) {
+//         currentBlogStartIndex = totalBlogs - blogsPerPage;
+//     }
 
-    // Update the carousel to show the current range of blogs
-    updateCarousel();
-});
+//     // Update the carousel to show the current range of blogs
+//     updateCarousel();
+// });
 
 // Initial update of the carousel
 updateCarousel();

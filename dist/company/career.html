@@ -256,7 +256,7 @@
                 </div>
 
                 <div class="relative w-fit h-fit">
-                    <img class="w-fit h-fit object-cover" src="../files/hero-solution-box.svg" alt="Hero Solution Box">
+                    <img class="w-fit h-fit object-cover" src="../files/hero-solution-box.webp" alt="Hero Solution Box">
                     <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
                         <img class="w-16 h-16 md:w-32 md:h-32 pt-4" src="../files/careerPerk_4.webp" alt="Career Perk 4">
                         <div class="mx-auto px-2 md:py-2 md:w-9/12 w-11/12 h-fit">
@@ -381,8 +381,20 @@
                 <div class="w-40">
                     <h3 class="text-white font-semibold text-sm md:text-base mb-2">Contact Us</h3>
                     <p class="text-white text-sm md:text-base mb-2">+91 89052 46537</p>
-                    <p><a href="mailto:hello@cargopro.ai"
-                            class="text-white font-semibold text-sm md:text-base hover:text-white">hello@cargopro.ai</a>
+                    <p><span id="email1"></span>
+
+<script>
+  function insertEmailLink(containerId, user, domain, classes) {
+    var email = user + "@" + domain;
+    var container = document.getElementById(containerId);
+    if (container) {
+      container.innerHTML = '<a href="mailto:' + email + '" class="' + classes + '">' + email + '</a>';
+    }
+  }
+
+  insertEmailLink("email1", "hello", "cargopro.ai", "text-white font-semibold text-sm md:text-base hover:text-white");
+</script>
+
                     </p>
                 </div>
                 <div class="flex mt-4 md:mt-0 justify-center md:justify-start items-center">
