@@ -14,12 +14,19 @@
     <meta name="description" content="About CargoPro's innovative Dashboard and Analytics Functionality">
 
     <!-- Link to the stylesheet -->
-    <link rel="stylesheet" href="../output.css">
+    <!-- <link rel="stylesheet" href="../output.css"> -->
+     <link rel="stylesheet" href="../output.css" media="print" onload="this.media='all'">
+
 
     <!-- Link to external font stylesheets -->
-    <link
+    <!-- <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Monserrat:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Monserrat:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Monserrat:wght@400;500;600;700&display=swap">
+</noscript>
+
 
     <!-- Favicon and apple touch icon -->
     <link rel="icon" type="image/x-icon" href="../images/logo1.webp">
