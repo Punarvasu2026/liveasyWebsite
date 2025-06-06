@@ -282,7 +282,7 @@
     <footer class="relative bg-white flex items-center justify-center">
         <!-- Background image -->
         <div class="absolute inset-0 overflow-hidden bg-[#152968] rounded-t-3xl h-auto">
-            <img class="w-full h-full object-cover" src="../files/footer-image.svg" alt="footer-image">
+            <img class="w-full h-full object-cover" src="../files/footer-image.webp" alt="footer-image">
         </div>
         <!-- Content container -->
         <div class="text-white text-center relative pt-12 pb-24 z-10">
@@ -336,8 +336,20 @@
                 <div class="w-40">
                     <h3 class="text-white font-semibold text-sm md:text-base mb-2">Contact Us</h3>
                     <p class="text-white text-sm md:text-base mb-2">+91 89052 46537</p>
-                    <p><a href="mailto:hello@cargopro.ai"
-                            class="text-white font-semibold text-sm md:text-base hover:text-white">hello@cargopro.ai</a>
+                    <p><span id="email1"></span>
+
+<script>
+  function insertEmailLink(containerId, user, domain, classes) {
+    var email = user + "@" + domain;
+    var container = document.getElementById(containerId);
+    if (container) {
+      container.innerHTML = '<a href="mailto:' + email + '" class="' + classes + '">' + email + '</a>';
+    }
+  }
+
+  insertEmailLink("email1", "hello", "cargopro.ai", "text-white font-semibold text-sm md:text-base hover:text-white");
+</script>
+
                     </p>
                 </div>
                 <div class="flex mt-4 md:mt-0 justify-center md:justify-start items-center">
@@ -358,5 +370,5 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="blogs.js" rel="script"></script>
-
+    <script src="navbar.js" rel="script"></script>
 </body>
