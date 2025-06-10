@@ -13,14 +13,12 @@
         "destination": "/sitemap.xml"
       },
       {
-        "source": "**",
-        "destination": "/index.html"
+        "source": "/**",
+        "destination": "/404.html",
+        "type": 404
       }
     ],
     "cleanUrls": true,
-    "trailingSlash": false,
-    "errorPages": {
-      "404": "/404.html"
-    }
+    "trailingSlash": false
   }
 }
