@@ -3,7 +3,7 @@ name: Deploy to Firebase from Main
 on:
   push:
     branches:
-      - main
+      - newDev
 
 jobs:
   deploy:
