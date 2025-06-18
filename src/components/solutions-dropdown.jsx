@@ -7,14 +7,14 @@ const solutions = [
     path: "/freight-sourcing-and-reverse-auction",
   },
   { name: "Indent Automation", path: "/indent-automation" },
-  { name: "Invoicing", path: "/solutions/invoicing" },
+  { name: "Invoicing", path: "/invoicing" },
   {
     name: "In-Plant Vehicle Movement and Optimization",
-    path: "/solutions/in-plant-vehicle-optimization",
+    path: "/in-plant-vehicle-movement-and-optimization",
   },
   { name: "Dashboard and Analytics", path: "/solutions/dashboard-analytics" },
   { name: "Tracking", path: "/solutions/tracking" },
-  { name: "Proof of Delivery", path: "/solutions/proof-of-delivery" },
+  { name: "Proof of Delivery", path: "/proof-of-delivery" },
 ];
 
 const SolutionsDropdown = () => {

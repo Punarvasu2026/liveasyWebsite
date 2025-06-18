@@ -6,73 +6,45 @@ const allInsights = [
   {
     image: BlogCardImage1,
     heading:
-      "Streamlining Procurement and Indent Management: The Power of Automated Solution",
+      "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
     date: "January 10, 2025",
+    link: "/blogs/revolutionizing-logistics",
   },
   {
     image: BlogCardImage1,
     heading:
       "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
     date: "January 27, 2025",
+    link: "/insights/eco-friendly-logistics",
   },
   {
     image: BlogCardImage1,
     heading:
       "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
     date: "January 18, 2025",
+    link: "/insights/invoicing-automation",
   },
   {
     image: BlogCardImage1,
     heading:
       "Breaking Barriers: Overcoming Challenges in Implementing Digital Solutions",
     date: "January 15, 2025",
+    link: "/insights/digital-solution-challenges",
   },
   {
     image: BlogCardImage1,
     heading: "Digital Transformation Strategies for Logistics Company",
     date: "January 9, 2025",
+    link: "/insights/digital-transformation-strategies",
   },
   {
     image: BlogCardImage1,
     heading:
       "Optimizing Resources and Safety: The Role of Automation in In-Plant Vehicle Movement",
     date: "January 26, 2025",
+    link: "/insights/in-plant-automation",
   },
-  {
-    image: BlogCardImage1,
-    heading:
-      "Streamlining Procurement and Indent Management: The Power of Automated Solution",
-    date: "January 10, 2025",
-  },
-  {
-    image: BlogCardImage1,
-    heading:
-      "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-    date: "January 27, 2025",
-  },
-  {
-    image: BlogCardImage1,
-    heading:
-      "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-    date: "January 18, 2025",
-  },
-  {
-    image: BlogCardImage1,
-    heading:
-      "Breaking Barriers: Overcoming Challenges in Implementing Digital Solutions",
-    date: "January 15, 2025",
-  },
-  {
-    image: BlogCardImage1,
-    heading: "Digital Transformation Strategies for Logistics Company",
-    date: "January 9, 2025",
-  },
-  {
-    image: BlogCardImage1,
-    heading:
-      "Optimizing Resources and Safety: The Role of Automation in In-Plant Vehicle Movement",
-    date: "December 26, 2025",
-  },
+  // ...repeat for remaining items
 ];
 
 const InsightsPage = () => {
@@ -114,6 +86,7 @@ const InsightsPage = () => {
               image={item.image}
               heading={item.heading}
               date={item.date}
+              link={item.link}
             />
           ))}
         </div>

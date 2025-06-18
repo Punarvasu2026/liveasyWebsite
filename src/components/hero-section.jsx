@@ -56,12 +56,14 @@ const HeroSection = ({
             </p>
 
             <div className="relative inline-block">
-              <button
-                onClick={onButtonClick}
-                className="bg-primaryBlue hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-full transition duration-200 z-20 relative"
+              <a
+                href="https://calendly.com/pranav-cargopro/30min"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="bg-primaryBlue hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-full transition duration-200 z-20 relative inline-block"
               >
                 {buttonLabel}
-              </button>
+              </a>
 
               {/* Arrow - Desktop */}
               <img

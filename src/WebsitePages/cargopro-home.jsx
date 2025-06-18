@@ -13,8 +13,6 @@ import CargoProSteps from "../components/cargopro-onboarding-steps";
 import Reviews from "../components/reviews";
 import CargoProBookDemo from "../components/cargopro-book-demo";
 import Footer from "../components/footer";
-import FounderSection from "../components/AboutUs/cargopro-founder-section";
-import MissionSection from "../components/AboutUs/cargopro-mission-section";
 
 //Images
 import HeroImage from "../assets/hero-image.png";
@@ -51,8 +49,6 @@ const Home = () => {
       <AboutUs />
       <WhyChooseCargoPro />
       <SolutionsSection />
-      <FounderSection />
-      <MissionSection />
       <CargoProSteps />
       <Reviews />
       <CargoProBookDemo

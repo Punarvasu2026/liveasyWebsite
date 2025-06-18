@@ -1,10 +1,9 @@
-import React from 'react';
-import WhyChooseCargoProGraphics from '../assets/WhyChooseCargoPro.png';
+import React from "react";
+import WhyChooseCargoProGraphics from "../assets/WhyChooseCargoPro.png";
 
 const WhyChooseCargoPro = () => {
   return (
     <section className="flex flex-col md:flex-row items-start justify-between gap-12 px-6 md:px-12 py-12 bg-white">
-
       {/* Left Image Section (comes first in mobile) */}
       <div className="w-full md:w-1/2 flex justify-center md:justify-start">
         <img
@@ -26,9 +25,9 @@ const WhyChooseCargoPro = () => {
           </h2>
 
           <p className="font-dmSans font-normal text-[16px] md:text-[20px] leading-[1.5] text-[#40474F]">
-            Designed to streamline your road shipment management, our
-            solution brings automation, real-time visibility, and enhanced
-            operational efficiency — from order to delivery.
+            Designed to streamline your road shipment management, our solution
+            brings automation, real-time visibility, and enhanced operational
+            efficiency — from order to delivery.
           </p>
 
           <ul className="text-[#2B2829] font-sofiaSans font-semibold italic text-[20px] md:text-[24px] leading-[1.4] space-y-2">
@@ -38,12 +37,14 @@ const WhyChooseCargoPro = () => {
             <li>End-to-End Visibility</li>
           </ul>
 
-          <button
-            onClick={() => alert('Demo scheduled!')}
-            className="bg-[#2d55fb] text-white px-6 py-3 rounded-full hover:bg-[#1c3ec9] transition mt-4 md:mt-6"
+          <a
+            href="https://calendly.com/pranav-cargopro/30min"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            className="bg-[#2d55fb] text-white px-6 py-3 rounded-full hover:bg-[#1c3ec9] transition mt-4 md:mt-6 inline-block"
           >
             Schedule a Demo
-          </button>
+          </a>
         </div>
       </div>
     </section>

@@ -1,8 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const InsightsCard = ({ image, heading, date }) => {
+const InsightsCard = ({ image, heading, date, link }) => {
+  const navigate = useNavigate();
+
   return (
-    <div className="w-full max-w-[411px] h-[400px] p-6 rounded-[24px] bg-white shadow-md flex flex-col">
+    <div
+      onClick={() => navigate(link)}
+      className="w-full max-w-[411px] h-[400px] p-6 rounded-[24px] bg-white shadow-md flex flex-col cursor-pointer transition hover:shadow-lg"
+    >
       {/* Top Image */}
       <img
         src={image}
@@ -25,7 +31,7 @@ const InsightsCard = ({ image, heading, date }) => {
           <span className="text-[#4C6FFF] font-semibold text-sm">
             Read more
           </span>
-          <button className="w-8 h-8 rounded-full bg-[#4C6FFF] flex items-center justify-center hover:bg-[#3c5fe0] transition">
+          <div className="w-8 h-8 rounded-full bg-[#4C6FFF] flex items-center justify-center hover:bg-[#3c5fe0] transition">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-[14px] h-[14px] text-white transform rotate-[-45deg]"
@@ -40,7 +46,7 @@ const InsightsCard = ({ image, heading, date }) => {
                 d="M5 12h14M12 5l7 7-7 7"
               />
             </svg>
-          </button>
+          </div>
         </div>
       </div>
     </div>

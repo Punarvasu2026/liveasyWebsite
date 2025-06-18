@@ -1,12 +1,12 @@
-import React from 'react';
-import TrustedByLogos from '../assets/TrustedByCargoProLogos.png'; // Replace with actual path
+import React from "react";
+import TrustedByLogos from "../assets/TrustedByCargoProLogos.png"; // Replace with actual path
 
 const TrustedBy = () => {
   return (
     <section className="bg-white py-12 overflow-hidden font-sans">
       <div className="max-w-[1220px] mx-auto px-4 text-center">
         <h2
-  className="
+          className="
     font-semibold
     text-[#1D2B7F]
     mb-4 sm:mb-6 md:mb-8
@@ -14,11 +14,10 @@ const TrustedBy = () => {
     text-[18px] sm:text-[24px] md:text-[32px]
     text-center
   "
->
-  Trusted Logistic Partner for <br className="block md:hidden" />
-  Global Businesses and Industries
-</h2>
-
+        >
+          Trusted by Global Businesses <br className="block md:hidden" />
+          and Industries
+        </h2>
 
         {/* Logo Container */}
         <div className="relative w-full max-w-[1220px] h-[50px] mx-auto overflow-hidden px-[0.04px]">
