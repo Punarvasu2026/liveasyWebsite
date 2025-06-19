@@ -24,7 +24,9 @@ const Career = () => {
       <CareerPerks />
       <WhyWorkWithUs />
       <TrustedBy />
-      <ContactUs />
+      <section id="contact-us">
+        <ContactUs />
+      </section>
       <Footer />
     </>
   );

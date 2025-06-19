@@ -11,6 +11,7 @@ import ReverseAuctionSection from "../../components/Solutions/ReusableComponents
 import FreightSourcingSection1 from "../../components/Solutions/ReusableComponents/Section1";
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import Footer from "../../components/footer";
+import BussinessBenifits from "../../components/Solutions/IndentAutomation/bussiness-benifits";
 
 // Images
 import IndentAutomationHero from "../../assets/Solutions/IndentAutomation/indent-automation-hero.webp";
@@ -117,6 +118,7 @@ const FreightSourcingAndReverseAuction = () => {
         points={fullVisibilityLogsPoints}
         mainImage={FullVisibilityLogs}
       />
+      <BussinessBenifits />
       <CargoProBookDemo
         heading={<>See It In Action</>}
         text={

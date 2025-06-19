@@ -8,6 +8,7 @@ module.exports = {
         raleway: ['Raleway', 'sans-serif'],
         sora: ['Sora', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
+        sofia: ["'Sofia Sans'", "sans-serif"],
       },
       colors: {
         primaryBlue: "#304DAF",    // Custom name for #304DAF     // Another example
