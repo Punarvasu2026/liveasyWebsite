@@ -12,8 +12,8 @@ const solutions = [
     name: "In-Plant Vehicle Movement and Optimization",
     path: "/in-plant-vehicle-movement-and-optimization",
   },
-  { name: "Dashboard and Analytics", path: "/solutions/dashboard-analytics" },
-  { name: "Tracking", path: "/solutions/tracking" },
+  { name: "Dashboard and Analytics", path: "/dashboard-analytics" },
+  { name: "Tracking", path: "/tracking" },
   { name: "Proof of Delivery", path: "/proof-of-delivery" },
 ];
 

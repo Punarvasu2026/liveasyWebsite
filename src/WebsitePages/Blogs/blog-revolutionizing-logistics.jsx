@@ -8,6 +8,7 @@ import ContentSection from "../../components/Blogs/ReusableComponents/blogs-cont
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import CargoProBookDemo from "../../components/cargopro-book-demo";
+import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
 import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
@@ -52,6 +53,30 @@ const Blog1 = () => {
     footerText: "Found this article helpful? Spread the word!",
   };
 
+  const insightsData = [
+    {
+      image: logisticsImage,
+      heading:
+        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
+      date: "January 10, 2025",
+      link: "/blogs/revolutionizing-logistics",
+    },
+    {
+      image: logisticsImage,
+      heading:
+        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
+      date: "January 27, 2025",
+      link: "/insights/eco-friendly-logistics",
+    },
+    {
+      image: logisticsImage,
+      heading:
+        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
+      date: "January 18, 2025",
+      link: "/insights/invoicing-automation",
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -65,6 +90,7 @@ const Blog1 = () => {
         text="Automation is very useful in industries like logistics where manual processes can lead to a pile of paperwork and long processing hours, therefore CargoPro with a motive to serve businesses in improving efficiency, accuracy, and customer service becomes a handy tool to manage logistics operations."
       />
       <ContentSection sections={sections} wrappingUp={wrappingUp} />
+      <RelatedBlogs insights={insightsData} />;
       <CargoProBookDemo
         heading={<>Your Logistics, Now Smarter.</>}
         text={

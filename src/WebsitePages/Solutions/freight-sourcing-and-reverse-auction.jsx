@@ -11,6 +11,8 @@ import ReverseAuctionSection from "../../components/Solutions/ReusableComponents
 import FreightSourcingSection1 from "../../components/Solutions/ReusableComponents/Section1";
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import Footer from "../../components/footer";
+import IdealFor from "../../components/Solutions/FreightSourcingAndReverseAuction/ideal-for";
+import BusinessImpactSection from "../../components/Solutions/FreightSourcingAndReverseAuction/bussiness-impact";
 
 // Images
 import AutomatedFreightSourcingImage from "../../assets/Solutions/FreightSourcing/automated-freight-sourcing.png";
@@ -123,6 +125,9 @@ const FreightSourcingAndReverseAuction = () => {
         points={automatedFreightSourcingPoints}
         mainImage={AutomatedFreightSourcingImage}
       />
+      <BusinessImpactSection />
+      <IdealFor />
+
       <CargoProBookDemo
         heading={
           <>

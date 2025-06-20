@@ -6,43 +6,64 @@ const allInsights = [
   {
     image: BlogCardImage1,
     heading:
-      "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
+      "Eco-Friendly Logistics: Reducing Carbon Footprint Through Digital Innovation with CargoPro",
     date: "January 10, 2025",
-    link: "/blogs/revolutionizing-logistics",
+    link: "/blogs/eco-friendly-logistics",
   },
   {
     image: BlogCardImage1,
     heading:
-      "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
+      "Revolutionizing Procurement and Indent Management with CargoPro’s Automated TMS Platform",
     date: "January 27, 2025",
-    link: "/insights/eco-friendly-logistics",
+    link: "/blogs/revolutionizing-procurement",
   },
   {
     image: BlogCardImage1,
     heading:
       "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
     date: "January 18, 2025",
-    link: "/insights/invoicing-automation",
+    link: "/blogs/say-goodbye-to-invoicing-hassles",
   },
   {
     image: BlogCardImage1,
     heading:
-      "Breaking Barriers: Overcoming Challenges in Implementing Digital Solutions",
+      "Breaking Barriers: Overcoming Challenges in Implementing Digital Logistics Solutions with CargoPro",
     date: "January 15, 2025",
-    link: "/insights/digital-solution-challenges",
-  },
-  {
-    image: BlogCardImage1,
-    heading: "Digital Transformation Strategies for Logistics Company",
-    date: "January 9, 2025",
-    link: "/insights/digital-transformation-strategies",
+    link: "/blogs/digital-solution-challenges",
   },
   {
     image: BlogCardImage1,
     heading:
-      "Optimizing Resources and Safety: The Role of Automation in In-Plant Vehicle Movement",
+      "Digital Transformation Strategies for Logistics Companies: The CargoPro Edge",
+    date: "January 9, 2025",
+    link: "/blogs/digital-transformation-strategies",
+  },
+  {
+    image: BlogCardImage1,
+    heading:
+      "Optimizing Resources and Safety: The Role of Automation in In-Plant Vehicle Movement with CargoPro",
     date: "January 26, 2025",
-    link: "/insights/in-plant-automation",
+    link: "/blogs/in-plant-automation",
+  },
+  {
+    image: BlogCardImage1,
+    heading:
+      "Optimizing Resources and Safety: The Role of Automation in In-Plant Vehicle Movement with CargoPro",
+    date: "January 26, 2025",
+    link: "/blogs/in-plant-automation",
+  },
+  {
+    image: BlogCardImage1,
+    heading: "How to Choose the Right TMS: A Buyer’s Guide",
+    date: "January 26, 2025",
+    link: "/blogs/how-to-choose-the-right-tms",
+  },
+  {
+    image: BlogCardImage1,
+    heading:
+      "Big Data and Predictive Analytics in Logistics: A Game Changer for Achieving End-to-End Supply Chain Visibility",
+    date: "January 26, 2025",
+    link: "/blogs/big-data-and-predictive-analytics-in-logistics",
   },
   // ...repeat for remaining items
 ];

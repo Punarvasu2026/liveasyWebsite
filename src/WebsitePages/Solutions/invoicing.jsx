@@ -11,6 +11,7 @@ import SolutionsSection3 from "../../components/Solutions/ReusableComponents/Sec
 import SolutionsSection1 from "../../components/Solutions/ReusableComponents/Section1";
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import Footer from "../../components/footer";
+import WhyInvoicing from "../../components/Solutions/Invoicing/why-invoicing";
 
 // Images
 import InvoicingHero from "../../assets/Solutions/Invoicing/invoicing-hero-image.webp";
@@ -142,6 +143,7 @@ const Invoicing = () => {
           </>
         }
       />
+      <WhyInvoicing />
 
       <Footer />
     </>
