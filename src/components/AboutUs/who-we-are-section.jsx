@@ -1,5 +1,5 @@
 import React from "react";
-import TeamImage from "../../assets/AboutCargoPro/who-we-are-image.webp"; // Update path if needed
+import TeamImage from "../../assets/AboutCargoPro/who-are-we.webp"; // Update path if needed
 
 const WhoAreWeSection = () => {
   return (

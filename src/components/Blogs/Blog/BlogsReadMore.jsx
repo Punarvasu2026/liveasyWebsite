@@ -65,6 +65,50 @@ const allInsights = [
     date: "January 26, 2025",
     link: "/blogs/big-data-and-predictive-analytics-in-logistics",
   },
+  {
+    image: BlogCardImage1,
+    heading: "Why Freight Cost is Higher in the Steel Industry?",
+    date: "January 26, 2025",
+    link: "/blogs/why-freight-cost-is-higher-in-the-steel-industry",
+  },
+  {
+    image: BlogCardImage1,
+    heading: "National Logistics Policy 2022 – Explained",
+    date: "January 26, 2025",
+    link: "/blogs/national-logistics-policy-2022",
+  },
+  {
+    image: BlogCardImage1,
+    heading:
+      "Efficiency at Every Step – Automated Invoicing and Simplifying Logistics with CargoPro",
+    date: "January 26, 2025",
+    link: "/blogs/automated-invoicing-and-simplifying-logistics",
+  },
+  {
+    image: BlogCardImage1,
+    heading: "The Benefits of Automated Indent Management for Procurement",
+    date: "January 26, 2025",
+    link: "/blogs/benifits-of-automated-indent-management",
+  },
+  {
+    image: BlogCardImage1,
+    heading: "How to Streamline Yard Management with In-Plant Optimization",
+    date: "January 26, 2025",
+    link: "/blogs/how-to-streamline-yard-management-with-in-plant-optimization",
+  },
+  {
+    image: BlogCardImage1,
+    heading:
+      "Achieving End-to-End Visibility with Logistics Tracking Solutions",
+    date: "January 26, 2025",
+    link: "/blogs/achieving-end-to-end-visibility-with-logistics-tracking-solutions",
+  },
+  {
+    image: BlogCardImage1,
+    heading: "The Power of Data-Driven Logistics Analytics and Insights",
+    date: "January 26, 2025",
+    link: "/blogs/the-power-of-data-driven-logistics-analytics-and-insights",
+  },
   // ...repeat for remaining items
 ];
 

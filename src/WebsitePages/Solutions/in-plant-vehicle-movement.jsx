@@ -13,11 +13,12 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import Footer from "../../components/footer";
 
 // Images
-import HeroImge from "../../assets/Solutions/InPlantVehicleMovement/inplant-vehicle-movement-hero-image.webp";
-import Section1Image from "../../assets/Solutions/InPlantVehicleMovement/inplant-vehicle-movement-image.webp";
-import StageWiseMonitoring from "../../assets/Solutions/InPlantVehicleMovement/in-plant-stage-wise-monitoring.webp";
-import StayInformedAtEveryStep from "../../assets/Solutions/InPlantVehicleMovement/in-plant-stay-informed-at-every-step.webp";
-import TurnAroundTime from "../../assets/Solutions/InPlantVehicleMovement/in-plant-turnaround-time.webp";
+import CargoProLogo from "../../assets/CargoProLogo.png";
+import HeroImge from "../../assets/Solutions/InPlantVehicleMovement/in-plant-vehicle-movement-and-optimization.webp";
+import Section1Image from "../../assets/Solutions/InPlantVehicleMovement/maximize-facility-efficiency.webp";
+import StageWiseMonitoring from "../../assets/Solutions/InPlantVehicleMovement/stage-wise-process-monitoring.webp";
+import StayInformedAtEveryStep from "../../assets/Solutions/InPlantVehicleMovement/stay-informed-at-every-step.webp";
+import TurnAroundTime from "../../assets/Solutions/InPlantVehicleMovement/turnaround-time-optimization.webp";
 
 const InPlantVehicleMovement = () => {
   const heading = (
@@ -62,6 +63,8 @@ const InPlantVehicleMovement = () => {
     <>
       <Helmet>
         <title>In Plant Vehicle Movement and Optimization| CargoPro</title>
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>
       <Navbar />
       <HeroSection

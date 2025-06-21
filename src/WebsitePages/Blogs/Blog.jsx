@@ -6,9 +6,10 @@ import BlogReadMore from "../../components/Blogs/Blog/BlogsReadMore";
 import RevolutionizingAutomation from "../../components/Blogs/Blog/revolutionizing-automation";
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import BlogsHeroSection from "../../components/Blogs/Blog/blogs-hero-section";
+import Footer from "../../components/footer";
 
 //images
-import Footer from "../../components/footer";
+import BackgroundImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
 
 const Blog = () => {
   return (
@@ -28,6 +29,7 @@ const Blog = () => {
             <br /> chain strategies powering the future of logistics.
           </>
         }
+        backgroundImage={BackgroundImage}
       />
       <RevolutionizingAutomation />
       <BlogReadMore />

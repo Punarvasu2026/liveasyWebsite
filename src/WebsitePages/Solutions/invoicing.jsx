@@ -14,12 +14,13 @@ import Footer from "../../components/footer";
 import WhyInvoicing from "../../components/Solutions/Invoicing/why-invoicing";
 
 // Images
-import InvoicingHero from "../../assets/Solutions/Invoicing/invoicing-hero-image.webp";
-import InvoicingSectionImage from "../../assets/Solutions/Invoicing/invoicing-image.webp";
-import InvoicingDigitalRecords from "../../assets/Solutions/Invoicing/invoicing-digital-records.webp";
-import OneClickInvoice from "../../assets/Solutions/Invoicing/invoicing-one-click-invoice.webp";
-import SmartReviewAndDeduction from "../../assets/Solutions/Invoicing/invoicing-smart-review-and-deduction.webp";
-import VisibilityFromAllEnds from "../../assets/Solutions/Invoicing/invoicing-visibility-from-all-ends.webp";
+import CargoProLogo from "../../assets/CargoProLogo.png";
+import InvoicingHero from "../../assets/Solutions/Invoicing/Invoicing.webp";
+import InvoicingSectionImage from "../../assets/Solutions/Invoicing/automated-freight-billing.webp";
+import InvoicingDigitalRecords from "../../assets/Solutions/Invoicing/digital-records-for-audit.webp";
+import OneClickInvoice from "../../assets/Solutions/Invoicing/one-click-invoice-generation.webp";
+import SmartReviewAndDeduction from "../../assets/Solutions/Invoicing/smart-review-and-deduction.webp";
+import VisibilityFromAllEnds from "../../assets/Solutions/Invoicing/visibility-from-all-ends.webp";
 
 const Invoicing = () => {
   const heading = (
@@ -64,6 +65,8 @@ const Invoicing = () => {
     <>
       <Helmet>
         <title>Invoicing| CargoPro</title>
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>
       <Navbar />
       <HeroSection

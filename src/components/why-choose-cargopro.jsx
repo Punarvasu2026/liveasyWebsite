@@ -1,5 +1,5 @@
 import React from "react";
-import WhyChooseCargoProGraphics from "../assets/WhyChooseCargoPro.png";
+import WhyChooseCargoProGraphics from "../assets/CargoProIndexPage/why-choose-cargopro.webp";
 
 const WhyChooseCargoPro = () => {
   return (

@@ -1,12 +1,12 @@
 import React from "react";
 
 //images
-import IndustriesComplicatedInvoicing from "../../assets/Industries/industries-complicated-invoicing.webp";
-import IndustriesInefficientInPlantVehicleMovement from "../../assets/Industries/industries-inefficient-vehicle-movement.webp";
-import IndustriesIndentManagement from "../../assets/Industries/industries-indent-management.webp";
-import IndustriesLackOfTransparency from "../../assets/Industries/industries-lack-of-transperency.webp";
-import IndustriesManualDisparateDataSources from "../../assets/Industries/industries-manual-data-sources.webp";
-import IndustriesTraditionalTrackingMethods from "../../assets/Industries/industries-traditional-tracking-method.webp";
+import IndustriesComplicatedInvoicing from "../../assets/Industries/complicated-invoicing.webp";
+import IndustriesInefficientInPlantVehicleMovement from "../../assets/Industries/inefficient-in-plant-vehicle-movement.webp";
+import IndustriesIndentManagement from "../../assets/Industries/indent-management.webp";
+import IndustriesLackOfTransparency from "../../assets/Industries/lack-of-transperency.webp";
+import IndustriesManualDisparateDataSources from "../../assets/Industries/manual-data-sources.webp";
+import IndustriesTraditionalTrackingMethods from "../../assets/Industries/traditional-tracking-method.webp";
 
 const ChallengesSection = () => {
   const challengeData = [

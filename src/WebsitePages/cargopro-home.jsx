@@ -15,13 +15,18 @@ import CargoProBookDemo from "../components/cargopro-book-demo";
 import Footer from "../components/footer";
 
 //Images
-import HeroImage from "../assets/hero-image.png";
+import CargoProLogo from "../assets/CargoProLogo.png";
+
+//Images
+import HeroImage from "../assets/CargoProIndexPage/cargopro-putting-your-logistics.webp";
 
 const Home = () => {
   return (
     <>
       <Helmet>
         <title>CargoPro | Smart TMS Platform for Freight & Logistics</title>
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>
       <NavBar />
       <HeroSection

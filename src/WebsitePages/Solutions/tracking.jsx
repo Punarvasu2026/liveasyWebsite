@@ -9,24 +9,20 @@ import TrustedBy from "../../components/trustedby-cargopro";
 import TrackingSection1 from "../../components/Solutions/Tracking/tracking-section-1";
 import TrackingSection2 from "../../components/Solutions/Tracking/tracking-section-2";
 import RealTimeTrackingBenifits from "../../components/Solutions/Tracking/real-time-tracking-benifits";
-import SolutionsSection2 from "../../components/Solutions/ReusableComponents/Section2";
-import SolutionsSection3 from "../../components/Solutions/ReusableComponents/Section3";
-import SolutionsSection1 from "../../components/Solutions/ReusableComponents/Section1";
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import Footer from "../../components/footer";
 
 // Images
-import TrackingHero from "../../assets/Solutions/Tracking/tracking-hero-image.webp";
-import PodSectionImage from "../../assets/Solutions/pod/pod-image.webp";
-import InstantUploads from "../../assets/Solutions/pod/pod-instant-uploads.webp";
-import SeamlessInvoiceIntegrationImage from "../../assets/Solutions/pod/pod-seamless-invoice-integration.webp";
-import ShipperAndVendorVisibilityImage from "../../assets/Solutions/pod/pod-shipper-and-vendor-visibility.webp";
+import CargoProLogo from "../../assets/CargoProLogo.png";
+import TrackingHero from "../../assets/Solutions/Tracking/live-tracking.webp";
 
 const Tracking = () => {
   return (
     <>
       <Helmet>
         <title>Live Tracking | CargoPro</title>
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>
       <Navbar />
       <HeroSection
@@ -39,7 +35,7 @@ const Tracking = () => {
         }
         content={
           <>
-            CargoPro Offers SIM-based and App tracking to give you <br />
+            CargoPro Offers SIM-based and App tracking to give <br />
             real-time vehicle updates, along with detailed insights
             <br /> about vehicle compliance and reliability.
           </>

@@ -1,5 +1,5 @@
 import React from "react";
-import founderImage from "../../assets/AboutCargoPro/cargopro-founder-image.webp"; // Update path as needed
+import founderImage from "../../assets/AboutCargoPro/cargopro-founder.webp"; // Update path as needed
 
 const FounderSection = () => {
   return (

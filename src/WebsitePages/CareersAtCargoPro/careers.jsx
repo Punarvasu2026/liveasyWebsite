@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 //Components
 import Navbar from "../../components/navbar";
@@ -10,11 +11,17 @@ import TrustedBy from "../../components/trustedby-cargopro";
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
 
 //Images
-import HeroBgImage from "../../assets/Careers/careers-hero-bg.webp";
+import CargoProLogo from "../../assets/CargoProLogo.png";
+import HeroBgImage from "../../assets/Careers/careers-bg.webp";
 
 const Career = () => {
   return (
     <>
+      <Helmet>
+        <title>Industries | CargoPro</title>
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+      </Helmet>
       <Navbar />
       <BlogsHero
         heading="Careers: Join Us at CargoPro"

@@ -15,12 +15,13 @@ import Footer from "../../components/footer";
 import TakeControlOfYourLogistics from "../../components/Solutions/DadhboardAndAnalytics/take-control-of-your-logistics";
 
 // Images
-import DashboardAndAnalyticsHero from "../../assets/Solutions/DashboardAndAnalytics/dashboard-and-analytics-hero-image.jsx.webp";
-import DashboardAndAnalyticsImage from "../../assets/Solutions/DashboardAndAnalytics/dashboard-and-analytics-image.webp";
+import CargoProLogo from "../../assets/CargoProLogo.png";
+import DashboardAndAnalyticsHero from "../../assets/Solutions/DashboardAndAnalytics/dashboard-and-analytics.webp";
+import DashboardAndAnalyticsImage from "../../assets/Solutions/DashboardAndAnalytics/see-everything-miss-nothing.webp";
 import CentralizedLogisticsOverviewImage from "../../assets/Solutions/DashboardAndAnalytics/centralized-logistics-overview.webp";
 import FreightAndLoadAnalysisImage from "../../assets/Solutions/DashboardAndAnalytics/freight-and-load-analysis.webp";
 import FullAuditTrailAndTeamLogsImage from "../../assets/Solutions/DashboardAndAnalytics/full-audit-trail-and-team-logs.webp";
-import TransporterAndVendorAnalysisImage from "../../assets/Solutions/DashboardAndAnalytics/transporter-and-vendor-analysis.webp";
+import TransporterAndVendorAnalysisImage from "../../assets/Solutions/DashboardAndAnalytics/transporter-and-vendor-insights.webp";
 
 const DashboardAndAnalytics = () => {
   const heading = (
@@ -65,6 +66,8 @@ const DashboardAndAnalytics = () => {
     <>
       <Helmet>
         <title>Dashboard and Analytics | CargoPro</title>
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>
       <Navbar />
       <HeroSection

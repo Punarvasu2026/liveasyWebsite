@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Home from './WebsitePages/cargopro-home';
@@ -23,7 +22,14 @@ import Blog5 from './WebsitePages/Blogs/blog-5-digital-transformations-strategie
 import Blog6 from './WebsitePages/Blogs/blog-6-optimizing-resourses';
 import Blog8 from './WebsitePages/Blogs/blog-8-how-to-choose-right-tms';
 import Blog9 from './WebsitePages/Blogs/blog-9-end-to-end-suplly-chain';
-import Tracking from './WebsitePages/Solutions/tracking';
+import Blog10 from './WebsitePages/Blogs/blog-10-higher-freight-cost-in-steel-industry';
+import Blog11 from './WebsitePages/Blogs/blog-11-national-logistics-policy-2022';
+import Blog12 from './WebsitePages/Blogs/blog-12-automated-invoicing';
+import Blog13 from './WebsitePages/Blogs/blog-13-benifits-of-automated-indent-management';
+import Blog14 from './WebsitePages/Blogs/blog-14-streamline-yard-management-with-in-plant-optimization';
+import Blog15 from './WebsitePages/Blogs/blog-15-end-to-end-visibility-with-logistics-tracking-solution';
+import Blog16 from './WebsitePages/Blogs/blog-16-data-driven-logistics';
+import Tracking from './WebsitePages/Solutions/tracking';   
 
 
 
@@ -62,6 +68,13 @@ function App() {
         <Route path='/blogs/in-plant-automation' element = {<Blog6 />}/>
         <Route path='/blogs/how-to-choose-the-right-tms' element = {<Blog8 />}/>
         <Route path='/blogs/big-data-and-predictive-analytics-in-logistics' element = {<Blog9 />}/>
+        <Route path='/blogs/why-freight-cost-is-higher-in-the-steel-industry' element = {<Blog10 />}/>
+        <Route path='/blogs/national-logistics-policy-2022' element = {<Blog11 />}/>
+        <Route path='/blogs/automated-invoicing-and-simplifying-logistics' element = {<Blog12 />}/>
+        <Route path='/blogs/benifits-of-automated-indent-management' element = {<Blog13 />}/>
+        <Route path='/blogs/how-to-streamline-yard-management-with-in-plant-optimization' element = {<Blog14 />}/>
+        <Route path='/blogs/achieving-end-to-end-visibility-with-logistics-tracking-solutions' element = {<Blog15 />}/>
+        <Route path='/blogs/the-power-of-data-driven-logistics-analytics-and-insights' element = {<Blog16 />}/>
 
         {/* Contacts */}
         <Route path="/contacts" element={<Careers />} />

@@ -14,12 +14,13 @@ import Footer from "../../components/footer";
 import BussinessBenifits from "../../components/Solutions/IndentAutomation/bussiness-benifits";
 
 // Images
+import CargoProLogo from "../../assets/CargoProLogo.png";
 import IndentAutomationHero from "../../assets/Solutions/IndentAutomation/indent-automation-hero.webp";
-import IndentAutomation from "../../assets/Solutions/IndentAutomation/indent-automation.webp";
+import IndentAutomation from "../../assets/Solutions/IndentAutomation/why-indent-automation.webp";
 import CentralizedContractManagement from "../../assets/Solutions/IndentAutomation/centralized-contract-management.webp";
-import IntelligentIndentAssignment from "../../assets/Solutions/IndentAutomation/intelligent-indent-management.webp";
+import IntelligentIndentAssignment from "../../assets/Solutions/IndentAutomation/intelligent-indent-assignment.webp";
 import RealTimeNotifications from "../../assets/Solutions/IndentAutomation/real-time-notification-and-acceptance.webp";
-import FullVisibilityLogs from "../../assets/Solutions/IndentAutomation/full-visibility-logs.webp";
+import FullVisibilityLogs from "../../assets/Solutions/IndentAutomation/full-visibility-and-logs.webp";
 
 const FreightSourcingAndReverseAuction = () => {
   const heading = <>Why Indent Automation?</>;
@@ -59,6 +60,8 @@ const FreightSourcingAndReverseAuction = () => {
     <>
       <Helmet>
         <title>Indent Automation | CargoPro</title>
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>
       <Navbar />
       <HeroSection

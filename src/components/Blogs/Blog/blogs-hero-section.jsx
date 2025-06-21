@@ -3,20 +3,20 @@ import React from "react";
 // Images
 import Arrow from "../../../assets/Pointer_Arrow.png";
 import BottomShape from "../../../assets/Vector_3.png";
-import BgImage from "../../../assets/Blogs/Blog/blogs-background.png";
 
 const BlogsHeroSection = ({
   heading,
   content,
   buttonLabel = "Schedule Demo",
   onButtonClick,
+  backgroundImage, // <-- Accept background image here
 }) => {
   return (
     <div
       className="relative overflow-hidden"
       style={{
         height: "660px",
-        backgroundImage: `url(${BgImage})`,
+        backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -35,7 +35,7 @@ const BlogsHeroSection = ({
         }}
       />
 
-      <section className="relative z-10 pb-20 px-6 sm:px-10 lg:px-20 h-full flex items-end">
+      <section className="relative z-10 pb-20 px-6 sm:px-10 lg:px-20 h-full flex items-start pt-40">
         <div className="max-w-7xl mx-auto w-full">
           <div className="w-full lg:w-1/2 text-left text-white">
             <h1
@@ -62,12 +62,14 @@ const BlogsHeroSection = ({
             </p>
 
             <div className="relative inline-block">
-              <button
-                onClick={onButtonClick}
-                className="bg-primaryBlue hover:bg-blue-800 text-white font-semibold px-8 py-3 rounded-full transition duration-200 z-20 relative"
+              <a
+                href="https://calendly.com/pranav-cargopro/30"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="bg-primaryBlue hover:bg-blue-800 text-white font-semibold px-8 py-3 rounded-full transition duration-200 z-20 relative inline-block"
               >
                 {buttonLabel}
-              </button>
+              </a>
 
               {/* Arrow for Desktop */}
               <img

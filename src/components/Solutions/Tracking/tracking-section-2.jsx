@@ -1,5 +1,5 @@
 import React from "react";
-import TrackingImage from "../../../assets/Solutions/Tracking/tracking-section-2-image.webp"; // Adjust path as needed
+import TrackingImage from "../../../assets/Solutions/Tracking/integrated-tracking.webp"; // Adjust path as needed
 
 const IntegratedTrackingSection = () => {
   return (

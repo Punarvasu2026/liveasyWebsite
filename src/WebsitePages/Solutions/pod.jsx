@@ -13,11 +13,12 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import Footer from "../../components/footer";
 
 // Images
-import PodHero from "../../assets/Solutions/pod/pod-hero-image.webp";
-import PodSectionImage from "../../assets/Solutions/pod/pod-image.webp";
-import InstantUploads from "../../assets/Solutions/pod/pod-instant-uploads.webp";
-import SeamlessInvoiceIntegrationImage from "../../assets/Solutions/pod/pod-seamless-invoice-integration.webp";
-import ShipperAndVendorVisibilityImage from "../../assets/Solutions/pod/pod-shipper-and-vendor-visibility.webp";
+import CargoProLogo from "../../assets/CargoProLogo.png";
+import PodHero from "../../assets/Solutions/pod/proof-of-delivery.webp";
+import PodSectionImage from "../../assets/Solutions/pod/digital-proof.webp";
+import InstantUploads from "../../assets/Solutions/pod/instant-pod-uploads.webp";
+import SeamlessInvoiceIntegrationImage from "../../assets/Solutions/pod/seamless-invoice-integration.webp";
+import ShipperAndVendorVisibilityImage from "../../assets/Solutions/pod/shipper-and-vendor-visibility.webp";
 
 const Pod = () => {
   const heading = <>Digital Proof, Zero Delays.</>;
@@ -50,6 +51,8 @@ const Pod = () => {
     <>
       <Helmet>
         <title>Proof of Dilivery| CargoPro</title>
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>
       <Navbar />
       <HeroSection

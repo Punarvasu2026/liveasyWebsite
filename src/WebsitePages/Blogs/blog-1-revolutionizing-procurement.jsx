@@ -1,5 +1,6 @@
 //External Libraries
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 //Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
@@ -11,6 +12,8 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
+import CargoProLogo from "../../assets/CargoProLogo.png";
+//Blog Images
 import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
 import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.png";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-1.png";
@@ -85,6 +88,14 @@ const Blog1 = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Revolutionizing Procurement and Indent Management with CargoPro’s
+          Automated TMS Platform | CargoPro
+        </title>
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+      </Helmet>
       <Navbar />
       <BlogsHero
         heading="Revolutionizing Procurement and Indent Management with CargoPro’s Automated TMS Platform"
