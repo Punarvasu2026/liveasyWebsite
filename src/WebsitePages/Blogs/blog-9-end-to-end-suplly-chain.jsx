@@ -1,5 +1,6 @@
 //External Libraries
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 //Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
@@ -11,12 +12,13 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
-import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.png";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-1.png";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-2.png";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-3.png";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.png";
+import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-9/blog-9-bg.webp";
+import logisticsImage from "../../assets/Blogs/blog-9/blog-9-bg.webp";
+import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-9/leverage-big-data.webp";
+import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-9/predictive-analytics.webp";
+import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-9/smarter-route-optimization.webp";
+import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-9/inventory-management.webp";
+import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-9/risk-detection.webp";
 
 const Blog9 = () => {
   const sections = [
@@ -100,7 +102,7 @@ const Blog9 = () => {
     },
     {
       heading: "Risk Detection and Disruption Management",
-      image: logisticsImage,
+      image: RevolutionizingLogisticsImage5,
       paragraph: (
         <>
           The supply chain is vulnerable to many disruptions — weather,

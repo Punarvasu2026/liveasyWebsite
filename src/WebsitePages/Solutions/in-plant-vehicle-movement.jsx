@@ -13,7 +13,7 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import Footer from "../../components/footer";
 
 // Images
-import CargoProLogo from "../../assets/CargoProLogo.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import HeroImge from "../../assets/Solutions/InPlantVehicleMovement/in-plant-vehicle-movement-and-optimization.webp";
 import Section1Image from "../../assets/Solutions/InPlantVehicleMovement/maximize-facility-efficiency.webp";
 import StageWiseMonitoring from "../../assets/Solutions/InPlantVehicleMovement/stage-wise-process-monitoring.webp";

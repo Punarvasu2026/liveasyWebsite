@@ -14,7 +14,7 @@ import Footer from "../../components/footer";
 import BussinessBenifits from "../../components/Solutions/IndentAutomation/bussiness-benifits";
 
 // Images
-import CargoProLogo from "../../assets/CargoProLogo.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import IndentAutomationHero from "../../assets/Solutions/IndentAutomation/indent-automation-hero.webp";
 import IndentAutomation from "../../assets/Solutions/IndentAutomation/why-indent-automation.webp";
 import CentralizedContractManagement from "../../assets/Solutions/IndentAutomation/centralized-contract-management.webp";

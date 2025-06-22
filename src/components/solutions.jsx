@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import SolutionCard from "./solution-card";
 
 import icon1Active from "../assets/ActiveIconSolutions.webp";
-import icon1Inactive from "../assets/inActiceIconSolutions.png";
+import icon1Inactive from "../assets/inActiceIconSolutions.webp";
 
 const solutions = [
   {

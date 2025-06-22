@@ -1,5 +1,6 @@
 //External Libraries
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 //Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
@@ -11,11 +12,11 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
-import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.png";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-1.png";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-2.png";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.png";
+import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-6/blog-6-bg.webp";
+import logisticsImage from "../../assets/Blogs/blog-6/blog-6-image.webp";
+import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-6/enhanced-efficiency-with-automation.webp";
+import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-6/safety-first-vehicle-movement.webp";
+import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-6/smart-use-of-data.webp";
 
 const Blog6 = () => {
   const sections = [

@@ -14,7 +14,7 @@ import Footer from "../../components/footer";
 import WhyInvoicing from "../../components/Solutions/Invoicing/why-invoicing";
 
 // Images
-import CargoProLogo from "../../assets/CargoProLogo.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import InvoicingHero from "../../assets/Solutions/Invoicing/Invoicing.webp";
 import InvoicingSectionImage from "../../assets/Solutions/Invoicing/automated-freight-billing.webp";
 import InvoicingDigitalRecords from "../../assets/Solutions/Invoicing/digital-records-for-audit.webp";

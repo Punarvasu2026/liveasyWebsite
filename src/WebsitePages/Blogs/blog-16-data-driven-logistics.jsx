@@ -1,5 +1,6 @@
 //External Libraries
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 //Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
@@ -11,12 +12,12 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
-import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.png";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-1.png";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-2.png";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-3.png";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.png";
+import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-16/blog-16-bg.webp";
+import logisticsImage from "../../assets/Blogs/blog-16/blog-16-image.webp";
+import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-16/route-optimization.webp";
+import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-16/inventory-management.webp";
+import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-16/fraud-detection.webp";
+import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-16/risk-metigation.webp";
 
 const Blog16 = () => {
   const sections = [
@@ -82,21 +83,21 @@ const Blog16 = () => {
       <Navbar />
       <BlogsHero
         heading="The Power of Data-Driven Logistics Analytics and Insights"
+        text="Freight management involves the planning, coordination, and
+            execution of moving goods from one location to another. It is a
+            complex process, often involving multiple transportation modes,
+            partners, and moving parts. Traditional approaches to freight
+            management, often manual and paper-based, result in inefficiencies,
+            data silos, and delayed decision-making."
         bgImage={RevolutionzingLogisticsBg}
       />
       <BlogsSection1
         imageSrc={logisticsImage}
         text={
           <>
-            Freight management involves the planning, coordination, and
-            execution of moving goods from one location to another. It is a
-            complex process, often involving multiple transportation modes,
-            partners, and moving parts. Traditional approaches to freight
-            management, often manual and paper-based, result in inefficiencies,
-            data silos, and delayed decision-making.
-            <br />
-            <br />
-            <strong>The Problem</strong>
+            <h2 className="font-sora font-semibold text-[40px] leading-[100%] tracking-[0%] text-[#22377C]">
+              The Problem
+            </h2>
             <br />
             Manual freight management makes it difficult to track shipments,
             identify inefficiencies, or respond to issues in real time. Without
@@ -104,7 +105,9 @@ const Blog16 = () => {
             to optimize performance or reduce costs.
             <br />
             <br />
-            <strong>How CargoPro Can Help</strong>
+            <h2 className="font-sora font-semibold text-[40px] leading-[100%] tracking-[0%] text-[#22377C]">
+              How CargoPro Can Help
+            </h2>
             <br />
             CargoPro provides a comprehensive platform for data-driven logistics
             analytics, helping businesses monitor and improve every aspect of

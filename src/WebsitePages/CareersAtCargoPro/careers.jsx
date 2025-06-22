@@ -11,7 +11,7 @@ import TrustedBy from "../../components/trustedby-cargopro";
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import HeroBgImage from "../../assets/Careers/careers-bg.webp";
 
 const Career = () => {

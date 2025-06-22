@@ -1,5 +1,6 @@
 //External Libraries
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 //Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
@@ -11,12 +12,13 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
-import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.png";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-1.png";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-2.png";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-3.png";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.png";
+import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-14/blog-14-bg.webp";
+import logisticsImage from "../../assets/Blogs/blog-14/blog-14-image.webp";
+import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-14/reduces-turnaround-time.webp";
+import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-14/improves-resource-allocation.webp";
+import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-14/real-time-visibility.webp";
+import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-14/enhance-safety-and-compliance.webp";
+import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-14/support-freight-sourcing.webp";
 
 const Blog14 = () => {
   const sections = [
@@ -70,7 +72,7 @@ const Blog14 = () => {
     },
     {
       heading: "Supports Freight Sourcing with Reverse Auctions",
-      image: logisticsImage,
+      image: RevolutionizingLogisticsImage5,
       paragraph: (
         <>
           CargoPro also offers a reverse auction platform for freight sourcing,

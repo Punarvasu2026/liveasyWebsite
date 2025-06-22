@@ -15,7 +15,7 @@ import IdealFor from "../../components/Solutions/FreightSourcingAndReverseAuctio
 import BusinessImpactSection from "../../components/Solutions/FreightSourcingAndReverseAuction/bussiness-impact";
 
 // Images
-import CargoProLogo from "../../assets/CargoProLogo.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import AutomatedFreightSourcingImage from "../../assets/Solutions/FreightSourcing/automated-freight-sourcing.webp";
 import desktopImage from "../../assets/Solutions/FreightSourcing/smart-price-sourcing.webp";
 import FreightPricing from "../../assets/Solutions/FreightSourcing/transperency-in-freight-sourcing.webp";

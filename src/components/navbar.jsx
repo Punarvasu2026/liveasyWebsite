@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import CargoProLogo from "../assets/CargoProLogo.png";
+import CargoProLogo from "../assets/CargoProLogo.webp";
 import SolutionsDropdown from "./solutions-dropdown";
 import SignUpDropdown from "./SignUpDropdown";
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";

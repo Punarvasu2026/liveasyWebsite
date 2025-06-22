@@ -1,5 +1,6 @@
 //External Libraries
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 //Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
@@ -11,12 +12,14 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
-import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.png";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-1.png";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-2.png";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-3.png";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
+import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-5/blog-5-bg.webp";
+import logisticsImage from "../../assets/Blogs/blog-5/blog-5-image.webp";
+import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-5/data-driven-decision-making.webp";
+import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-5/intelligent-automation.webp";
+import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-5/seamless-collaboration-and-connectivity.webp";
+import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-5/prioritizing-sustainability.webp";
+import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-5/enhancing-customer-experience.webp";
 
 const Blog5 = () => {
   const sections = [
@@ -97,7 +100,7 @@ const Blog5 = () => {
     },
     {
       heading: "Enhanced Customer Experience",
-      image: logisticsImage,
+      image: RevolutionizingLogisticsImage5,
       paragraph: (
         <>
           Customer expectations have evolved — they now demand real-time
@@ -156,6 +159,19 @@ const Blog5 = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Digital Transformation in Logistics: 5 Strategies for Growth with
+          CargoPro
+        </title>
+        <meta
+          name="description"
+          content="Explore how CargoPro enables logistics companies to lead digital transformation with data-driven decisions, automation, sustainability, and customer-centric innovation."
+        />
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+      </Helmet>
+
       <Navbar />
       <BlogsHero
         heading="Digital Transformation Strategies for Logistics Companies: The CargoPro Edge"

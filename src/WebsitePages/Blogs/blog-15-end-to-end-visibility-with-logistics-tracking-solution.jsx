@@ -1,5 +1,6 @@
 //External Libraries
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 //Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
@@ -11,12 +12,13 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
-import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.png";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-1.png";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-2.png";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-3.png";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.png";
+import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-15/blog-15-bg.webp";
+import logisticsImage from "../../assets/Blogs/blog-15/blog-15-image.webp";
+import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-15/real-time-tracking.webp";
+import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-15/improved-fleet-and-resource-optimization.webp";
+import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-15/enhanced-coordination-across-stakeholders.webp";
+import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-15/proactive-exception-management.webp";
+import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-15/centralized-dashboard-for-monitoring.webp";
 
 const Blog15 = () => {
   const sections = [
@@ -70,7 +72,7 @@ const Blog15 = () => {
     },
     {
       heading: "Centralized Dashboard for Monitoring",
-      image: logisticsImage,
+      image: RevolutionizingLogisticsImage5,
       paragraph: (
         <>
           CargoPro provides a single dashboard to view all logistics operations.

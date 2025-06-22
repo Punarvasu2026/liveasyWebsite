@@ -1,6 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-//images
+// Images
 import IndustriesComplicatedInvoicing from "../../assets/Industries/complicated-invoicing.webp";
 import IndustriesInefficientInPlantVehicleMovement from "../../assets/Industries/inefficient-in-plant-vehicle-movement.webp";
 import IndustriesIndentManagement from "../../assets/Industries/indent-management.webp";
@@ -9,42 +10,50 @@ import IndustriesManualDisparateDataSources from "../../assets/Industries/manual
 import IndustriesTraditionalTrackingMethods from "../../assets/Industries/traditional-tracking-method.webp";
 
 const ChallengesSection = () => {
+  const navigate = useNavigate();
+
   const challengeData = [
     {
       title: "Lack Of transparency",
       description:
         "The freight transportation industry lacks a transparent and efficient process for shippers to source and negotiate with providers, leading to time-consuming and complex logistics operations.",
       image: IndustriesLackOfTransparency,
+      link: "/blogs/revolutionizing-logistics",
     },
     {
       title: "Indent Management",
       description:
         "Many businesses struggle with manual and error-prone indent management processes, leading to delays, inaccuracies, and inefficiencies in the procurement of goods.",
       image: IndustriesIndentManagement,
+      link: "/blogs/benifits-of-automated-indent-management",
     },
     {
       title: "Inefficient In-Plant Vehicle Movement",
       description:
         "Inefficient in-plant vehicle movement can increase costs, reduce productivity, and pose safety risks. Traditional manual management is time-consuming, error-prone, and inefficient in resource usage.",
       image: IndustriesInefficientInPlantVehicleMovement,
+      link: "/blogs/how-to-streamline-yard-management-with-in-plant-optimization",
     },
     {
       title: "Traditional Tracking Methods",
       description:
         "Traditional tracking methods are inefficient, while modern tracking techniques such as GPS, mobile apps, location-based tracking, and sim-based tracking are highly efficient.",
       image: IndustriesTraditionalTrackingMethods,
+      link: "/blogs/achieving-end-to-end-visibility-with-logistics-tracking-solutions",
     },
     {
       title: "Manual & Disparate Data Sources",
       description:
         "Manual and disparate data sources used in logistics operations can lead to data silos and difficulty in tracking key performance metrics. This results in a lack of visibility into logistics operations and makes it difficult to identify areas for improvement.",
       image: IndustriesManualDisparateDataSources,
+      link: "/blogs/the-power-of-data-driven-logistics-analytics-and-insights",
     },
     {
       title: "Complicated Invoicing",
       description:
         "The logistics industry struggles with complex, paper-based invoicing processes causing inefficiencies, delays, and errors. Manual methods hinder invoice tracking and management, leading to transparency and visibility issues.",
       image: IndustriesComplicatedInvoicing,
+      link: "/blogs/automated-invoicing-and-simplifying-logistics",
     },
   ];
 
@@ -77,7 +86,10 @@ const ChallengesSection = () => {
               {item.description}
             </p>
             <div className="flex items-center gap-4">
-              <button className="text-[#304DAF] font-inter font-bold text-[16px] leading-[32px] tracking-[1.28px] uppercase">
+              <button
+                onClick={() => navigate(item.link)}
+                className="text-[#304DAF] font-inter font-bold text-[16px] leading-[32px] tracking-[1.28px] uppercase"
+              >
                 Read More
               </button>
               <div className="w-[40px] h-[40px] rounded-full bg-[#304DAF] flex items-center justify-center">

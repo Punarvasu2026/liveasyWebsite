@@ -1,5 +1,6 @@
 //External Libraries
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 //Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
@@ -11,12 +12,13 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
-import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.png";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-1.png";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-2.png";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-3.png";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.png";
+import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-12/blog-12-bg.webp";
+import logisticsImage from "../../assets/Blogs/blog-12/blog-12-image.webp";
+import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-12/enhancing-accuracy.webp";
+import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-12/real-time-tracking.webp";
+import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-12/facilities-seamless-integration.webp";
+import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-12/centralized-visibility.webp";
+import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-12/proactive-shipmemt-management.webp";
 
 const Blog12 = () => {
   const sections = [
@@ -92,7 +94,7 @@ const Blog12 = () => {
     },
     {
       heading: "Proactive Shipment Management",
-      image: logisticsImage,
+      image: RevolutionizingLogisticsImage5,
       paragraph: (
         <>
           With predictive alerts and dashboard insights, logistics managers can:
@@ -167,26 +169,47 @@ const Blog12 = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Automated Invoicing and Simplified Logistics | CargoPro</title>
+        <meta
+          name="description"
+          content="Discover how CargoPro automates invoicing and simplifies logistics management for greater efficiency, accuracy, and profitability."
+        />
+      </Helmet>
+
       <Navbar />
       <BlogsHero
         heading="Efficiency at Every Step – Automated Invoicing and Simplifying Logistics with CargoPro"
+        text=" Efficiency is the backbone of every successful logistics company.
+            Whether it’s managing inventory, coordinating deliveries, or
+            handling finances, the logistics industry runs on precision and
+            speed. One of the most critical yet often overlooked aspects is
+            financial transactions—especially invoicing and settlements.
+            With CargoPro, logistics companies now have the power to automate
+            invoicing and streamline operations, unlocking new levels of
+            efficiency and profitability. This blog explores how automation and
+            simplified logistics management can redefine operational excellence."
         bgImage={RevolutionzingLogisticsBg}
       />
       <BlogsSection1
         imageSrc={logisticsImage}
         text={
           <>
-            Efficiency is the backbone of every successful logistics company.
-            Whether it’s managing inventory, coordinating deliveries, or
-            handling finances, the logistics industry runs on precision and
-            speed. One of the most critical yet often overlooked aspects is
-            financial transactions—especially invoicing and settlements.
+            <h2 className="font-sora font-semibold text-[40px] leading-[100%] tracking-[0%] text-[#22377C]">
+              Automated Invoicing: A Game-Changer in Logistics
+            </h2>
             <br />
             <br />
-            With CargoPro, logistics companies now have the power to automate
-            invoicing and streamline operations, unlocking new levels of
-            efficiency and profitability. This blog explores how automation and
-            simplified logistics management can redefine operational excellence.
+            Traditionally, manual invoicing was a slow, error-prone process
+            involving paperwork, human entry, and postal delays. Such outdated
+            systems led to:
+            <ul className="list-disc list-inside ml-4 mt-1">
+              <li>Increased administrative costs</li>
+              <li>Delayed settlements</li>
+              <li>Frequent invoicing errors and disputes</li>
+            </ul>
+            With CargoPro’s automated invoicing system, companies can completely
+            overhaul this process—turning inefficiency into opportunity.
           </>
         }
       />

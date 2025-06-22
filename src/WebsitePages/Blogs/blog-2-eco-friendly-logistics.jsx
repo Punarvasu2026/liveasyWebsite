@@ -1,5 +1,6 @@
 //External Libraries
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 //Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
@@ -11,12 +12,13 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
-import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.png";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-1.png";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-2.png";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-3.png";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
+import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-2/blog-2-bg.webp";
+import logisticsImage from "../../assets/Blogs/blog-2/blog-2-image.webp";
+import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-2/optimized-routes-lower-emissions.webp";
+import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-2/intelligent-fleet-management.webp";
+import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-2/paperless-workflows.webp";
+import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-2/unified-platform.webp";
 
 const Blog1 = () => {
   const sections = [
@@ -79,6 +81,18 @@ const Blog1 = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Eco-Friendly Logistics: Reduce Carbon Footprint with CargoPro’s
+          Digital TMS
+        </title>
+        <meta
+          name="description"
+          content="Discover how CargoPro’s AI-powered Transportation Management System optimizes routes, manages fleets intelligently, digitizes workflows, and unifies logistics operations to reduce carbon emissions and promote sustainable freight transport."
+        />
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+      </Helmet>
       <Navbar />
       <BlogsHero
         heading="Eco-Friendly Logistics: Reducing Carbon Footprint Through Digital Innovation with CargoPro"

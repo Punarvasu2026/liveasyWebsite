@@ -9,7 +9,7 @@ import BlogsHeroSection from "../../components/Blogs/Blog/blogs-hero-section";
 import Footer from "../../components/footer";
 
 //images
-import BackgroundImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
+import BackgroundImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.webp";
 
 const Blog = () => {
   return (

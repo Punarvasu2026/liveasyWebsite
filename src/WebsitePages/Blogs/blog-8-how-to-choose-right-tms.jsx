@@ -1,5 +1,6 @@
 //External Libraries
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 //Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
@@ -11,12 +12,13 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
-import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.png";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-1.png";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-2.png";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-3.png";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.png";
+import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-8/blog-8-bg.webp";
+import logisticsImage from "../../assets/Blogs/blog-8/blog-8-bg.webp";
+import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-8/access-your-business-needs.webp";
+import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-8/choose-a-user-friendly-interface.webp";
+import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-8/real-time-visibility.webp";
+import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-8/powerfull-analytics.webp";
+import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-8/integration-and-scalability.webp";
 
 const Blog8 = () => {
   const sections = [
@@ -107,7 +109,7 @@ const Blog8 = () => {
     },
     {
       heading: "Integration & Scalability",
-      image: logisticsImage,
+      image: RevolutionizingLogisticsImage5,
       paragraph: (
         <>
           Your chosen TMS must integrate easily with existing systems — ERPs,

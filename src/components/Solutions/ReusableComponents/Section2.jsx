@@ -1,5 +1,5 @@
 import React from "react";
-import designPatternImage from "../../../assets/Solutions/FreightSourcing/design-pattern-1.png"; // use your uploaded design
+import designPatternImage from "../../../assets/Solutions/FreightSourcing/design-pattern-1.webp"; // use your uploaded design
 
 const SmartFreightManagement = ({ heading, points, imageSrc }) => {
   return (

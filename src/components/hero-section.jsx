@@ -1,8 +1,8 @@
 import React from "react";
 
 //Images
-import Arrow from "../assets/Pointer_Arrow.png";
-import BottomShape from "../assets/Vector_3.png";
+import Arrow from "../assets/Pointer_Arrow.webp";
+import BottomShape from "../assets/Vector_3.webp";
 
 const HeroSection = ({
   heading,

@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
-import CargoProLogo from "../assets/CargoProLogoWhite.png"; // Adjust the path as necessary
+import CargoProLogo from "../assets/CargoProLogoWhite.webp"; // Adjust the path as necessary
 
 const Footer = () => {
   return (

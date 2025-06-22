@@ -1,7 +1,7 @@
 import React from "react";
 import missionImage from "../../assets/AboutCargoPro/our-mission.webp";
 import icon from "../../assets/AboutCargoPro/cargopro-mission-icon.webp";
-import linesBg from "../../assets/Solutions/FreightSourcing/design-pattern-1.png"; // <- NEW LINE DESIGN IMAGE
+import linesBg from "../../assets/Solutions/FreightSourcing/design-pattern-1.webp"; // <- NEW LINE DESIGN IMAGE
 
 const MissionSection = () => {
   return (

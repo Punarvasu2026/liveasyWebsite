@@ -13,7 +13,7 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import Footer from "../../components/footer";
 
 // Images
-import CargoProLogo from "../../assets/CargoProLogo.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import TrackingHero from "../../assets/Solutions/Tracking/live-tracking.webp";
 
 const Tracking = () => {

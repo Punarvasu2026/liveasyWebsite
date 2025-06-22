@@ -12,7 +12,7 @@ import WhyWorkWithUs from "../../components/AboutUs/why-work-with-us";
 import BlogsHeroSection from "../../components/Blogs/Blog/blogs-hero-section";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import BackgroundImage from "../../assets/AboutCargoPro/about-us-bg.webp";
 
 const AboutUs = () => {

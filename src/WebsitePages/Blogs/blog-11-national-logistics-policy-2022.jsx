@@ -1,5 +1,6 @@
 //External Libraries
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 //Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
@@ -11,12 +12,13 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
-import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.png";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-1.png";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-2.png";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-3.png";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.png";
+import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-11/blog-11-bg.webp";
+import logisticsImage from "../../assets/Blogs/blog-11/blog-11-image.webp";
+import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-11/reducing-logistics-cost.webp";
+import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-11/digital-transformations.webp";
+import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-11/comprehensive-logistics-action-plan.webp";
+import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-11/economic-developmemt.webp";
+import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-11/enhancing-customer-experience.webp";
 
 const Blog11 = () => {
   const sections = [
@@ -116,6 +118,22 @@ const Blog11 = () => {
           The seamless and tech-powered logistics network will boost industrial
           output, enhance supply chain efficiency, and promote a self-reliant
           economy (Atmanirbhar Bharat).
+        </>
+      ),
+    },
+    {
+      heading: "Enhancing Customer Experience",
+      image: RevolutionizingLogisticsImage5,
+      paragraph: (
+        <>
+          Customer expectations have evolved — they now demand real-time
+          updates, accurate ETAs, and end-to-end visibility.
+          <br />
+          With CargoPro’s advanced tracking features, clients can monitor their
+          cargo across the journey. Whether via app tracking, SIM-based GPS, or
+          FASTag-based checkpoints, the system ensures full transparency.
+          Integrated features like contract-based delivery SLAs and digital
+          acknowledgments further enhance customer trust and retention.
         </>
       ),
     },

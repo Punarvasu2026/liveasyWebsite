@@ -13,7 +13,7 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import Footer from "../../components/footer";
 
 // Images
-import CargoProLogo from "../../assets/CargoProLogo.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import PodHero from "../../assets/Solutions/pod/proof-of-delivery.webp";
 import PodSectionImage from "../../assets/Solutions/pod/digital-proof.webp";
 import InstantUploads from "../../assets/Solutions/pod/instant-pod-uploads.webp";

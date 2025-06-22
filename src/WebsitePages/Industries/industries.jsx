@@ -10,7 +10,7 @@ import Footer from "../../components/footer";
 import BlogsHeroSection from "../../components/Blogs/Blog/blogs-hero-section";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import BackgroundImage from "../../assets/Industries/industries-bg.webp";
 
 const Industries = () => {

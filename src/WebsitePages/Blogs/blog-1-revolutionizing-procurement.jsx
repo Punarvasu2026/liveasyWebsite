@@ -12,14 +12,14 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.png";
-//Blog Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
-import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.png";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-1.png";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-2.png";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-3.png";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
+import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.webp";
+import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.webp";
+import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-1/centralized-procurement-and-indent.webp";
+import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-1/smart-vendor-and-transport-management.webp";
+import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-1/automated-indent-generation.webp";
+import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.webp";
+import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-1/advanced-reporting-and-spend-analysis.webp";
 
 const Blog1 = () => {
   const sections = [
@@ -49,7 +49,7 @@ const Blog1 = () => {
     },
     {
       heading: "Advanced Reporting & Spend Analytics",
-      image: RevolutionizingLogisticsImage4,
+      image: RevolutionizingLogisticsImage5,
       paragraph:
         "CargoPro gives you deep insights through detailed freight analytics, procurement KPIs, and audit logs. Identify trends in spending, evaluate vendor reliability, and unlock process optimizations. Whether it’s knowing which transporter wins the most bids, or tracking average freight cost per route, CargoPro helps you make data-driven logistics decisions.",
     },
@@ -93,6 +93,10 @@ const Blog1 = () => {
           Revolutionizing Procurement and Indent Management with CargoPro’s
           Automated TMS Platform | CargoPro
         </title>
+        <meta
+          name="description"
+          content="Explore how CargoPro's AI-powered Transportation Management System (TMS) automates procurement and indent processes, enhances vendor management, controls budgets, and delivers advanced analytics to transform your logistics operations."
+        />
         <link rel="icon" type="image/x-icon" href={CargoProLogo} />
         <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>

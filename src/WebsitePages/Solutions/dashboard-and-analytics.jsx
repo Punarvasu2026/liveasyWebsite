@@ -15,7 +15,7 @@ import Footer from "../../components/footer";
 import TakeControlOfYourLogistics from "../../components/Solutions/DadhboardAndAnalytics/take-control-of-your-logistics";
 
 // Images
-import CargoProLogo from "../../assets/CargoProLogo.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import DashboardAndAnalyticsHero from "../../assets/Solutions/DashboardAndAnalytics/dashboard-and-analytics.webp";
 import DashboardAndAnalyticsImage from "../../assets/Solutions/DashboardAndAnalytics/see-everything-miss-nothing.webp";
 import CentralizedLogisticsOverviewImage from "../../assets/Solutions/DashboardAndAnalytics/centralized-logistics-overview.webp";

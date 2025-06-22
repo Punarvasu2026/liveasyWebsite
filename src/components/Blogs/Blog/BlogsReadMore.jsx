@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import InsightsCard from "./BlogsCard";
-import BlogCardImage1 from "../../../assets/Blogs/Blog/blog-card-image-1.png";
+import BlogCardImage1 from "../../../assets/Blogs/Blog/blog-card-image-1.webp";
 
 const allInsights = [
   {
@@ -108,6 +108,32 @@ const allInsights = [
     heading: "The Power of Data-Driven Logistics Analytics and Insights",
     date: "January 26, 2025",
     link: "/blogs/the-power-of-data-driven-logistics-analytics-and-insights",
+  },
+  {
+    image: BlogCardImage1,
+    heading: "How to Leverage Digital Proof of Delivery for Faster Invoicing",
+    date: "January 26, 2025",
+    link: "/blogs/digital-proof-of-delivery",
+  },
+  {
+    image: BlogCardImage1,
+    heading: "Top Techniques for Optimizing Last Mile Delivery Logistics",
+    date: "January 26, 2025",
+    link: "/blogs/last-mile-delivery",
+  },
+  {
+    image: BlogCardImage1,
+    heading:
+      "Elevating Warehouse Efficiency – The Path to Digital Transformation",
+    date: "January 26, 2025",
+    link: "/blogs/elevating-warehouse-efficiency",
+  },
+  {
+    image: BlogCardImage1,
+    heading:
+      "Seamless Integration of Transportation and Warehouse Management Systems",
+    date: "January 26, 2025",
+    link: "/blogs/seamless-integration-of-transportation-and-warehouse-management",
   },
   // ...repeat for remaining items
 ];
