@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import InsightsCard from "./BlogsCard";
-import BlogCardImage1 from "../../../assets/Blogs/Blog/blog-card-image-1.png";
+import BlogCardImage1 from "../../../assets/Blogs/Blog/blog-card-image-1.webp";
 
 const allInsights = [
   {
@@ -47,10 +47,9 @@ const allInsights = [
   },
   {
     image: BlogCardImage1,
-    heading:
-      "Optimizing Resources and Safety: The Role of Automation in In-Plant Vehicle Movement with CargoPro",
+    heading: "How Digitization Helps in Cutting Down Freight Cost",
     date: "January 26, 2025",
-    link: "/blogs/in-plant-automation",
+    link: "/blogs/digitization-helps-cutting-down-freight-cost",
   },
   {
     image: BlogCardImage1,
@@ -64,6 +63,76 @@ const allInsights = [
       "Big Data and Predictive Analytics in Logistics: A Game Changer for Achieving End-to-End Supply Chain Visibility",
     date: "January 26, 2025",
     link: "/blogs/big-data-and-predictive-analytics-in-logistics",
+  },
+  {
+    image: BlogCardImage1,
+    heading: "Why Freight Cost is Higher in the Steel Industry?",
+    date: "January 26, 2025",
+    link: "/blogs/why-freight-cost-is-higher-in-the-steel-industry",
+  },
+  {
+    image: BlogCardImage1,
+    heading: "National Logistics Policy 2022 – Explained",
+    date: "January 26, 2025",
+    link: "/blogs/national-logistics-policy-2022",
+  },
+  {
+    image: BlogCardImage1,
+    heading:
+      "Efficiency at Every Step – Automated Invoicing and Simplifying Logistics with CargoPro",
+    date: "January 26, 2025",
+    link: "/blogs/automated-invoicing-and-simplifying-logistics",
+  },
+  {
+    image: BlogCardImage1,
+    heading: "The Benefits of Automated Indent Management for Procurement",
+    date: "January 26, 2025",
+    link: "/blogs/benifits-of-automated-indent-management",
+  },
+  {
+    image: BlogCardImage1,
+    heading: "How to Streamline Yard Management with In-Plant Optimization",
+    date: "January 26, 2025",
+    link: "/blogs/how-to-streamline-yard-management-with-in-plant-optimization",
+  },
+  {
+    image: BlogCardImage1,
+    heading:
+      "Achieving End-to-End Visibility with Logistics Tracking Solutions",
+    date: "January 26, 2025",
+    link: "/blogs/achieving-end-to-end-visibility-with-logistics-tracking-solutions",
+  },
+  {
+    image: BlogCardImage1,
+    heading: "The Power of Data-Driven Logistics Analytics and Insights",
+    date: "January 26, 2025",
+    link: "/blogs/the-power-of-data-driven-logistics-analytics-and-insights",
+  },
+  {
+    image: BlogCardImage1,
+    heading: "How to Leverage Digital Proof of Delivery for Faster Invoicing",
+    date: "January 26, 2025",
+    link: "/blogs/digital-proof-of-delivery",
+  },
+  {
+    image: BlogCardImage1,
+    heading: "Top Techniques for Optimizing Last Mile Delivery Logistics",
+    date: "January 26, 2025",
+    link: "/blogs/last-mile-delivery",
+  },
+  {
+    image: BlogCardImage1,
+    heading:
+      "Elevating Warehouse Efficiency – The Path to Digital Transformation",
+    date: "January 26, 2025",
+    link: "/blogs/elevating-warehouse-efficiency",
+  },
+  {
+    image: BlogCardImage1,
+    heading:
+      "Seamless Integration of Transportation and Warehouse Management Systems",
+    date: "January 26, 2025",
+    link: "/blogs/seamless-integration-of-transportation-and-warehouse-management",
   },
   // ...repeat for remaining items
 ];

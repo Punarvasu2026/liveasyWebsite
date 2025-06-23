@@ -1,7 +1,14 @@
 import React from "react";
-import AutomationImage from "../../../assets/Blogs/Blog/revolutionizing-automation.png"; // Adjust path as needed
+import { useNavigate } from "react-router-dom";
+import AutomationImage from "../../../assets/Blogs/Blog/revolutionizing-automation.webp";
 
 const AutomationHighlightSection = () => {
+  const navigate = useNavigate();
+
+  const handleReadMore = () => {
+    navigate("/blogs/revolutionizing-logistics");
+  };
+
   return (
     <section className="w-full max-w-[1440px] px-[80px] py-[80px] bg-white">
       <div className="w-full max-w-[1280px] mx-auto flex flex-col lg:flex-row gap-[80px] items-center">
@@ -32,7 +39,10 @@ const AutomationHighlightSection = () => {
           </p>
 
           {/* Button */}
-          <button className="w-[273px] py-[21px] px-[30px] rounded-full bg-[#22377C] text-white font-medium text-base hover:bg-[#1b2e6a] transition">
+          <button
+            onClick={handleReadMore}
+            className="w-[273px] py-[21px] px-[30px] rounded-full bg-[#22377C] text-white font-medium text-base hover:bg-[#1b2e6a] transition"
+          >
             Read More
           </button>
         </div>

@@ -1,9 +1,9 @@
 import React from "react";
-import TrackingImage1 from "../../../assets/Solutions/Tracking/tracking-benifits-image-1.webp";
-import TrackingImage2 from "../../../assets/Solutions/Tracking/tracking-benifits-image-2.webp";
-import TrackingImage3 from "../../../assets/Solutions/Tracking/tracking-benifits-image-3.webp";
-import TrackingImage4 from "../../../assets/Solutions/Tracking/tracking-benifits-image-4.webp";
-import TrackingImage5 from "../../../assets/Solutions/Tracking/tracking-benifits-image-5.webp";
+import TrackingImage1 from "../../../assets/Solutions/Tracking/real-time-locations-updates.webp";
+import TrackingImage2 from "../../../assets/Solutions/Tracking/360-degree-visibility.webp";
+import TrackingImage3 from "../../../assets/Solutions/Tracking/Fastag-powered-tracking.webp";
+import TrackingImage4 from "../../../assets/Solutions/Tracking/complete-vehicle-profile-access.webp";
+import TrackingImage5 from "../../../assets/Solutions/Tracking/centralized-dashboard.webp";
 
 const smallBoxes = [
   {

@@ -1,5 +1,6 @@
 //External Libraries
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 //Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
@@ -11,12 +12,13 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
-import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.png";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-1.png";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-2.png";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-3.png";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
+import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-4/blog-4-bg.webp";
+import logisticsImage from "../../assets/Blogs/blog-4/blog-4-image.webp";
+import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-4/cost-conundrum.webp";
+import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-4/resistance-to-change.webp";
+import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-4/data-security-concerns.webp";
+import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-4/overcoming-complexity.webp";
 
 const Blog4 = () => {
   const sections = [
@@ -79,6 +81,18 @@ const Blog4 = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Breaking Barriers: Solving Digital Logistics Challenges with CargoPro
+        </title>
+        <meta
+          name="description"
+          content="Discover how CargoPro helps logistics companies overcome digital adoption barriers—cost, resistance to change, security, and complexity—through scalable, secure, and user-friendly TMS solutions."
+        />
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+      </Helmet>
+
       <Navbar />
       <BlogsHero
         heading="Breaking Barriers: Overcoming Challenges in Implementing Digital Logistics Solutions with CargoPro"

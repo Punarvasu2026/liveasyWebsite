@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import About_Us_Image from "../assets/About_Us_Image.png";
+import About_Us_Image from "../assets/CargoProIndexPage/cargopro-about-us.webp";
 
 const AboutUs = () => {
   return (
@@ -52,7 +52,7 @@ const AboutUs = () => {
         <img
           src={About_Us_Image}
           alt="CargoPro Features"
-          className="max-w-full h-auto object-contain"
+          className="w-full max-w-[618px] h-auto object-contain"
         />
       </div>
     </div>

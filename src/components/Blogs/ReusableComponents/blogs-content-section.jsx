@@ -1,7 +1,11 @@
 import React from "react";
-import { Facebook, Twitter, Linkedin } from "lucide-react"; // Install via `lucide-react`
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa"; // Stable icons from react-icons
 
 const ContentSection = ({ sections, wrappingUp }) => {
+  // Define static share URL and title for the blog
+  const shareUrl = "https://cargopro.ai/blog"; // Replace with actual blog URL
+  const shareTitle = "Check out this insightful blog on CargoPro.ai!";
+
   return (
     <div className="w-full max-w-[1440px] px-[80px] py-[40px] flex flex-col gap-[60px]">
       {sections.map((section, index) => {
@@ -57,28 +61,34 @@ const ContentSection = ({ sections, wrappingUp }) => {
               {/* Social Icons */}
               <div className="flex gap-4 items-center mt-2">
                 <a
-                  href="https://facebook.com"
+                  href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                    shareUrl
+                  )}&quote=${encodeURIComponent(shareTitle)}`}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="w-10 h-10 bg-black shadow-md rounded-full flex items-center justify-center hover:bg-[#f0f0f0]"
                 >
-                  <Facebook className="text-[#22377C] w-5 h-5" />
+                  <FaFacebookF className="text-[#22377C] w-5 h-5" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+                    shareUrl
+                  )}`}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="w-10 h-10 bg-black shadow-md rounded-full flex items-center justify-center hover:bg-[#f0f0f0]"
                 >
-                  <Linkedin className="text-[#22377C] w-5 h-5" />
+                  <FaLinkedinIn className="text-[#22377C] w-5 h-5" />
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
+                    shareUrl
+                  )}&text=${encodeURIComponent(shareTitle)}`}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="w-10 h-10 bg-black shadow-md rounded-full flex items-center justify-center hover:bg-[#f0f0f0]"
                 >
-                  <Twitter className="text-[#22377C] w-5 h-5" />
+                  <FaTwitter className="text-[#22377C] w-5 h-5" />
                 </a>
               </div>
             </div>

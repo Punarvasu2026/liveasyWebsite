@@ -1,5 +1,5 @@
 import React from "react";
-import designImage from "../../../assets/Solutions/FreightSourcing/design-pattern-2.png"; // use your uploaded design
+import designImage from "../../../assets/Solutions/FreightSourcing/design-pattern-2.webp"; // use your uploaded design
 
 const ReverseAuctionSection = ({ heading, points = [], mainImage }) => {
   return (
@@ -20,7 +20,7 @@ const ReverseAuctionSection = ({ heading, points = [], mainImage }) => {
           <div className="w-full md:flex-1 flex justify-center md:justify-start items-center">
             <img
               src={mainImage}
-              alt="Illustration"
+              alt={heading}
               className="w-full max-w-full h-auto rounded-[5.63px] md:rounded-[8px] object-cover"
             />
           </div>

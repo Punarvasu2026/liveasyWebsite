@@ -13,11 +13,12 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import Footer from "../../components/footer";
 
 // Images
-import HeroImge from "../../assets/Solutions/InPlantVehicleMovement/inplant-vehicle-movement-hero-image.webp";
-import Section1Image from "../../assets/Solutions/InPlantVehicleMovement/inplant-vehicle-movement-image.webp";
-import StageWiseMonitoring from "../../assets/Solutions/InPlantVehicleMovement/in-plant-stage-wise-monitoring.webp";
-import StayInformedAtEveryStep from "../../assets/Solutions/InPlantVehicleMovement/in-plant-stay-informed-at-every-step.webp";
-import TurnAroundTime from "../../assets/Solutions/InPlantVehicleMovement/in-plant-turnaround-time.webp";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
+import HeroImge from "../../assets/Solutions/InPlantVehicleMovement/in-plant-vehicle-movement-and-optimization.webp";
+import Section1Image from "../../assets/Solutions/InPlantVehicleMovement/maximize-facility-efficiency.webp";
+import StageWiseMonitoring from "../../assets/Solutions/InPlantVehicleMovement/stage-wise-process-monitoring.webp";
+import StayInformedAtEveryStep from "../../assets/Solutions/InPlantVehicleMovement/stay-informed-at-every-step.webp";
+import TurnAroundTime from "../../assets/Solutions/InPlantVehicleMovement/turnaround-time-optimization.webp";
 
 const InPlantVehicleMovement = () => {
   const heading = (
@@ -61,7 +62,13 @@ const InPlantVehicleMovement = () => {
   return (
     <>
       <Helmet>
-        <title>In Plant Vehicle Movement and Optimization| CargoPro</title>
+        <title>CargoPro | In Plant Vehicle Movement and Optimization</title>
+        <meta
+          name="description"
+          content="Track vehicle movement inside your plant with CargoPro’s real-time alerts, stage-wise monitoring, and turnaround time optimization. Maximize efficiency and minimize downtime with full operational transparency."
+        />
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>
       <Navbar />
       <HeroSection

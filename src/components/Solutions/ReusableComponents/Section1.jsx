@@ -8,7 +8,7 @@ const FreightSection1 = ({ imageSrc, heading, text }) => {
         <div className="w-full sm:w-1/2 flex justify-center sm:justify-start">
           <img
             src={imageSrc}
-            alt="Freight Visual"
+            alt={heading}
             className="w-full max-w-[358px] sm:max-w-[618px] h-auto object-contain"
           />
         </div>

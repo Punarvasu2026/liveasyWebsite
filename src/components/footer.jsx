@@ -1,6 +1,6 @@
 import React from "react";
-import { FaYoutube, FaLinkedinIn, FaTimes, FaWhatsapp } from "react-icons/fa";
-import CargoProLogo from "../assets/CargoProLogoWhite.png"; // Adjust the path as necessary
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import CargoProLogo from "../assets/CargoProLogoWhite.webp"; // Adjust the path as necessary
 
 const Footer = () => {
   return (
@@ -44,24 +44,28 @@ const Footer = () => {
             <h4 className="font-bold text-[17px]">Company</h4>
             <ul className="[&>li]:mb-0 [&>li+li]:mt-[16px]">
               <li>
-                <a href="#" className="hover:underline">
+                Why CargoPro
+                {/* <a href="#" className="hover:underline">
                   Why CargoPro?
-                </a>
+                </a> */}
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                Contact Us
+                {/* <a href="#" className="hover:underline">
                   Contact Us
-                </a>
+                </a> */}
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                Blog
+                {/* <a href="#" className="hover:underline">
                   Blog
-                </a>
+                </a> */}
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                FAQ
+                {/* <a href="#" className="hover:underline">
                   FAQ
-                </a>
+                </a> */}
               </li>
             </ul>
           </div>
@@ -71,29 +75,34 @@ const Footer = () => {
             <h4 className="font-bold text-[17px]">Solutions</h4>
             <ul className="[&>li]:mb-0 [&>li+li]:mt-[16px]">
               <li>
-                <a href="#" className="hover:underline">
+                Services
+                {/* <a href="#" className="hover:underline">
                   Services
-                </a>
+                </a> */}
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                Support
+                {/* <a href="#" className="hover:underline">
                   Support
-                </a>
+                </a> */}
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                Free Demo
+                {/* <a href="#" className="hover:underline">
                   Free Demo
-                </a>
+                </a> */}
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                Testimonals
+                {/* <a href="#" className="hover:underline">
                   Testimonials
-                </a>
+                </a> */}
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                Download Brochure
+                {/* <a href="#" className="hover:underline">
                   Download Brochure
-                </a>
+                </a> */}
               </li>
             </ul>
           </div>
@@ -103,19 +112,22 @@ const Footer = () => {
             <h4 className="font-bold text-[17px]">Legal</h4>
             <ul className="[&>li]:mb-0 [&>li+li]:mt-[16px]">
               <li>
-                <a href="#" className="hover:underline">
+                Terms of Services
+                {/* <a href="#" className="hover:underline">
                   Terms of Service
-                </a>
+                </a> */}
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                Privacy Policy
+                {/* <a href="#" className="hover:underline">
                   Privacy Policy / GDPR
-                </a>
+                </a> */}
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                Cookie Policy
+                {/* <a href="#" className="hover:underline">
                   Cookie Policy
-                </a>
+                </a> */}
               </li>
             </ul>
           </div>
@@ -138,7 +150,7 @@ const Footer = () => {
             key={idx}
             href={link}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             className="w-8 h-8 bg-black rounded-full flex items-center justify-center cursor-pointer hover:scale-105 transition-transform"
           >
             <Icon className="text-white text-sm" />

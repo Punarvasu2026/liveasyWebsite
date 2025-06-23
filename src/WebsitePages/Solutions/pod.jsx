@@ -13,11 +13,12 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import Footer from "../../components/footer";
 
 // Images
-import PodHero from "../../assets/Solutions/pod/pod-hero-image.webp";
-import PodSectionImage from "../../assets/Solutions/pod/pod-image.webp";
-import InstantUploads from "../../assets/Solutions/pod/pod-instant-uploads.webp";
-import SeamlessInvoiceIntegrationImage from "../../assets/Solutions/pod/pod-seamless-invoice-integration.webp";
-import ShipperAndVendorVisibilityImage from "../../assets/Solutions/pod/pod-shipper-and-vendor-visibility.webp";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
+import PodHero from "../../assets/Solutions/pod/proof-of-delivery.webp";
+import PodSectionImage from "../../assets/Solutions/pod/digital-proof.webp";
+import InstantUploads from "../../assets/Solutions/pod/instant-pod-uploads.webp";
+import SeamlessInvoiceIntegrationImage from "../../assets/Solutions/pod/seamless-invoice-integration.webp";
+import ShipperAndVendorVisibilityImage from "../../assets/Solutions/pod/shipper-and-vendor-visibility.webp";
 
 const Pod = () => {
   const heading = <>Digital Proof, Zero Delays.</>;
@@ -49,7 +50,13 @@ const Pod = () => {
   return (
     <>
       <Helmet>
-        <title>Proof of Dilivery| CargoPro</title>
+        <title>CargoPro | Proof of Delivery</title>
+        <meta
+          name="description"
+          content="Ensure delivery accountability with CargoPro’s digital POD solution. Instantly upload proof of delivery, automate invoice integration, and gain real-time visibility for faster payment and dispute-free workflows."
+        />
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>
       <Navbar />
       <HeroSection

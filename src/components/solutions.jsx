@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SolutionCard from "./solution-card";
 
 import icon1Active from "../assets/ActiveIconSolutions.webp";
-import icon1Inactive from "../assets/inActiceIconSolutions.png";
+import icon1Inactive from "../assets/inActiceIconSolutions.webp";
 
 const solutions = [
   {
@@ -13,16 +14,16 @@ const solutions = [
     iconInactive: icon1Inactive,
   },
   {
-    title: "Freight Sourcing & Reverse Auction",
+    title: "Dispatch Planning",
     description:
-      "Source transporters through competitive bidding with reverse auctions. This feature helps reduce freight costs by allowing multiple vendors to compete for the job, providing you with the best rates and full pricing transparency.",
+      "AI-powered automation helps in planning dispatches intelligently. Based on the data from your ERP system, CargoPro automatically assigns the best transporter and optimizes delivery routes, saving you hours of manual planning and reducing operational costs.",
     iconActive: icon1Active,
     iconInactive: icon1Inactive,
   },
   {
-    title: "Dispatch Planning",
+    title: "Freight Sourcing & Reverse Auction",
     description:
-      "AI-powered automation helps in planning dispatches intelligently. Based on the data from your ERP system, CargoPro automatically assigns the best transporter and optimizes delivery routes, saving you hours of manual planning and reducing operational costs.",
+      "Source transporters through competitive bidding with reverse auctions. This feature helps reduce freight costs by allowing multiple vendors to compete for the job, providing you with the best rates and full pricing transparency.",
     iconActive: icon1Active,
     iconInactive: icon1Inactive,
   },
@@ -87,12 +88,12 @@ const SolutionsSection = () => {
               right fit for you.
             </p>
           </div>
-          <a
-            href="#"
+          {/* <Link
+            to="/"
             className="text-[#3B78ED] text-[16px] font-inter font-medium leading-6 tracking-[-0.01em] text-center"
           >
             Explore Solutions →
-          </a>
+          </Link> */}
         </div>
 
         {/* Grid */}

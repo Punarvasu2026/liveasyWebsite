@@ -1,5 +1,6 @@
 //External Libraries
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 //Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
@@ -11,12 +12,14 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
-import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.png";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-1.png";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-2.png";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-3.png";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
+import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-3/blog-3-bg.webp";
+import logisticsImage from "../../assets/Blogs/blog-3/blog-3-image.webp";
+import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-3/seamless-and-instant-invoice-generation.webp";
+import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-3/higher-accuracy-fewer-disputes.webp";
+import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-3/centralized-invoice-tracking-and-visibility.webp";
+import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-3/save-time-cut-costs.webp";
+import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-3/better-shipper-experience.webp";
 
 const Blog2 = () => {
   const sections = [
@@ -103,7 +106,7 @@ const Blog2 = () => {
     },
     {
       heading: "Better Shipper Experience = Stronger Relationships",
-      image: logisticsImage,
+      image: RevolutionizingLogisticsImage5,
       paragraph: (
         <>
           CargoPro ensures that clients receive branded, on-time, and clear
@@ -168,6 +171,18 @@ const Blog2 = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Automate Freight Invoicing with CargoPro | Seamless Logistics Billing
+          & Accuracy
+        </title>
+        <meta
+          name="description"
+          content="Simplify freight invoicing with CargoPro’s automated TMS platform. Achieve instant invoice generation, higher accuracy, centralized tracking, and cost savings for logistics operations."
+        />
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+      </Helmet>
       <Navbar />
       <BlogsHero
         heading="Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management with CargoPro"

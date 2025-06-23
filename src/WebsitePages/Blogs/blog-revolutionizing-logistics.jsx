@@ -1,5 +1,6 @@
 //External Libraries
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 //Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
@@ -11,12 +12,13 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.png";
-import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.png";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-1.png";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-2.png";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-3.png";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
+import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.webp";
+import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.webp";
+import RevolutionizingLogisticsImage1 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-1.webp";
+import RevolutionizingLogisticsImage2 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-2.webp";
+import RevolutionizingLogisticsImage3 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-3.webp";
+import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.webp";
 
 const Blog1 = () => {
   const sections = [
@@ -80,6 +82,18 @@ const Blog1 = () => {
   return (
     <>
       <Navbar />
+      <Helmet>
+        <title>
+          CargoPro | Revolutionizing Logistics: How Automation is Transforming
+          the Freight Transport Industry
+        </title>
+        <meta
+          name="description"
+          content="Explore how CargoPro revolutionizes logistics with automation, improving productivity, customer satisfaction, cost savings, and helping businesses stay ahead in the competitive freight transport industry."
+        />
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+      </Helmet>
       <BlogsHero
         heading="Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry"
         text="In the logistics industry, procurement and indent management play a crucial role in ensuring smooth operations and efficient supply chain management. Manual processes can be time-consuming, error-prone, and lack the necessary visibility. However, with the power of automated solutions integrated in our CargoPro app, you can streamline your procurement and indent management processes for maximum efficiency and productivity."

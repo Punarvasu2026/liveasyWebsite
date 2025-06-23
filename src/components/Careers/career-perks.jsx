@@ -1,27 +1,30 @@
 import React from "react";
-import CareerPerksImage from "../../assets/Careers/careers-perks.webp";
+import CareerPerksImage1 from "../../assets/Careers/careers-perks-image-1.webp";
+import CareerPerksImage2 from "../../assets/Careers/careers-perks-image-2.webp";
+import CareerPerksImage3 from "../../assets/Careers/careers-perks-image-3.webp";
+import CareerPerksImage4 from "../../assets/Careers/careers-perks-image-4.webp";
 
 const perksData = [
   {
     title: "Innovation Space",
     description: "A room for new ideas and initiatives",
-    image: CareerPerksImage, // Replace with actual image path
+    image: CareerPerksImage1, // Replace with actual image path
   },
   {
     title: "Personal Growth",
     description: "A room for personality development",
-    image: CareerPerksImage,
+    image: CareerPerksImage2,
   },
   {
     title: "Digitizing Logistics",
     description:
       "Be a part of a company who is digitizing traditional logistics system.",
-    image: CareerPerksImage,
+    image: CareerPerksImage3,
   },
   {
     title: "Competitive Salary",
     description: "Get competitive salary and benefits",
-    image: CareerPerksImage,
+    image: CareerPerksImage4,
   },
 ];
 

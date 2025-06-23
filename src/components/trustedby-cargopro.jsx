@@ -1,5 +1,5 @@
 import React from "react";
-import TrustedByLogos from "../assets/TrustedByCargoProLogos.png"; // Replace with actual path
+import TrustedByLogos from "../assets/CargoProIndexPage/cargopro-companies-logos.webp"; // Replace with actual path
 
 const TrustedBy = () => {
   return (

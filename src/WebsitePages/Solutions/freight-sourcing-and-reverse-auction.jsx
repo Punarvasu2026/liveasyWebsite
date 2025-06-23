@@ -15,12 +15,13 @@ import IdealFor from "../../components/Solutions/FreightSourcingAndReverseAuctio
 import BusinessImpactSection from "../../components/Solutions/FreightSourcingAndReverseAuction/bussiness-impact";
 
 // Images
-import AutomatedFreightSourcingImage from "../../assets/Solutions/FreightSourcing/automated-freight-sourcing.png";
-import desktopImage from "../../assets/Solutions/FreightSourcing/smart-freight-sourcing.png";
-import FreightPricing from "../../assets/Solutions/FreightSourcing/freight-pricing.png";
-import FreightSourcingHeroImage from "../../assets/Solutions/FreightSourcing/freight-sourcing-hero.png";
-import reverseAuctionImage from "../../assets/Solutions/FreightSourcing/reverse-auction.png";
-import TruckImage from "../../assets/Solutions/FreightSourcing/freight-sourcing.png";
+import CargoProLogo from "../../assets/CargoProLogo.webp";
+import AutomatedFreightSourcingImage from "../../assets/Solutions/FreightSourcing/automated-freight-sourcing.webp";
+import desktopImage from "../../assets/Solutions/FreightSourcing/smart-price-sourcing.webp";
+import FreightPricing from "../../assets/Solutions/FreightSourcing/transperency-in-freight-sourcing.webp";
+import FreightSourcingHeroImage from "../../assets/Solutions/FreightSourcing/freight-sourcing-and-reverse-auction-hero.webp";
+import reverseAuctionImage from "../../assets/Solutions/FreightSourcing/reverse-auction-for-competitive-pricing.webp";
+import TruckImage from "../../assets/Solutions/FreightSourcing/digitize-your-freight-procurement.webp";
 
 const FreightSourcingAndReverseAuction = () => {
   const heading = (
@@ -66,7 +67,13 @@ const FreightSourcingAndReverseAuction = () => {
   return (
     <>
       <Helmet>
-        <title>Freight Sourcing and Reverse Auction | CargoPro</title>
+        <title>CargoPro | Freight Sourcing and Reverse Auction</title>
+        <meta
+          name="description"
+          content="Streamline freight procurement with CargoPro’s smart sourcing and reverse auction. Save costs with automated bidding and transparent transporter rates."
+        />
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>
       <Navbar />
       <HeroSection

@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import CargoProBookDemoBg from "../assets/CargoProBookDemoBg.png";
+import CargoProBookDemoBg from "../assets/CargoProBookDemoBg.webp";
 
 const CtaBanner = ({ heading, text }) => {
   return (

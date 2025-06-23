@@ -1,26 +1,30 @@
 import React from "react";
-import StepImage from "../assets/CargoProSteps.png"; // Replace with actual path
+import StepImage from "../assets/CargoProIndexPage/cargopro-operations-four-easy-steps.webp"; // Replace with actual path
 
 const steps = [
   {
     number: 1,
     title: "Sign Up & Onboard Teams",
-    description: "Sign up and onboard your plants and teams (logistics, finance, etc.).",
+    description:
+      "Sign up and onboard your plants and teams (logistics, finance, etc.).",
   },
   {
     number: 2,
     title: "Integrate with ERP Systems",
-    description: "Connect CargoPro with your ERP (SAP, Microsoft, etc.) for seamless data flow.",
+    description:
+      "Connect CargoPro with your ERP (SAP, Microsoft, etc.) for seamless data flow.",
   },
   {
     number: 3,
     title: "Automated Dispatch & Load Planning",
-    description: "Dispatches and loads are automatically planned and posted, with real-time updates on the dashboard.",
+    description:
+      "Dispatches and loads are automatically planned and posted, with real-time updates on the dashboard.",
   },
   {
     number: 4,
     title: "Optimize & Manage Operations",
-    description: "Gain complete control of your logistics — track shipments, manage PODs, optimize routes, and more.",
+    description:
+      "Gain complete control of your logistics — track shipments, manage PODs, optimize routes, and more.",
   },
 ];
 
@@ -30,7 +34,8 @@ const CargoProSteps = () => {
       <div className="max-w-[1280px] mx-auto flex flex-col gap-10 md:gap-12">
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-bold text-center text-blue-900">
-          Transform your Logistics Operation with <br className="hidden md:block" />
+          Transform your Logistics Operation with{" "}
+          <br className="hidden md:block" />
           CargoPro in four easy steps
         </h2>
 
@@ -66,7 +71,7 @@ const CargoProSteps = () => {
           <div className="flex-1 max-w-full md:max-w-[638px]">
             <img
               src={StepImage}
-              alt="CargoPro Steps"
+              alt="CargoPro Steps to onboard"
               className="w-full h-auto md:h-[516px] rounded-[12px] shadow"
             />
           </div>
