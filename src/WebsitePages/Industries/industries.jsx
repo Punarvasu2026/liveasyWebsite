@@ -17,7 +17,11 @@ const Industries = () => {
   return (
     <>
       <Helmet>
-        <title>Industries | CargoPro</title>
+        <title>CargoPro | Industries</title>
+        <meta
+          name="description"
+          content="Modernize and optimize your logistics operations with CargoPro. Serving Metal, FMCG, Chemicals, EPC, Engineering, Agriculture, and more. Solve challenges like lack of transparency, inefficient vehicle movement, manual tracking, and complicated invoicing."
+        />
         <link rel="icon" type="image/x-icon" href={CargoProLogo} />
         <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>

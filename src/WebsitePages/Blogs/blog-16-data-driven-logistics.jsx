@@ -12,6 +12,7 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-16/blog-16-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-16/blog-16-image.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-16/route-optimization.webp";
@@ -80,6 +81,18 @@ const Blog16 = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          CargoPro | The Power of Data-Driven Logistics Analytics and Insights
+        </title>
+        <meta
+          name="description"
+          content="Leverage CargoPro’s data-driven logistics analytics to optimize freight management, improve route efficiency, detect fraud, mitigate risks, and boost customer satisfaction with actionable insights."
+        />
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+      </Helmet>
+
       <Navbar />
       <BlogsHero
         heading="The Power of Data-Driven Logistics Analytics and Insights"

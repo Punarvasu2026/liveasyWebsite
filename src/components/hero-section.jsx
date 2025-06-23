@@ -103,7 +103,7 @@ const HeroSection = ({
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
             <img
               src={image}
-              alt="Hero"
+              alt="CargoPro Hero"
               className="w-full max-w-lg lg:max-w-[600px] h-auto"
             />
           </div>

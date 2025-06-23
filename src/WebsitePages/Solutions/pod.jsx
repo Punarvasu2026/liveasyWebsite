@@ -50,7 +50,11 @@ const Pod = () => {
   return (
     <>
       <Helmet>
-        <title>Proof of Dilivery| CargoPro</title>
+        <title>CargoPro | Proof of Delivery</title>
+        <meta
+          name="description"
+          content="Ensure delivery accountability with CargoPro’s digital POD solution. Instantly upload proof of delivery, automate invoice integration, and gain real-time visibility for faster payment and dispute-free workflows."
+        />
         <link rel="icon" type="image/x-icon" href={CargoProLogo} />
         <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>

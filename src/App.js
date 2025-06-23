@@ -19,6 +19,7 @@ import Blog3 from "./WebsitePages/Blogs/blog-3-say-goodbye-to-invoiceing-hassles
 import Blog4 from "./WebsitePages/Blogs/blog-4-breaking-barieiers";
 import Blog5 from "./WebsitePages/Blogs/blog-5-digital-transformations-strategies";
 import Blog6 from "./WebsitePages/Blogs/blog-6-optimizing-resourses";
+import Blog7 from "./WebsitePages/Blogs/blog-7-cutting-down-freight-cost";
 import Blog8 from "./WebsitePages/Blogs/blog-8-how-to-choose-right-tms";
 import Blog9 from "./WebsitePages/Blogs/blog-9-end-to-end-suplly-chain";
 import Blog10 from "./WebsitePages/Blogs/blog-10-higher-freight-cost-in-steel-industry";
@@ -88,6 +89,10 @@ function App() {
           element={<Blog5 />}
         />
         <Route path="/blogs/in-plant-automation" element={<Blog6 />} />
+        <Route
+          path="/blogs/digitization-helps-cutting-down-freight-cost"
+          element={<Blog7 />}
+        />
         <Route path="/blogs/how-to-choose-the-right-tms" element={<Blog8 />} />
         <Route
           path="/blogs/big-data-and-predictive-analytics-in-logistics"

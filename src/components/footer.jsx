@@ -150,7 +150,7 @@ const Footer = () => {
             key={idx}
             href={link}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             className="w-8 h-8 bg-black rounded-full flex items-center justify-center cursor-pointer hover:scale-105 transition-transform"
           >
             <Icon className="text-white text-sm" />

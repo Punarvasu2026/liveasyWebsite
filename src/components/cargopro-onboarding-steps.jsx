@@ -71,7 +71,7 @@ const CargoProSteps = () => {
           <div className="flex-1 max-w-full md:max-w-[638px]">
             <img
               src={StepImage}
-              alt="CargoPro Steps"
+              alt="CargoPro Steps to onboard"
               className="w-full h-auto md:h-[516px] rounded-[12px] shadow"
             />
           </div>

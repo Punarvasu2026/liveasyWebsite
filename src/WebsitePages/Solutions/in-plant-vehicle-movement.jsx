@@ -62,7 +62,11 @@ const InPlantVehicleMovement = () => {
   return (
     <>
       <Helmet>
-        <title>In Plant Vehicle Movement and Optimization| CargoPro</title>
+        <title>CargoPro | In Plant Vehicle Movement and Optimization</title>
+        <meta
+          name="description"
+          content="Track vehicle movement inside your plant with CargoPro’s real-time alerts, stage-wise monitoring, and turnaround time optimization. Maximize efficiency and minimize downtime with full operational transparency."
+        />
         <link rel="icon" type="image/x-icon" href={CargoProLogo} />
         <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>

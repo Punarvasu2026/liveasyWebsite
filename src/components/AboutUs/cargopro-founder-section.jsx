@@ -46,7 +46,7 @@ const FounderSection = () => {
           <div className="w-full md:w-[340px] h-[auto] md:h-[472px]">
             <img
               src={founderImage}
-              alt="Founder"
+              alt="CargoPro Founder (Pranav Gupta)"
               className="w-full h-full object-cover rounded-[12px]"
             />
           </div>

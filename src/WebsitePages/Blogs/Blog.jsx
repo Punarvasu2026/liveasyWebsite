@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 //components
 import NavBar from "../../components/navbar";
@@ -9,11 +10,21 @@ import BlogsHeroSection from "../../components/Blogs/Blog/blogs-hero-section";
 import Footer from "../../components/footer";
 
 //images
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import BackgroundImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.webp";
 
 const Blog = () => {
   return (
     <>
+      <Helmet>
+        <title>CargoPro | Blogs</title>
+        <meta
+          name="description"
+          content="Explore CargoPro’s expert blogs on logistics innovation, automation, eco-friendly solutions, procurement, invoicing, and digital transformation. Stay updated with strategies shaping the future of freight management."
+        />
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+      </Helmet>
       <NavBar />
       <BlogsHeroSection
         heading={

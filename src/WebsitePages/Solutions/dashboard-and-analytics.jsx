@@ -65,7 +65,11 @@ const DashboardAndAnalytics = () => {
   return (
     <>
       <Helmet>
-        <title>Dashboard and Analytics | CargoPro</title>
+        <title>CargoPro | Dashboard and Analytics</title>
+        <meta
+          name="description"
+          content="Gain full control and visibility with CargoPro’s advanced logistics dashboard. Access real-time freight analytics, transporter performance, audit logs, and detailed reports for smarter decisions."
+        />
         <link rel="icon" type="image/x-icon" href={CargoProLogo} />
         <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>

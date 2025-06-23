@@ -20,7 +20,7 @@ const ReverseAuctionSection = ({ heading, points = [], mainImage }) => {
           <div className="w-full md:flex-1 flex justify-center md:justify-start items-center">
             <img
               src={mainImage}
-              alt="Illustration"
+              alt={heading}
               className="w-full max-w-full h-auto rounded-[5.63px] md:rounded-[8px] object-cover"
             />
           </div>

@@ -18,7 +18,11 @@ const Career = () => {
   return (
     <>
       <Helmet>
-        <title>Industries | CargoPro</title>
+        <title>CargoPro | Industries</title>
+        <meta
+          name="description"
+          content="Join CargoPro to transform logistics with cutting-edge technology. Enjoy innovation-driven growth, competitive salary, personal development, and the chance to revolutionize supply chain solutions."
+        />
         <link rel="icon" type="image/x-icon" href={CargoProLogo} />
         <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>

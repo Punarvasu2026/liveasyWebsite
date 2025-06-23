@@ -8,7 +8,7 @@ const WhyChooseCargoPro = () => {
       <div className="w-full md:w-1/2 flex justify-center md:justify-start">
         <img
           src={WhyChooseCargoProGraphics}
-          alt="CargoPro Logistics Illustration"
+          alt="why choose cargo pro"
           className="max-w-full h-auto"
         />
       </div>

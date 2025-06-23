@@ -12,6 +12,7 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-6/blog-6-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-6/blog-6-image.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-6/enhanced-efficiency-with-automation.webp";
@@ -138,6 +139,19 @@ const Blog6 = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          CargoPro | Optimizing Resources and Safety: The Role of Automation in
+          In-Plant Vehicle Movement
+        </title>
+        <meta
+          name="description"
+          content="Discover how CargoPro enhances in-plant vehicle movement with automation, improving efficiency, safety, and resource utilization for industries and transporters alike."
+        />
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+      </Helmet>
+
       <Navbar />
       <BlogsHero
         heading="Optimizing Resources and Safety: The Role of Automation in In-Plant Vehicle Movement with CargoPro"

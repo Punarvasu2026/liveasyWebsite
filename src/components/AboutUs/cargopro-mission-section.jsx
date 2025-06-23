@@ -16,7 +16,7 @@ const MissionSection = () => {
       {/* Decorative Lines Bottom Right */}
       <img
         src={linesBg}
-        alt="Decorative Lines"
+        alt="Decorative Lines (Design)"
         className="absolute bottom-0 right-0 w-[500px] pointer-events-none z-0"
       />
 
@@ -36,7 +36,7 @@ const MissionSection = () => {
             </div>
             <img
               src={missionImage}
-              alt="Mission"
+              alt="CargoPro mission"
               className="w-[640px] h-[356px] object-contain"
             />
           </div>

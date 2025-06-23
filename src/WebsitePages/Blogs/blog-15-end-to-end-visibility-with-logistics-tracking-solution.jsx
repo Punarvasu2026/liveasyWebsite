@@ -12,6 +12,7 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-15/blog-15-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-15/blog-15-image.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-15/real-time-tracking.webp";
@@ -125,6 +126,19 @@ const Blog15 = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          CargoPro | Achieving End-to-End Visibility with Logistics Tracking
+          Solutions
+        </title>
+        <meta
+          name="description"
+          content="Discover how CargoPro’s logistics tracking solutions provide end-to-end visibility, real-time shipment monitoring, fleet optimization, proactive exception management, and centralized control for improved supply chain efficiency."
+        />
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+      </Helmet>
+
       <Navbar />
       <BlogsHero
         heading="Achieving End-to-End Visibility with Logistics Tracking Solutions"

@@ -47,10 +47,9 @@ const allInsights = [
   },
   {
     image: BlogCardImage1,
-    heading:
-      "Optimizing Resources and Safety: The Role of Automation in In-Plant Vehicle Movement with CargoPro",
+    heading: "How Digitization Helps in Cutting Down Freight Cost",
     date: "January 26, 2025",
-    link: "/blogs/in-plant-automation",
+    link: "/blogs/digitization-helps-cutting-down-freight-cost",
   },
   {
     image: BlogCardImage1,

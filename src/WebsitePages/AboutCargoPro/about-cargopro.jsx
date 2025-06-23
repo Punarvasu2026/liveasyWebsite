@@ -19,7 +19,11 @@ const AboutUs = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | CargoPro</title>
+        <title>CargoPro | About Us</title>
+        <meta
+          name="description"
+          content="CargoPro is a leading AI-powered Transport Management System (TMS) platform offering innovative freight sourcing, indent management, real-time tracking, and automated invoicing solutions to optimize supply chain operations and reduce logistics costs."
+        />
         <link rel="icon" type="image/x-icon" href={CargoProLogo} />
         <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>

@@ -10,7 +10,7 @@ const ControlTowerSection = () => {
           <h1 className="text-[44px] leading-[58px] tracking-[-1.2px] font-sans text-[#C4D9FF]">
             Take Control of Your Logistics,
             <br />
-            <span text-white>One Click at a Time</span>
+            <span className="text-white">One Click at a Time</span>
           </h1>
           <p className="text-[18px] leading-[28px] font-sans">
             Whether you’re a supply chain manager, a logistics head, or a CXO,

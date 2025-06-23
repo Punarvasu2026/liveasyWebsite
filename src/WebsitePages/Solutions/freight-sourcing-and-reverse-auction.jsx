@@ -67,7 +67,11 @@ const FreightSourcingAndReverseAuction = () => {
   return (
     <>
       <Helmet>
-        <title>Freight Sourcing and Reverse Auction | CargoPro</title>
+        <title>CargoPro | Freight Sourcing and Reverse Auction</title>
+        <meta
+          name="description"
+          content="Streamline freight procurement with CargoPro’s smart sourcing and reverse auction. Save costs with automated bidding and transparent transporter rates."
+        />
         <link rel="icon" type="image/x-icon" href={CargoProLogo} />
         <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>

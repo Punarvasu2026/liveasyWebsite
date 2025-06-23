@@ -20,7 +20,11 @@ const Tracking = () => {
   return (
     <>
       <Helmet>
-        <title>Live Tracking | CargoPro</title>
+        <title>CargoPro | Live Tracking</title>
+        <meta
+          name="description"
+          content="Track every shipment live with CargoPro’s SIM-based and app tracking. Gain real-time location updates, vehicle compliance insights, FASTag alerts, and full visibility for confident delivery management."
+        />
         <link rel="icon" type="image/x-icon" href={CargoProLogo} />
         <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>

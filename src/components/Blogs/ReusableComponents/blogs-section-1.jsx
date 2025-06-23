@@ -7,7 +7,7 @@ const LogisticsInfoBlock = ({ imageSrc, text }) => {
         {/* Image */}
         <img
           src={imageSrc}
-          alt="Logistics"
+          alt="Logistics Info"
           className="w-[618px] h-[389px] rounded-[12px] object-cover"
         />
 

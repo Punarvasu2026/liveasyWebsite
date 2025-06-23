@@ -59,7 +59,11 @@ const FreightSourcingAndReverseAuction = () => {
   return (
     <>
       <Helmet>
-        <title>Indent Automation | CargoPro</title>
+        <title>CargoPro | Indent Automation</title>
+        <meta
+          name="description"
+          content="Automate freight indent assignment with CargoPro’s intelligent contract-based system. Get best-rate transporter selection, real-time notifications, and full audit logs for faster, error-free dispatch."
+        />
         <link rel="icon" type="image/x-icon" href={CargoProLogo} />
         <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>

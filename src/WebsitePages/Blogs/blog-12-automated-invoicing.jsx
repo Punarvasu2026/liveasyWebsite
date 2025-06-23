@@ -12,6 +12,7 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-12/blog-12-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-12/blog-12-image.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-12/enhancing-accuracy.webp";

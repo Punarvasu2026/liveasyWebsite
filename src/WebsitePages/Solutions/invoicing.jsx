@@ -64,7 +64,11 @@ const Invoicing = () => {
   return (
     <>
       <Helmet>
-        <title>Invoicing| CargoPro</title>
+        <title>CargoPro | Invoicing</title>
+        <meta
+          name="description"
+          content="Digitize freight invoicing with CargoPro’s automated billing from POD upload to payment approval. Achieve 99% accuracy, faster processing, and full transparency with audit-ready digital records."
+        />
         <link rel="icon" type="image/x-icon" href={CargoProLogo} />
         <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
       </Helmet>

@@ -12,6 +12,7 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-18/blog-18-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-18/blog-18-image.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-18/real-time-route-optimization.webp";
@@ -87,6 +88,18 @@ const Blog18 = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          CargoPro | Top Techniques for Optimizing Last Mile Delivery Logistics
+        </title>
+        <meta
+          name="description"
+          content="Discover CargoPro’s advanced tools to optimize last mile delivery logistics with real-time route optimization, smart delivery management, dynamic capacity adjustments, and seamless communication for superior customer experience."
+        />
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+      </Helmet>
+
       <Navbar />
       <BlogsHero
         heading="Top Techniques for Optimizing Last Mile Delivery Logistics"

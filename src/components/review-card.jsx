@@ -25,7 +25,7 @@ const ReviewCard = ({ stars = 5, text }) => {
       {/* Gradient Decoration Image */}
       <img
         src={GradientDecoration}
-        alt="Decoration"
+        alt="Gradient Decoration"
         className="absolute bottom-0 right-0 w-[90px] md:w-[120px] z-0"
       />
     </div>

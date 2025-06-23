@@ -12,6 +12,7 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
+import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-8/blog-8-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-8/blog-8-bg.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-8/access-your-business-needs.webp";
@@ -175,6 +176,16 @@ const Blog8 = () => {
 
   return (
     <>
+      <Helmet>
+        <title>CargoPro | How to Choose the Right TMS: A Buyer’s Guide</title>
+        <meta
+          name="description"
+          content="Learn how to select the ideal Transportation Management System (TMS) for your logistics needs. Discover key features like real-time tracking, analytics, scalability, and seamless integration with CargoPro."
+        />
+        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
+        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+      </Helmet>
+
       <Navbar />
       <BlogsHero
         heading="How to Choose the Right TMS: A Buyer’s Guide"

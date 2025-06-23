@@ -77,7 +77,7 @@ const LiveTrackingSection = () => {
         <div className="w-full max-w-[694px] h-auto overflow-hidden rounded-lg">
           <img
             src={TrackingImage}
-            alt="Live Tracking UI"
+            alt="Live Tracking"
             className="w-full h-full object-cover"
           />
         </div>
