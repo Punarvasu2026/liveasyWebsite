@@ -30,6 +30,7 @@ const TrustedBy = () => {
             <img
               src={TrustedByLogos}
               alt="Duplicate logos"
+              loading="lazy"
               className="h-[50px] w-auto object-contain"
             />
           </div>

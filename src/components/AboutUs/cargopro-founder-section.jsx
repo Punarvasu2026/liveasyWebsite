@@ -47,6 +47,7 @@ const FounderSection = () => {
             <img
               src={founderImage}
               alt="CargoPro Founder (Pranav Gupta)"
+              loading="lazy"
               className="w-full h-full object-cover rounded-[12px]"
             />
           </div>

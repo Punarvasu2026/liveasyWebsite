@@ -9,6 +9,7 @@ const WhyChooseCargoPro = () => {
         <img
           src={WhyChooseCargoProGraphics}
           alt="why choose cargo pro"
+          loading="lazy"
           className="max-w-full h-auto"
         />
       </div>

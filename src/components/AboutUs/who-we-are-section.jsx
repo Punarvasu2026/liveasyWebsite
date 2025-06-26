@@ -16,6 +16,7 @@ const WhoAreWeSection = () => {
           <img
             src={TeamImage}
             alt="Who Are We (CargoPro)"
+            loading="lazy"
             className="w-full max-w-[618px] h-auto rounded-[12px]"
           />
 

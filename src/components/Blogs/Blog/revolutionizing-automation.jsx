@@ -17,6 +17,7 @@ const AutomationHighlightSection = () => {
           <img
             src={AutomationImage}
             alt="Automation in logistics"
+            loading="lazy"
             className="w-[618px] h-[435px] rounded-[12px] object-cover"
           />
         </div>

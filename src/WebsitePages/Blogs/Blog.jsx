@@ -10,7 +10,6 @@ import BlogsHeroSection from "../../components/Blogs/Blog/blogs-hero-section";
 import Footer from "../../components/footer";
 
 //images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import BackgroundImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.webp";
 
 const Blog = () => {
@@ -22,8 +21,12 @@ const Blog = () => {
           name="description"
           content="Explore CargoPro’s expert blogs on logistics innovation, automation, eco-friendly solutions, procurement, invoicing, and digital transformation. Stay updated with strategies shaping the future of freight management."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
       <NavBar />
       <BlogsHeroSection

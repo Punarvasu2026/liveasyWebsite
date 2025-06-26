@@ -12,7 +12,6 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-18/blog-18-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-18/blog-18-image.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-18/real-time-route-optimization.webp";
@@ -96,8 +95,12 @@ const Blog18 = () => {
           name="description"
           content="Discover CargoPro’s advanced tools to optimize last mile delivery logistics with real-time route optimization, smart delivery management, dynamic capacity adjustments, and seamless communication for superior customer experience."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
 
       <Navbar />

@@ -33,6 +33,7 @@ const ControlTowerSection = () => {
           <img
             src={TakeControlOfYourLogistics} // 🔁 replace with actual image path
             alt="Control Tower Illustration"
+            loading="lazy"
             className="w-full h-auto"
           />
         </div>

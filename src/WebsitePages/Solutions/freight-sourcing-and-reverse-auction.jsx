@@ -15,7 +15,6 @@ import IdealFor from "../../components/Solutions/FreightSourcingAndReverseAuctio
 import BusinessImpactSection from "../../components/Solutions/FreightSourcingAndReverseAuction/bussiness-impact";
 
 // Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import AutomatedFreightSourcingImage from "../../assets/Solutions/FreightSourcing/automated-freight-sourcing.webp";
 import desktopImage from "../../assets/Solutions/FreightSourcing/smart-price-sourcing.webp";
 import FreightPricing from "../../assets/Solutions/FreightSourcing/transperency-in-freight-sourcing.webp";
@@ -72,8 +71,12 @@ const FreightSourcingAndReverseAuction = () => {
           name="description"
           content="Streamline freight procurement with CargoPro’s smart sourcing and reverse auction. Save costs with automated bidding and transparent transporter rates."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
       <Navbar />
       <HeroSection

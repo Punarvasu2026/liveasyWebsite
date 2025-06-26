@@ -78,6 +78,7 @@ const LiveTrackingSection = () => {
           <img
             src={TrackingImage}
             alt="Live Tracking"
+            loading="lazy"
             className="w-full h-full object-cover"
           />
         </div>

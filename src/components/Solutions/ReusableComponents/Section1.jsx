@@ -9,6 +9,7 @@ const FreightSection1 = ({ imageSrc, heading, text }) => {
           <img
             src={imageSrc}
             alt={heading}
+            loading="lazy"
             className="w-full max-w-[358px] sm:max-w-[618px] h-auto object-contain"
           />
         </div>

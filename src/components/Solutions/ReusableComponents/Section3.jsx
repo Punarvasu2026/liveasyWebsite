@@ -21,6 +21,7 @@ const ReverseAuctionSection = ({ heading, points = [], mainImage }) => {
             <img
               src={mainImage}
               alt={heading}
+              loading="lazy"
               className="w-full max-w-full h-auto rounded-[5.63px] md:rounded-[8px] object-cover"
             />
           </div>

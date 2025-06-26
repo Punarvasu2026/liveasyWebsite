@@ -12,7 +12,6 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.webp";
 import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-1/centralized-procurement-and-indent.webp";
@@ -93,12 +92,53 @@ const Blog1 = () => {
           Revolutionizing Procurement and Indent Management with CargoPro’s
           Automated TMS Platform | CargoPro
         </title>
+
+        {/* Open Graph Meta Tags */}
+        <meta
+          property="og:title"
+          content="Revolutionizing Procurement and Indent Management with CargoPro’s
+          Automated TMS Platform"
+        />
+        <meta
+          property="og:description"
+          content="Explore how CargoPro's AI-powered Transportation Management System (TMS) automates procurement and indent processes, enhances vendor management, controls budgets, and delivers advanced analytics to transform your logistics operations."
+        />
+        <meta
+          property="og:image"
+          content="https://cargopro.ai/CargoProLogo.webp"
+        />
+        <meta
+          property="og:url"
+          content="https://cargopro.ai/blogs/revolutionizing-procurement"
+        />
+        <meta property="og:type" content="article" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Revolutionizing Procurement and Indent Management with CargoPro’s
+          Automated TMS Platform"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore how CargoPro's AI-powered Transportation Management System (TMS) automates procurement and indent processes, enhances vendor management, controls budgets, and delivers advanced analytics to transform your logistics operations."
+        />
+        <meta
+          name="twitter:image"
+          content="https://cargopro.ai/CargoProLogo.webp"
+        />
+
         <meta
           name="description"
           content="Explore how CargoPro's AI-powered Transportation Management System (TMS) automates procurement and indent processes, enhances vendor management, controls budgets, and delivers advanced analytics to transform your logistics operations."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
       <Navbar />
       <BlogsHero

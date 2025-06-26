@@ -25,6 +25,7 @@ const BlogsHeroSection = ({
       <img
         src={BottomShape}
         alt="Vector Background (Design)"
+        loading="lazy"
         className="absolute pointer-events-none z-0 hidden lg:block"
         style={{
           top: "250px",

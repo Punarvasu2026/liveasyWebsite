@@ -11,7 +11,6 @@ import TrustedBy from "../../components/trustedby-cargopro";
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import HeroBgImage from "../../assets/Careers/careers-bg.webp";
 
 const Career = () => {
@@ -23,8 +22,12 @@ const Career = () => {
           name="description"
           content="Join CargoPro to transform logistics with cutting-edge technology. Enjoy innovation-driven growth, competitive salary, personal development, and the chance to revolutionize supply chain solutions."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
       <Navbar />
       <BlogsHero

@@ -12,7 +12,6 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-19/blog-19-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-19/blog-19-image.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-19/smart-inventory-management.webp";
@@ -90,8 +89,12 @@ const Blog19 = () => {
           name="description"
           content="Discover how CargoPro drives digital transformation in warehouse operations through smart inventory management, automation, optimized layouts, and data analytics for improved efficiency and operational excellence."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
 
       <Navbar />

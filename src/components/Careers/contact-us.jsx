@@ -32,6 +32,7 @@ const ContactSection = () => {
             <img
               src={ContactUsImage}
               alt="Contact Illustration"
+              loading="lazy"
               className="object-contain h-full"
             />
           </div>

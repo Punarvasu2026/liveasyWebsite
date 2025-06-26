@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const SolutionCard = ({ title, description, iconActive, iconInactive }) => {
   return (
@@ -10,11 +10,13 @@ const SolutionCard = ({ title, description, iconActive, iconInactive }) => {
         <img
           src={iconInactive}
           alt={`${title} icon`}
+          loading="lazy"
           className="w-10 h-10 group-hover:hidden"
         />
         <img
           src={iconActive}
           alt={`${title} icon active`}
+          loading="lazy"
           className="w-10 h-10 hidden group-hover:block"
         />
       </div>

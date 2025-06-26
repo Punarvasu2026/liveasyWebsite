@@ -40,6 +40,7 @@ const WhyWorkWithUs = () => {
             <img
               src={card.image}
               alt={card.title}
+              loading="lazy"
               className="w-full h-[189px] rounded-[24px] object-cover"
             />
             {/* Content */}

@@ -26,6 +26,7 @@ const ReviewCard = ({ stars = 5, text }) => {
       <img
         src={GradientDecoration}
         alt="Gradient Decoration"
+        loading="lazy"
         className="absolute bottom-0 right-0 w-[90px] md:w-[120px] z-0"
       />
     </div>

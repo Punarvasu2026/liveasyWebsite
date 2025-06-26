@@ -17,6 +17,7 @@ const MissionSection = () => {
       <img
         src={linesBg}
         alt="Decorative Lines (Design)"
+        loading="lazy"
         className="absolute bottom-0 right-0 w-[500px] pointer-events-none z-0"
       />
 

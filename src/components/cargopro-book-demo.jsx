@@ -10,6 +10,7 @@ const CtaBanner = ({ heading, text }) => {
         <img
           src={CargoProBookDemoBg}
           alt="Freight trucks"
+          loading="lazy"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
 
@@ -29,10 +30,14 @@ const CtaBanner = ({ heading, text }) => {
             href="https://calendly.com/pranav-cargopro/30min"
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="mt-6 md:mt-8 inline-flex items-center justify-center gap-2 bg-[#1B3C8D] hover:bg-[#1B3C8D]/90 text-white rounded-full text-sm md:text-base font-semibold px-6 md:px-10 py-3 md:py-4 max-w-[351px] h-[48px] md:h-[64px]"
+            className="group mt-6 md:mt-8 inline-flex items-center justify-center gap-1 bg-[#1B3C8D] hover:bg-[#1B3C8D]/90 text-white rounded-full text-sm md:text-base font-semibold px-6 md:px-10 py-3 md:py-4 max-w-[351px] h-[48px] md:h-[64px] transition-all duration-300 shadow-md hover:shadow-lg"
           >
-            BOOK A DEMO FOR FREE
-            <ArrowRight size={18} strokeWidth={3} />
+            <span className="tracking-wide">CONTACT OUR LOGISTICS EXPERTS</span>
+            <ArrowRight
+              size={40}
+              strokeWidth={2.5}
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            />
           </a>
         </div>
       </div>

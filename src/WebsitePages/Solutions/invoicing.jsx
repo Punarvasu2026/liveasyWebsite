@@ -14,7 +14,6 @@ import Footer from "../../components/footer";
 import WhyInvoicing from "../../components/Solutions/Invoicing/why-invoicing";
 
 // Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import InvoicingHero from "../../assets/Solutions/Invoicing/Invoicing.webp";
 import InvoicingSectionImage from "../../assets/Solutions/Invoicing/automated-freight-billing.webp";
 import InvoicingDigitalRecords from "../../assets/Solutions/Invoicing/digital-records-for-audit.webp";
@@ -69,8 +68,12 @@ const Invoicing = () => {
           name="description"
           content="Digitize freight invoicing with CargoPro’s automated billing from POD upload to payment approval. Achieve 99% accuracy, faster processing, and full transparency with audit-ready digital records."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
       <Navbar />
       <HeroSection

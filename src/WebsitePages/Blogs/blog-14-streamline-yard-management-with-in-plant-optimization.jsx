@@ -12,7 +12,6 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-14/blog-14-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-14/blog-14-image.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-14/reduces-turnaround-time.webp";
@@ -134,8 +133,12 @@ const Blog14 = () => {
           name="description"
           content="Optimize your logistics yard operations with CargoPro's in-plant optimization solutions. Reduce turnaround time, improve resource allocation, enhance safety, and gain real-time visibility for efficient yard management."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
 
       <Navbar />

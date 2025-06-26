@@ -13,6 +13,7 @@ const InsightsCard = ({ image, heading, date, link }) => {
       <img
         src={image}
         alt={heading}
+        loading="lazy"
         className="rounded-xl object-cover w-full h-[192px]"
       />
 

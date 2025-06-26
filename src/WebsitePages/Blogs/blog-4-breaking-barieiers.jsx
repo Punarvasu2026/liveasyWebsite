@@ -12,7 +12,6 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-4/blog-4-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-4/blog-4-image.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-4/cost-conundrum.webp";
@@ -89,8 +88,12 @@ const Blog4 = () => {
           name="description"
           content="Discover how CargoPro helps logistics companies overcome digital adoption barriers—cost, resistance to change, security, and complexity—through scalable, secure, and user-friendly TMS solutions."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
 
       <Navbar />
