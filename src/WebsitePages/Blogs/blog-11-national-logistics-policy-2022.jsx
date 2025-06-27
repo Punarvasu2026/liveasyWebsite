@@ -12,7 +12,6 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-11/blog-11-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-11/blog-11-image.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-11/reducing-logistics-cost.webp";
@@ -195,8 +194,12 @@ const Blog11 = () => {
           name="description"
           content="Discover how the National Logistics Policy 2022 aims to transform India's logistics sector through cost reduction, digital integration, infrastructure modernization, and enhanced customer experience, supported by CargoPro's real-time visibility and predictive insights."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
 
       <Navbar />

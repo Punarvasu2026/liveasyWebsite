@@ -32,6 +32,7 @@ const IndustriesWeServe = () => {
             <img
               src={industry.icon}
               alt={industry.title}
+              loading="lazy"
               className="w-[142px] h-[142px] object-contain"
             />
             <h3 className="text-[32px] leading-[38px] text-center font-sans font-bold text-[#0B3558]">

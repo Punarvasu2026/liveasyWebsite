@@ -10,6 +10,7 @@ const IntegratedTrackingSection = () => {
           <img
             src={TrackingImage}
             alt="Tracking Dashboard"
+            loading="lazy"
             className="rounded-lg w-full h-auto object-cover"
           />
         </div>

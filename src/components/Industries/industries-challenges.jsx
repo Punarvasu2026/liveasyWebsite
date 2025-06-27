@@ -76,6 +76,7 @@ const ChallengesSection = () => {
           <img
             src={item.image}
             alt={item.title}
+            loading="lazy"
             className="w-full md:w-[618px] h-[360px] object-cover rounded-[12px]"
           />
           <div className="w-full md:w-[582px] flex flex-col gap-[40px]">

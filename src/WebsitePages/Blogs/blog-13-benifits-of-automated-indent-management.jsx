@@ -12,7 +12,6 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-13/blog-13-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-13/blog-13-image.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-13/increase-efficiency.webp";
@@ -134,8 +133,12 @@ const Blog13 = () => {
           name="description"
           content="Discover how CargoPro's automated indent management system streamlines procurement by reducing manual delays, improving accuracy, and enhancing transparency. Simplify your procurement workflows today."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
 
       <Navbar />

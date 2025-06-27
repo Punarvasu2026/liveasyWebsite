@@ -46,6 +46,7 @@ const PerksSection = () => {
             <img
               src={perk.image}
               alt={perk.title}
+              loading="lazy"
               className="w-[254px] h-[189px] object-cover rounded-[24px]"
             />
             <div className="flex flex-col gap-4">

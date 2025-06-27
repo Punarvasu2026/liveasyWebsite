@@ -35,7 +35,12 @@ const Navbar = () => {
           className="flex items-center space-x-2"
           onClick={closeMobileMenu}
         >
-          <img src={CargoProLogo} alt="CargoPro Logo" className="h-8 w-auto" />
+          <img
+            src={CargoProLogo}
+            alt="CargoPro Logo"
+            loading="lazy"
+            className="h-8 w-auto"
+          />
           <div className="font-raleway font-semibold text-[24px] leading-[24px] text-primaryBlue">
             CargoPro
           </div>

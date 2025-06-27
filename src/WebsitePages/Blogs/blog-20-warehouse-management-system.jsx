@@ -12,7 +12,6 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 // Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import Blog20Bg from "../../assets/Blogs/blog-20/blog-20-bg.webp";
 import Blog20Image from "../../assets/Blogs/blog-20/blog-20-image.webp";
 import Step1Image from "../../assets/Blogs/blog-20/real-time-data-sharing.webp";
@@ -148,8 +147,12 @@ const Blog20 = () => {
           name="description"
           content="Discover how CargoPro enables seamless integration of Transportation Management Systems (TMS) and Warehouse Management Systems (WMS) for smarter, faster logistics operations with real-time data sharing, streamlined order fulfillment, and enhanced customer satisfaction."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
 
       <BlogsHero

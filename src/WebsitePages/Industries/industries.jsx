@@ -10,7 +10,6 @@ import Footer from "../../components/footer";
 import BlogsHeroSection from "../../components/Blogs/Blog/blogs-hero-section";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import BackgroundImage from "../../assets/Industries/industries-bg.webp";
 
 const Industries = () => {
@@ -22,8 +21,12 @@ const Industries = () => {
           name="description"
           content="Modernize and optimize your logistics operations with CargoPro. Serving Metal, FMCG, Chemicals, EPC, Engineering, Agriculture, and more. Solve challenges like lack of transparency, inefficient vehicle movement, manual tracking, and complicated invoicing."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
       <Navbar />
       <BlogsHeroSection

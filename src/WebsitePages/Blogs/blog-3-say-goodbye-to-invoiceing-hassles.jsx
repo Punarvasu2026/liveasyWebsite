@@ -12,7 +12,6 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-3/blog-3-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-3/blog-3-image.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-3/seamless-and-instant-invoice-generation.webp";
@@ -180,8 +179,12 @@ const Blog2 = () => {
           name="description"
           content="Simplify freight invoicing with CargoPro’s automated TMS platform. Achieve instant invoice generation, higher accuracy, centralized tracking, and cost savings for logistics operations."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
       <Navbar />
       <BlogsHero

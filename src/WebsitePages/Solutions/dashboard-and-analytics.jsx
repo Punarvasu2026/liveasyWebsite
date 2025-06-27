@@ -15,7 +15,6 @@ import Footer from "../../components/footer";
 import TakeControlOfYourLogistics from "../../components/Solutions/DadhboardAndAnalytics/take-control-of-your-logistics";
 
 // Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import DashboardAndAnalyticsHero from "../../assets/Solutions/DashboardAndAnalytics/dashboard-and-analytics.webp";
 import DashboardAndAnalyticsImage from "../../assets/Solutions/DashboardAndAnalytics/see-everything-miss-nothing.webp";
 import CentralizedLogisticsOverviewImage from "../../assets/Solutions/DashboardAndAnalytics/centralized-logistics-overview.webp";
@@ -70,8 +69,12 @@ const DashboardAndAnalytics = () => {
           name="description"
           content="Gain full control and visibility with CargoPro’s advanced logistics dashboard. Access real-time freight analytics, transporter performance, audit logs, and detailed reports for smarter decisions."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
       <Navbar />
       <HeroSection

@@ -12,7 +12,6 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-9/blog-9-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-9/blog-9-bg.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-9/leverage-big-data.webp";
@@ -177,8 +176,12 @@ const Blog9 = () => {
           name="description"
           content="Discover how Big Data and predictive analytics are revolutionizing logistics by enabling end-to-end supply chain visibility, smarter route planning, and proactive disruption management with CargoPro."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
 
       <Navbar />

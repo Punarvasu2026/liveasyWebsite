@@ -34,6 +34,7 @@ import Blog18 from "./WebsitePages/Blogs/blog-18-last-mile-delivery-logistics";
 import Blog19 from "./WebsitePages/Blogs/blog-19--elevating-warehoouse-efficiency";
 import Blog20 from "./WebsitePages/Blogs/blog-20-warehouse-management-system";
 import RevolutionizingLogisticsBlog from "./WebsitePages/Blogs/blog-revolutionizing-logistics";
+import NotFoundPage from "./404";
 //import NotFoundPage from "./404NotFound";
 
 import Tracking from "./WebsitePages/Solutions/tracking";
@@ -145,7 +146,7 @@ function App() {
         <Route path="/contacts" element={<Careers />} />
 
         {/* Catch-all route */}
-        {/* <Route path="*" element={<NotFoundPage />} /> */}
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
   );

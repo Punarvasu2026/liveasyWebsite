@@ -17,6 +17,7 @@ const HeroSection = ({
       <img
         src={BottomShape}
         alt="Background Shape"
+        loading="lazy"
         className="absolute pointer-events-none z-0 hidden lg:block"
         style={{
           top: "250px",

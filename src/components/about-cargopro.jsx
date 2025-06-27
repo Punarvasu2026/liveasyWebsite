@@ -52,6 +52,7 @@ const AboutUs = () => {
         <img
           src={About_Us_Image}
           alt="CargoPro Features"
+          loading="lazy"
           className="w-full max-w-[618px] h-auto object-contain"
         />
       </div>

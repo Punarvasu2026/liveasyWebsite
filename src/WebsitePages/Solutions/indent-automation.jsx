@@ -14,7 +14,6 @@ import Footer from "../../components/footer";
 import BussinessBenifits from "../../components/Solutions/IndentAutomation/bussiness-benifits";
 
 // Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import IndentAutomationHero from "../../assets/Solutions/IndentAutomation/indent-automation-hero.webp";
 import IndentAutomation from "../../assets/Solutions/IndentAutomation/why-indent-automation.webp";
 import CentralizedContractManagement from "../../assets/Solutions/IndentAutomation/centralized-contract-management.webp";
@@ -64,8 +63,12 @@ const FreightSourcingAndReverseAuction = () => {
           name="description"
           content="Automate freight indent assignment with CargoPro’s intelligent contract-based system. Get best-rate transporter selection, real-time notifications, and full audit logs for faster, error-free dispatch."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
       <Navbar />
       <HeroSection

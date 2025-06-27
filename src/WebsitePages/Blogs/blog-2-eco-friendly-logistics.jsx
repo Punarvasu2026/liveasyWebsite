@@ -12,7 +12,6 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-2/blog-2-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-2/blog-2-image.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-2/optimized-routes-lower-emissions.webp";
@@ -90,8 +89,12 @@ const Blog1 = () => {
           name="description"
           content="Discover how CargoPro’s AI-powered Transportation Management System optimizes routes, manages fleets intelligently, digitizes workflows, and unifies logistics operations to reduce carbon emissions and promote sustainable freight transport."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
       <Navbar />
       <BlogsHero

@@ -12,7 +12,6 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-16/blog-16-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-17/blog-17-image.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-17/real-time-data-capture.webp";
@@ -90,8 +89,12 @@ const Blog17 = () => {
           name="description"
           content="Learn how CargoPro’s Digital Proof of Delivery (POD) solution automates invoicing, reduces errors, ensures regulatory compliance, and improves customer satisfaction for faster cash flow in logistics."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
 
       <Navbar />

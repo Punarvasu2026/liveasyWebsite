@@ -12,7 +12,6 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-10/blog-10-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-10/blog-10-image.webp";
 import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-10/weight-and-volume.webp";
@@ -195,8 +194,12 @@ const Blog10 = () => {
           name="description"
           content="Explore the key factors driving higher freight costs in the steel industry, including weight, specialized handling, sourcing challenges, and industry-specific risks. Learn how CargoPro’s smart logistics solutions help optimize steel freight for cost efficiency."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
 
       <Navbar />

@@ -65,6 +65,7 @@ const CargoProBenefits = () => {
                 <img
                   src={box.image}
                   alt={box.title}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>

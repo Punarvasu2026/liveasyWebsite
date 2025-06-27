@@ -8,6 +8,7 @@ const LogisticsInfoBlock = ({ imageSrc, text }) => {
         <img
           src={imageSrc}
           alt="Logistics Info"
+          loading="lazy"
           className="w-[618px] h-[389px] rounded-[12px] object-cover"
         />
 

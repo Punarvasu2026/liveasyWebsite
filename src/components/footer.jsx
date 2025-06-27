@@ -14,6 +14,7 @@ const Footer = () => {
               <img
                 src={CargoProLogo} // <-- Replace with your logo path or import
                 alt="CargoPro Logo"
+                loading="lazy"
                 className="w-8 h-8 object-contain"
               />
               <h2 className="text-xl font-semibold">CargoPro</h2>
@@ -29,10 +30,10 @@ const Footer = () => {
             <h3 className="font-bold text-[17px]">Get in Touch</h3>
             <p className="text-sm">+91 89052 46537</p>
             <a
-              href="mailto:hello@cargopro.ai"
-              className="text-sm underline hover:text-gray-200"
+              href="mailto:&#105;&#110;&#102;&#111;&#64;&#99;&#97;&#114;&#103;&#111;&#112;&#114;&#111;&#46;&#97;&#105;"
+              className="text-sm hover:underline hover:text-gray-200 no-underline"
             >
-              hello@cargopro.ai
+              &#105;&#110;&#102;&#111;&#64;&#99;&#97;&#114;&#103;&#111;&#112;&#114;&#111;&#46;&#97;&#105;
             </a>
           </div>
         </div>

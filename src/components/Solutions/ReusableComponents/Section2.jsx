@@ -24,6 +24,7 @@ const SmartFreightManagement = ({ heading, points, imageSrc }) => {
           <img
             src={imageSrc}
             alt={heading}
+            loading="lazy"
             className="w-full max-w-[694px] h-auto rounded-[8px] object-cover"
           />
         </div>

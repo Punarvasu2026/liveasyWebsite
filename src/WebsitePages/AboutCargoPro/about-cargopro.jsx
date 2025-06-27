@@ -12,7 +12,6 @@ import WhyWorkWithUs from "../../components/AboutUs/why-work-with-us";
 import BlogsHeroSection from "../../components/Blogs/Blog/blogs-hero-section";
 
 //Images
-import CargoProLogo from "../../assets/CargoProLogo.webp";
 import BackgroundImage from "../../assets/AboutCargoPro/about-us-bg.webp";
 
 const AboutUs = () => {
@@ -24,8 +23,12 @@ const AboutUs = () => {
           name="description"
           content="CargoPro is a leading AI-powered Transport Management System (TMS) platform offering innovative freight sourcing, indent management, real-time tracking, and automated invoicing solutions to optimize supply chain operations and reduce logistics costs."
         />
-        <link rel="icon" type="image/x-icon" href={CargoProLogo} />
-        <link rel="apple-touch-icon" sizes="180x180" href={CargoProLogo} />
+        <link rel="icon" type="image/webp" href="/CargoProLogo.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/CargoProLogo.webp"
+        />
       </Helmet>
       <Navbar />
       <BlogsHeroSection
