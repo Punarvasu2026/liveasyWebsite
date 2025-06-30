@@ -12,19 +12,13 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-11/blog-11-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-11/blog-11-image.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-11/reducing-logistics-cost.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-11/digital-transformations.webp";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-11/comprehensive-logistics-action-plan.webp";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-11/economic-developmemt.webp";
-import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-11/enhancing-customer-experience.webp";
 
 const Blog11 = () => {
   const sections = [
     {
       heading: "Reducing Logistics Cost",
-      image: RevolutionizingLogisticsImage1,
+      image: "/images/Blogs/blog-11/reducing-logistics-cost.webp",
       paragraph: (
         <>
           India’s current logistics cost is considerably higher than that of
@@ -48,7 +42,7 @@ const Blog11 = () => {
     },
     {
       heading: "Digital Transformation in Logistics",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-11/digital-transformations.webp",
       paragraph: (
         <>
           The logistics sector has long relied on traditional methods, resulting
@@ -82,7 +76,7 @@ const Blog11 = () => {
     },
     {
       heading: "Comprehensive Logistics Action Plan (CLAP)",
-      image: RevolutionizingLogisticsImage3,
+      image: "/images/Blogs/blog-11/comprehensive-logistics-action-plan.webp",
       paragraph: (
         <>
           To bring structure to its vision, NLP includes a Comprehensive
@@ -99,7 +93,7 @@ const Blog11 = () => {
     },
     {
       heading: "Economic Development and Global Competitiveness",
-      image: RevolutionizingLogisticsImage4,
+      image: "/images/Blogs/blog-11/economic-developmemt.webp",
       paragraph: (
         <>
           The policy envisions the logistics sector as a growth engine for
@@ -123,7 +117,7 @@ const Blog11 = () => {
     },
     {
       heading: "Enhancing Customer Experience",
-      image: RevolutionizingLogisticsImage5,
+      image: "/images/Blogs/blog-11/enhancing-customer-experience.webp",
       paragraph: (
         <>
           Customer expectations have evolved — they now demand real-time
@@ -164,25 +158,23 @@ const Blog11 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-12-cover-image.webp",
       heading:
-        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
-      date: "January 10, 2025",
-      link: "/blogs/revolutionizing-logistics",
+        "Efficiency at Every Step – Automated Invoicing and Simplifying Logistics with CargoPro",
+      date: "January 26, 2025",
+      link: "/blogs/automated-invoicing-and-simplifying-logistics",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
+      image: "/images/Blogs/blogs-cover-images/blog-13-cover-image.webp",
+      heading: "The Benefits of Automated Indent Management for Procurement",
+      date: "January 26, 2025",
+      link: "/blogs/benifits-of-automated-indent-management",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-      date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+      image: "/images/Blogs/blogs-cover-images/blog-14-cover-image.webp",
+      heading: "How to Streamline Yard Management with In-Plant Optimization",
+      date: "January 26, 2025",
+      link: "/blogs/how-to-streamline-yard-management-with-in-plant-optimization",
     },
   ];
 
@@ -200,12 +192,29 @@ const Blog11 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
 
       <Navbar />
       <BlogsHero
         heading="National Logistics Policy 2022 – Explained"
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/blog-11/blog-11-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}

@@ -12,19 +12,13 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-13/blog-13-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-13/blog-13-image.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-13/increase-efficiency.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-13/improves-accuracy-and-reduces-errors.webp";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-13/enhances-transperency-and-control.webp";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-13/faster-approval-workflows.webp";
-import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-13/seamless-integration.webp";
 
 const Blog13 = () => {
   const sections = [
     {
       heading: "Increases Efficiency",
-      image: RevolutionizingLogisticsImage1,
+      image: "/images/Blogs/blog-13/increase-efficiency.webp",
       paragraph: (
         <>
           Automated systems eliminate the need for repetitive manual tasks such
@@ -36,7 +30,7 @@ const Blog13 = () => {
     },
     {
       heading: "Improves Accuracy and Reduces Errors",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-13/improves-accuracy-and-reduces-errors.webp",
       paragraph: (
         <>
           Manual data entry often leads to mistakes in quantities,
@@ -48,7 +42,7 @@ const Blog13 = () => {
     },
     {
       heading: "Enhances Transparency and Control",
-      image: RevolutionizingLogisticsImage3,
+      image: "/images/Blogs/blog-13/enhances-transperency-and-control.webp",
       paragraph: (
         <>
           Automated systems allow for real-time tracking and monitoring of each
@@ -61,7 +55,7 @@ const Blog13 = () => {
     },
     {
       heading: "Faster Approval Workflows",
-      image: RevolutionizingLogisticsImage4,
+      image: "/images/Blogs/blog-13/faster-approval-workflows.webp",
       paragraph: (
         <>
           CargoPro helps companies create customized workflows that
@@ -73,7 +67,7 @@ const Blog13 = () => {
     },
     {
       heading: "Seamless Integration with Procurement Ecosystem",
-      image: RevolutionizingLogisticsImage5,
+      image: "/images/Blogs/blog-13/seamless-integration.webp",
       paragraph: (
         <>
           CargoPro supports integration with inventory systems, order processing
@@ -101,25 +95,23 @@ const Blog13 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
-      heading:
-        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
-      date: "January 10, 2025",
-      link: "/blogs/revolutionizing-logistics",
+      image: "/images/Blogs/blogs-cover-images/blog-14-cover-image.webp",
+      heading: "How to Streamline Yard Management with In-Plant Optimization",
+      date: "January 26, 2025",
+      link: "/blogs/how-to-streamline-yard-management-with-in-plant-optimization",
     },
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-15-cover-image.webp",
       heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
+        "Achieving End-to-End Visibility with Logistics Tracking Solutions",
+      date: "January 26, 2025",
+      link: "/blogs/achieving-end-to-end-visibility-with-logistics-tracking-solutions",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-      date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+      image: "/images/Blogs/blogs-cover-images/blog-16-cover-image.webp",
+      heading: "The Power of Data-Driven Logistics Analytics and Insights",
+      date: "January 26, 2025",
+      link: "/blogs/the-power-of-data-driven-logistics-analytics-and-insights",
     },
   ];
 
@@ -139,12 +131,29 @@ const Blog13 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
 
       <Navbar />
       <BlogsHero
         heading="The Benefits of Automated Indent Management for Procurement"
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/blog-13/blog-13-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}

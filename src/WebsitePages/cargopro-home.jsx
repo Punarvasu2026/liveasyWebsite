@@ -1,6 +1,7 @@
 //External Libraries
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 
 //Components
 import NavBar from "../components/navbar";
@@ -14,10 +15,16 @@ import Reviews from "../components/reviews";
 import CargoProBookDemo from "../components/cargopro-book-demo";
 import Footer from "../components/footer";
 
-//Images
-import HeroImage from "../assets/CargoProIndexPage/cargopro-putting-your-logistics.webp";
-
 const Home = () => {
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "auto" }); // jump instantly
+      }
+    }
+  }, []);
   return (
     <>
       <Helmet>
@@ -27,6 +34,23 @@ const Home = () => {
           rel="apple-touch-icon"
           sizes="180x180"
           href="/CargoProLogo.webp"
+        />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
         />
       </Helmet>
       <NavBar />
@@ -47,13 +71,15 @@ const Home = () => {
             Logistics Operations
           </>
         }
-        image={HeroImage}
+        image="/images/CargoProIndexPage/cargopro-putting-your-logistics.webp"
         buttonLabel="Schedule Demo"
         onButtonClick={() => alert("Demo Scheduled!")}
       />
       <TrustedBy />
       <AboutUs />
-      <WhyChooseCargoPro />
+      <div id="whyChooseCargoPro">
+        <WhyChooseCargoPro />
+      </div>
       <SolutionsSection />
       <CargoProSteps />
       <Reviews />

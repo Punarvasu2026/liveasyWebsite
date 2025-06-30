@@ -12,9 +12,6 @@ import RealTimeTrackingBenifits from "../../components/Solutions/Tracking/real-t
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import Footer from "../../components/footer";
 
-// Images
-import TrackingHero from "../../assets/Solutions/Tracking/live-tracking.webp";
-
 const Tracking = () => {
   return (
     <>
@@ -29,6 +26,23 @@ const Tracking = () => {
           rel="apple-touch-icon"
           sizes="180x180"
           href="/CargoProLogo.webp"
+        />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
         />
       </Helmet>
       <Navbar />
@@ -47,7 +61,7 @@ const Tracking = () => {
             <br /> about vehicle compliance and reliability.
           </>
         }
-        image={TrackingHero} // Adjust the path as necessary
+        image="/images/Solutions/Tracking/live-tracking.webp" // Adjust the path as necessary
         buttonLabel="Schedule Demo"
         onButtonClick={() => alert("Demo Scheduled!")}
       />

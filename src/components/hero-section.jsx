@@ -1,9 +1,5 @@
 import React from "react";
 
-//Images
-import Arrow from "../assets/Pointer_Arrow.webp";
-import BottomShape from "../assets/Vector_3.webp";
-
 const HeroSection = ({
   heading,
   content,
@@ -15,7 +11,7 @@ const HeroSection = ({
     <div className="relative bg-[#F0F3Fc] overflow-hidden">
       {/* Background Shape - Desktop Only */}
       <img
-        src={BottomShape}
+        src="images/Vector_3.webp"
         alt="Background Shape"
         loading="lazy"
         className="absolute pointer-events-none z-0 hidden lg:block"
@@ -68,7 +64,7 @@ const HeroSection = ({
 
               {/* Arrow - Desktop */}
               <img
-                src={Arrow}
+                src="/images/Pointer_Arrow.webp"
                 alt="Arrow"
                 className="absolute hidden sm:block"
                 style={{
@@ -84,7 +80,7 @@ const HeroSection = ({
 
               {/* Arrow - Mobile */}
               <img
-                src={Arrow}
+                src="images/Pointer_Arrow.webp"
                 alt="Arrow Mobile"
                 className="absolute block sm:hidden"
                 style={{

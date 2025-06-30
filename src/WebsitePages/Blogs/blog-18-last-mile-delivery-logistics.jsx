@@ -11,44 +11,37 @@ import Footer from "../../components/footer";
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
-//Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-18/blog-18-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-18/blog-18-image.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-18/real-time-route-optimization.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-18/smart-delivery-management.webp";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-18/dynamic-capaccity-adjustments.webp";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-18/customer-centric-delivery-options.webp";
-import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-18/seamless-communication.webp";
 
 const Blog18 = () => {
   const sections = [
     {
       heading: "Real-Time Route Optimization",
-      image: RevolutionizingLogisticsImage1,
+      image: "/images/Blogs/blog-18/real-time-route-optimization.webp",
       paragraph:
         "CargoPro’s dynamic routing engine recalculates optimal routes based on real-time traffic and delivery constraints. This reduces fuel use and shortens delivery times, significantly improving operational efficiency.",
     },
     {
       heading: "Smart Delivery Management",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-18/smart-delivery-management.webp",
       paragraph:
         "CargoPro provides delivery tracking dashboards and mobile apps that keep dispatchers, drivers, and customers informed. Real-time visibility helps resolve issues promptly and enhances communication across stakeholders.",
     },
     {
       heading: "Dynamic Capacity Adjustments",
-      image: RevolutionizingLogisticsImage3,
+      image: "/images/Blogs/blog-18/dynamic-capaccity-adjustments.webp",
       paragraph:
         "Demand fluctuates based on time of day, season, or promotional events. CargoPro allows logistics teams to scale delivery resources—vehicles, drivers, and time slots—based on live demand, ensuring responsiveness and cost control.",
     },
     {
       heading: "Customer-Centric Delivery Options",
-      image: RevolutionizingLogisticsImage4,
+      image: "/images/Blogs/blog-18/customer-centric-delivery-options.webp",
       paragraph:
         "Personalized delivery windows and delivery preferences are key to customer satisfaction. CargoPro supports these features natively, giving businesses the ability to offer flexible, customer-focused delivery options",
     },
     {
       heading: "Seamless Communication",
-      image: RevolutionizingLogisticsImage5,
+      image: "/images/Blogs/blog-18/seamless-communication.webp",
       paragraph:
         "CargoPro connects drivers, dispatchers, and end customers in real-time. Whether it’s delivery updates, proof of delivery, or special instructions, our platform ensures clear, timely communication.",
     },
@@ -63,25 +56,25 @@ const Blog18 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-19-cover-image.webp",
       heading:
-        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
-      date: "January 10, 2025",
-      link: "/blogs/revolutionizing-logistics",
+        "Elevating Warehouse Efficiency – The Path to Digital Transformation",
+      date: "January 26, 2025",
+      link: "/blogs/elevating-warehouse-efficiency",
     },
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-20-cover-image.webp",
       heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
+        "Seamless Integration of Transportation and Warehouse Management Systems",
+      date: "January 26, 2025",
+      link: "/blogs/seamless-integration-of-transportation-and-warehouse-management",
     },
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-21-cover-image.webp",
       heading:
-        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-      date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+        "Streamlining Logistics Operations – The Benefits of Automated Indent Management",
+      date: "January 26, 2025",
+      link: "/blogs/seamless-logistics-operations",
     },
   ];
 
@@ -101,6 +94,23 @@ const Blog18 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
 
       <Navbar />
@@ -116,7 +126,7 @@ const Blog18 = () => {
             data silos, and delayed decision-making.
           </>
         }
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/blog-18/blog-18-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}

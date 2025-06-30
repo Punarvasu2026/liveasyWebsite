@@ -1,25 +1,19 @@
 import React from "react";
-import TrackingImage1 from "../../../assets/Solutions/Tracking/real-time-locations-updates.webp";
-import TrackingImage2 from "../../../assets/Solutions/Tracking/360-degree-visibility.webp";
-import TrackingImage3 from "../../../assets/Solutions/Tracking/Fastag-powered-tracking.webp";
-import TrackingImage4 from "../../../assets/Solutions/Tracking/complete-vehicle-profile-access.webp";
-import TrackingImage5 from "../../../assets/Solutions/Tracking/centralized-dashboard.webp";
-
 const smallBoxes = [
   {
-    image: TrackingImage1,
+    image: "/images/Solutions/Tracking/real-time-locations-updates.webp",
     title: "Real-Time Location Updates",
     description:
       "Track vehicle movement in real-time using SIM-based or app-based GPS, depending on your preference or transporter compatibility.",
   },
   {
-    image: TrackingImage2,
+    image: "/images/Solutions/Tracking/360-degree-visibility.webp",
     title: "360° Visibility for High-Value Goods",
     description:
       "From loading to final delivery, stay in sync on every move. Perfect for sensitive or high-value goods needing close monitoring.",
   },
   {
-    image: TrackingImage3,
+    image: "/images/Solutions/Tracking/Fastag-powered-tracking.webp",
     title: "FASTag–Powered Tracking Layer",
     description:
       "FASTag integration adds another layer of visibility — get alerts when your vehicle crosses toll booths for better route accountability.",
@@ -28,13 +22,13 @@ const smallBoxes = [
 
 const bigBoxes = [
   {
-    image: TrackingImage4,
+    image: "/images/Solutions/Tracking/complete-vehicle-profile-access.webp",
     title: "Complete Vehicle Profile Access",
     description:
       "Get transparency into the vehicle details carrying your load — from documentation to legal status — before and during transit.",
   },
   {
-    image: TrackingImage5,
+    image: "/images/Solutions/Tracking/centralized-dashboard.webp",
     title: "Centralized Dashboard for All Movements",
     description:
       "No more fragmented updates. Get a unified view of ongoing, completed, and delayed shipments — updated in real–time.",

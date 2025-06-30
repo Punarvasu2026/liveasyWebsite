@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ErrorImage from "./assets/404_illustration.webp"; // Replace with your actual image path
 
 const Error404Page = () => {
   return (
     <div className="min-h-screen bg-[#F9FAFC] flex flex-col items-center justify-center px-6 py-16 text-center">
       <div className="w-full max-w-xl bg-white p-8 rounded-2xl shadow-md border border-gray-100">
         <img
-          src={ErrorImage}
+          src="/images/404_illustration.webp"
           alt="404 Illustration"
           className="w-full max-w-xs mx-auto mb-8"
         />

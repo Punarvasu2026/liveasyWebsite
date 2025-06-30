@@ -1,5 +1,4 @@
 import React from "react";
-import GradientDecoration from "../assets/gradient-decoration.webp"; // update the path as needed
 
 const ReviewCard = ({ stars = 5, text }) => {
   return (
@@ -24,7 +23,7 @@ const ReviewCard = ({ stars = 5, text }) => {
 
       {/* Gradient Decoration Image */}
       <img
-        src={GradientDecoration}
+        src="/images/gradient-decoration.webp"
         alt="Gradient Decoration"
         loading="lazy"
         className="absolute bottom-0 right-0 w-[90px] md:w-[120px] z-0"

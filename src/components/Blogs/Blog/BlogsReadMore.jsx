@@ -1,140 +1,166 @@
 import React, { useState } from "react";
 import InsightsCard from "./BlogsCard";
-import BlogCardImage1 from "../../../assets/Blogs/Blog/blog-card-image-1.webp";
 
 const allInsights = [
   {
-    image: BlogCardImage1,
-    heading:
-      "Eco-Friendly Logistics: Reducing Carbon Footprint Through Digital Innovation with CargoPro",
-    date: "January 10, 2025",
-    link: "/blogs/eco-friendly-logistics",
-  },
-  {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-1-cover-image.webp",
     heading:
       "Revolutionizing Procurement and Indent Management with CargoPro’s Automated TMS Platform",
     date: "January 27, 2025",
     link: "/blogs/revolutionizing-procurement",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-2-cover-image.webp",
+    heading:
+      "Eco-Friendly Logistics: Reducing Carbon Footprint Through Digital Innovation with CargoPro",
+    date: "January 10, 2025",
+    link: "/blogs/eco-friendly-logistics",
+  },
+  {
+    image: "/images/Blogs/blogs-cover-images/blog-3-cover-image.webp",
     heading:
       "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
     date: "January 18, 2025",
     link: "/blogs/say-goodbye-to-invoicing-hassles",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-4-cover-image.webp",
     heading:
       "Breaking Barriers: Overcoming Challenges in Implementing Digital Logistics Solutions with CargoPro",
     date: "January 15, 2025",
     link: "/blogs/digital-solution-challenges",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-5-cover-image.webp",
     heading:
       "Digital Transformation Strategies for Logistics Companies: The CargoPro Edge",
     date: "January 9, 2025",
     link: "/blogs/digital-transformation-strategies",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-6-cover-image.webp",
     heading:
       "Optimizing Resources and Safety: The Role of Automation in In-Plant Vehicle Movement with CargoPro",
     date: "January 26, 2025",
     link: "/blogs/in-plant-automation",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-7-cover-image.webp",
     heading: "How Digitization Helps in Cutting Down Freight Cost",
     date: "January 26, 2025",
     link: "/blogs/digitization-helps-cutting-down-freight-cost",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-8-cover-image.webp",
     heading: "How to Choose the Right TMS: A Buyer’s Guide",
     date: "January 26, 2025",
     link: "/blogs/how-to-choose-the-right-tms",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-9-cover-image.webp",
     heading:
       "Big Data and Predictive Analytics in Logistics: A Game Changer for Achieving End-to-End Supply Chain Visibility",
     date: "January 26, 2025",
     link: "/blogs/big-data-and-predictive-analytics-in-logistics",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-10-cover-image.webp",
     heading: "Why Freight Cost is Higher in the Steel Industry?",
     date: "January 26, 2025",
     link: "/blogs/why-freight-cost-is-higher-in-the-steel-industry",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-11-cover-image.webp",
     heading: "National Logistics Policy 2022 – Explained",
     date: "January 26, 2025",
     link: "/blogs/national-logistics-policy-2022",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-12-cover-image.webp",
     heading:
       "Efficiency at Every Step – Automated Invoicing and Simplifying Logistics with CargoPro",
     date: "January 26, 2025",
     link: "/blogs/automated-invoicing-and-simplifying-logistics",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-13-cover-image.webp",
     heading: "The Benefits of Automated Indent Management for Procurement",
     date: "January 26, 2025",
     link: "/blogs/benifits-of-automated-indent-management",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-14-cover-image.webp",
     heading: "How to Streamline Yard Management with In-Plant Optimization",
     date: "January 26, 2025",
     link: "/blogs/how-to-streamline-yard-management-with-in-plant-optimization",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-15-cover-image.webp",
     heading:
       "Achieving End-to-End Visibility with Logistics Tracking Solutions",
     date: "January 26, 2025",
     link: "/blogs/achieving-end-to-end-visibility-with-logistics-tracking-solutions",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-16-cover-image.webp",
     heading: "The Power of Data-Driven Logistics Analytics and Insights",
     date: "January 26, 2025",
     link: "/blogs/the-power-of-data-driven-logistics-analytics-and-insights",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-17-cover-image.webp",
     heading: "How to Leverage Digital Proof of Delivery for Faster Invoicing",
     date: "January 26, 2025",
     link: "/blogs/digital-proof-of-delivery",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-18-cover-image.webp",
     heading: "Top Techniques for Optimizing Last Mile Delivery Logistics",
     date: "January 26, 2025",
     link: "/blogs/last-mile-delivery",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-19-cover-image.webp",
     heading:
       "Elevating Warehouse Efficiency – The Path to Digital Transformation",
     date: "January 26, 2025",
     link: "/blogs/elevating-warehouse-efficiency",
   },
   {
-    image: BlogCardImage1,
+    image: "/images/Blogs/blogs-cover-images/blog-20-cover-image.webp",
     heading:
       "Seamless Integration of Transportation and Warehouse Management Systems",
     date: "January 26, 2025",
     link: "/blogs/seamless-integration-of-transportation-and-warehouse-management",
   },
-  // ...repeat for remaining items
+  {
+    image: "/images/Blogs/blogs-cover-images/blog-21-cover-image.webp",
+    heading:
+      "Streamlining Logistics Operations – The Benefits of Automated Indent Management",
+    date: "January 26, 2025",
+    link: "/blogs/seamless-logistics-operations",
+  },
+  {
+    image: "/images/Blogs/blogs-cover-images/blog-22-cover-image.webp",
+    heading:
+      "Efficiency at Every Step – How Automated Invoicing is Simplifying Logistics",
+    date: "January 26, 2025",
+    link: "/blogs/how-automated-invoicing-in-simplifying-logistics",
+  },
+  {
+    image: "/images/Blogs/blogs-cover-images/blog-23-cover-image.webp",
+    heading:
+      "Mastering Multi-Carrier Shipments and Orders – Best Practices for Modern Logistics",
+    date: "January 26, 2025",
+    link: "/blogs/mastering-multi-carrier-shipments-and-orders",
+  },
+  {
+    image: "/images/Blogs/blogs-cover-images/blog-24-cover-image.webp",
+    heading:
+      "Revolutionizing Freight Transport – How Automation is Reshaping Logistics",
+    date: "January 26, 2025",
+    link: "/blogs/revolutionizing-freight-transport",
+  },
 ];
 
 const InsightsPage = () => {

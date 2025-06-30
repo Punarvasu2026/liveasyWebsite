@@ -13,14 +13,6 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import Footer from "../../components/footer";
 import WhyInvoicing from "../../components/Solutions/Invoicing/why-invoicing";
 
-// Images
-import InvoicingHero from "../../assets/Solutions/Invoicing/Invoicing.webp";
-import InvoicingSectionImage from "../../assets/Solutions/Invoicing/automated-freight-billing.webp";
-import InvoicingDigitalRecords from "../../assets/Solutions/Invoicing/digital-records-for-audit.webp";
-import OneClickInvoice from "../../assets/Solutions/Invoicing/one-click-invoice-generation.webp";
-import SmartReviewAndDeduction from "../../assets/Solutions/Invoicing/smart-review-and-deduction.webp";
-import VisibilityFromAllEnds from "../../assets/Solutions/Invoicing/visibility-from-all-ends.webp";
-
 const Invoicing = () => {
   const heading = (
     <>
@@ -74,6 +66,23 @@ const Invoicing = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
       <Navbar />
       <HeroSection
@@ -92,13 +101,13 @@ const Invoicing = () => {
             transparent payment cycles.
           </>
         }
-        image={InvoicingHero} // Adjust the path as necessary
+        image="/images/Solutions/Invoicing/Invoicing.webp"
         buttonLabel="Schedule Demo"
         onButtonClick={() => alert("Demo Scheduled!")}
       />
       <TrustedBy />
       <SolutionsSection1
-        imageSrc={InvoicingSectionImage}
+        imageSrc="/images/Solutions/Invoicing/automated-freight-billing.webp"
         heading={heading}
         text={text}
       />
@@ -110,7 +119,7 @@ const Invoicing = () => {
           </>
         }
         points={oneClickInvoicePoints}
-        imageSrc={OneClickInvoice}
+        imageSrc="/images/Solutions/Invoicing/one-click-invoice-generation.webp"
       />
 
       <SolutionsSection3
@@ -120,12 +129,12 @@ const Invoicing = () => {
           </>
         }
         points={SmartReviewAndDeductionPoints}
-        mainImage={SmartReviewAndDeduction}
+        mainImage="/images/Solutions/Invoicing/smart-review-and-deduction.webp"
       />
       <SolutionsSection2
         heading={<>Visibility From all Ends</>}
         points={VisibilityFromAllEndsPoints}
-        imageSrc={VisibilityFromAllEnds}
+        imageSrc="/images/Solutions/Invoicing/visibility-from-all-ends.webp"
       />
       <SolutionsSection3
         heading={
@@ -135,7 +144,7 @@ const Invoicing = () => {
           </>
         }
         points={DigitalRecordsPoints}
-        mainImage={InvoicingDigitalRecords}
+        mainImage="/images/Solutions/Invoicing/digital-records-for-audit.webp"
       />
       <CargoProBookDemo
         heading={
@@ -161,4 +170,3 @@ const Invoicing = () => {
 };
 
 export default Invoicing;
-// This component can be used in your main application file or routed as needed.

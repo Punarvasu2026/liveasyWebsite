@@ -1,8 +1,8 @@
-//External Libraries
+// External Libraries
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-//Components
+// Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
 import BlogsSection1 from "../../components/Blogs/ReusableComponents/blogs-section-1";
 import ContentSection from "../../components/Blogs/ReusableComponents/blogs-content-section";
@@ -11,20 +11,15 @@ import Footer from "../../components/footer";
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
-//Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-3/blog-3-bg.webp";
+// Images
 import logisticsImage from "../../assets/Blogs/blog-3/blog-3-image.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-3/seamless-and-instant-invoice-generation.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-3/higher-accuracy-fewer-disputes.webp";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-3/centralized-invoice-tracking-and-visibility.webp";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-3/save-time-cut-costs.webp";
-import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-3/better-shipper-experience.webp";
 
-const Blog2 = () => {
+const Blog3 = () => {
   const sections = [
     {
       heading: "Seamless & Instant Invoice Generation",
-      image: RevolutionizingLogisticsImage1,
+      image:
+        "/images/Blogs/blog-3/seamless-and-instant-invoice-generation.webp",
       paragraph: (
         <>
           Say goodbye to spreadsheets and manual paperwork. <br />
@@ -42,7 +37,7 @@ const Blog2 = () => {
     },
     {
       heading: "Higher Accuracy, Fewer Disputes",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-3/higher-accuracy-fewer-disputes.webp",
       paragraph: (
         <>
           Manual invoicing often leads to costly errors — typos, wrong
@@ -65,7 +60,8 @@ const Blog2 = () => {
     },
     {
       heading: "Centralized Invoice Tracking & Visibility",
-      image: RevolutionizingLogisticsImage3,
+      image:
+        "/images/Blogs/blog-3/centralized-invoice-tracking-and-visibility.webp",
       paragraph: (
         <>
           With CargoPro’s unified dashboard: <br />
@@ -87,7 +83,7 @@ const Blog2 = () => {
     },
     {
       heading: "Save Time, Cut Costs",
-      image: RevolutionizingLogisticsImage4,
+      image: "/images/Blogs/blog-3/save-time-cut-costs.webp",
       paragraph: (
         <>
           Time is money — especially in logistics. <br />
@@ -105,7 +101,7 @@ const Blog2 = () => {
     },
     {
       heading: "Better Shipper Experience = Stronger Relationships",
-      image: RevolutionizingLogisticsImage5,
+      image: "/images/Blogs/blog-3/better-shipper-experience.webp",
       paragraph: (
         <>
           CargoPro ensures that clients receive branded, on-time, and clear
@@ -146,25 +142,25 @@ const Blog2 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-4-cover-image.webp",
       heading:
-        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
-      date: "January 10, 2025",
-      link: "/blogs/revolutionizing-logistics",
+        "Breaking Barriers: Overcoming Challenges in Implementing Digital Logistics Solutions with CargoPro",
+      date: "January 15, 2025",
+      link: "/blogs/digital-solution-challenges",
     },
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-5-cover-image.webp",
       heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
+        "Digital Transformation Strategies for Logistics Companies: The CargoPro Edge",
+      date: "January 9, 2025",
+      link: "/blogs/digital-transformation-strategies",
     },
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-6-cover-image.webp",
       heading:
-        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-      date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+        "Optimizing Resources and Safety: The Role of Automation in In-Plant Vehicle Movement with CargoPro",
+      date: "January 26, 2025",
+      link: "/blogs/in-plant-automation",
     },
   ];
 
@@ -185,11 +181,28 @@ const Blog2 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
       <Navbar />
       <BlogsHero
         heading="Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management with CargoPro"
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/blog-3/blog-3-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}
@@ -229,4 +242,4 @@ const Blog2 = () => {
   );
 };
 
-export default Blog2;
+export default Blog3;

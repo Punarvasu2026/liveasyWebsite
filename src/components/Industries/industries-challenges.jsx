@@ -1,14 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-// Images
-import IndustriesComplicatedInvoicing from "../../assets/Industries/complicated-invoicing.webp";
-import IndustriesInefficientInPlantVehicleMovement from "../../assets/Industries/inefficient-in-plant-vehicle-movement.webp";
-import IndustriesIndentManagement from "../../assets/Industries/indent-management.webp";
-import IndustriesLackOfTransparency from "../../assets/Industries/lack-of-transperency.webp";
-import IndustriesManualDisparateDataSources from "../../assets/Industries/manual-data-sources.webp";
-import IndustriesTraditionalTrackingMethods from "../../assets/Industries/traditional-tracking-method.webp";
-
 const ChallengesSection = () => {
   const navigate = useNavigate();
 
@@ -17,42 +9,42 @@ const ChallengesSection = () => {
       title: "Lack Of transparency",
       description:
         "The freight transportation industry lacks a transparent and efficient process for shippers to source and negotiate with providers, leading to time-consuming and complex logistics operations.",
-      image: IndustriesLackOfTransparency,
+      image: "/images/Industries/lack-of-transperency.webp",
       link: "/blogs/revolutionizing-logistics",
     },
     {
       title: "Indent Management",
       description:
         "Many businesses struggle with manual and error-prone indent management processes, leading to delays, inaccuracies, and inefficiencies in the procurement of goods.",
-      image: IndustriesIndentManagement,
+      image: "/images/Industries/indent-management.webp",
       link: "/blogs/benifits-of-automated-indent-management",
     },
     {
       title: "Inefficient In-Plant Vehicle Movement",
       description:
         "Inefficient in-plant vehicle movement can increase costs, reduce productivity, and pose safety risks. Traditional manual management is time-consuming, error-prone, and inefficient in resource usage.",
-      image: IndustriesInefficientInPlantVehicleMovement,
+      image: "/images/Industries/inefficient-in-plant-vehicle-movement.webp",
       link: "/blogs/how-to-streamline-yard-management-with-in-plant-optimization",
     },
     {
       title: "Traditional Tracking Methods",
       description:
         "Traditional tracking methods are inefficient, while modern tracking techniques such as GPS, mobile apps, location-based tracking, and sim-based tracking are highly efficient.",
-      image: IndustriesTraditionalTrackingMethods,
+      image: "/images/Industries/traditional-tracking-method.webp",
       link: "/blogs/achieving-end-to-end-visibility-with-logistics-tracking-solutions",
     },
     {
       title: "Manual & Disparate Data Sources",
       description:
         "Manual and disparate data sources used in logistics operations can lead to data silos and difficulty in tracking key performance metrics. This results in a lack of visibility into logistics operations and makes it difficult to identify areas for improvement.",
-      image: IndustriesManualDisparateDataSources,
+      image: "/images/Industries/manual-data-sources.webp",
       link: "/blogs/the-power-of-data-driven-logistics-analytics-and-insights",
     },
     {
       title: "Complicated Invoicing",
       description:
         "The logistics industry struggles with complex, paper-based invoicing processes causing inefficiencies, delays, and errors. Manual methods hinder invoice tracking and management, leading to transparency and visibility issues.",
-      image: IndustriesComplicatedInvoicing,
+      image: "/images/Industries/complicated-invoicing.webp",
       link: "/blogs/automated-invoicing-and-simplifying-logistics",
     },
   ];
@@ -71,7 +63,9 @@ const ChallengesSection = () => {
       {challengeData.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col md:flex-row items-center gap-[40px] md:gap-[80px] w-full max-w-[1280px] mx-auto"
+          className={`flex flex-col md:flex-row ${
+            index % 2 !== 0 ? "md:flex-row-reverse" : ""
+          } items-center gap-[40px] md:gap-[80px] w-full max-w-[1280px] mx-auto`}
         >
           <img
             src={item.image}

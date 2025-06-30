@@ -1,5 +1,4 @@
 import React from "react";
-import TakeControlOfYourLogistics from "../../../assets/Solutions/DashboardAndAnalytics/take-control-of-your-logistics.webp";
 
 const ControlTowerSection = () => {
   return (
@@ -31,7 +30,7 @@ const ControlTowerSection = () => {
         {/* Right Image */}
         <div className="w-full md:w-[790px] h-auto">
           <img
-            src={TakeControlOfYourLogistics} // 🔁 replace with actual image path
+            src="/images/Solutions/DashboardAndAnalytics/take-control-of-your-logistics.webp" // 🔁 replace with actual image path
             alt="Control Tower Illustration"
             loading="lazy"
             className="w-full h-auto"

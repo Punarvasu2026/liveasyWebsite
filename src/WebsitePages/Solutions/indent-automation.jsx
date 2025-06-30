@@ -13,15 +13,7 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import Footer from "../../components/footer";
 import BussinessBenifits from "../../components/Solutions/IndentAutomation/bussiness-benifits";
 
-// Images
-import IndentAutomationHero from "../../assets/Solutions/IndentAutomation/indent-automation-hero.webp";
-import IndentAutomation from "../../assets/Solutions/IndentAutomation/why-indent-automation.webp";
-import CentralizedContractManagement from "../../assets/Solutions/IndentAutomation/centralized-contract-management.webp";
-import IntelligentIndentAssignment from "../../assets/Solutions/IndentAutomation/intelligent-indent-assignment.webp";
-import RealTimeNotifications from "../../assets/Solutions/IndentAutomation/real-time-notification-and-acceptance.webp";
-import FullVisibilityLogs from "../../assets/Solutions/IndentAutomation/full-visibility-and-logs.webp";
-
-const FreightSourcingAndReverseAuction = () => {
+const IndentAutomation = () => {
   const heading = <>Why Indent Automation?</>;
 
   const text =
@@ -69,6 +61,23 @@ const FreightSourcingAndReverseAuction = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
       <Navbar />
       <HeroSection
@@ -89,20 +98,20 @@ const FreightSourcingAndReverseAuction = () => {
             <br /> consistency, and improving reliability.
           </>
         }
-        image={IndentAutomationHero} // Adjust the path as necessary
+        image="/images/Solutions/IndentAutomation/indent-automation-hero.webp"
         buttonLabel="Schedule Demo"
         onButtonClick={() => alert("Demo Scheduled!")}
       />
       <TrustedBy />
       <FreightSourcingSection1
-        imageSrc={IndentAutomation}
+        imageSrc="/images/Solutions/IndentAutomation/why-indent-automation.webp"
         heading={heading}
         text={text}
       />
       <SmartFreightSourcing
         heading="Centralized Contract Management"
         points={centralizedContractManagementpoints}
-        imageSrc={CentralizedContractManagement}
+        imageSrc="/images/Solutions/IndentAutomation/centralized-contract-management.webp"
       />
 
       <ReverseAuctionSection
@@ -112,7 +121,7 @@ const FreightSourcingAndReverseAuction = () => {
           </>
         }
         points={intelligentIndentAssignmentPoints}
-        mainImage={IntelligentIndentAssignment}
+        mainImage="/images/Solutions/IndentAutomation/intelligent-indent-assignment.webp"
       />
       <SmartFreightSourcing
         heading={
@@ -121,12 +130,12 @@ const FreightSourcingAndReverseAuction = () => {
           </>
         }
         points={realTimeNotificationAndAcceptancePoints}
-        imageSrc={RealTimeNotifications}
+        imageSrc="/images/Solutions/IndentAutomation/real-time-notification-and-acceptance.webp"
       />
       <ReverseAuctionSection
         heading={<>Full Visibility and Logs</>}
         points={fullVisibilityLogsPoints}
-        mainImage={FullVisibilityLogs}
+        mainImage="/images/Solutions/IndentAutomation/full-visibility-and-logs.webp"
       />
       <BussinessBenifits />
       <CargoProBookDemo
@@ -144,5 +153,4 @@ const FreightSourcingAndReverseAuction = () => {
   );
 };
 
-export default FreightSourcingAndReverseAuction;
-// This component can be used in your main application file or routed as needed.
+export default IndentAutomation;

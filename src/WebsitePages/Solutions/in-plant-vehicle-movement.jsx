@@ -12,13 +12,6 @@ import SolutionsSection1 from "../../components/Solutions/ReusableComponents/Sec
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import Footer from "../../components/footer";
 
-// Images
-import HeroImge from "../../assets/Solutions/InPlantVehicleMovement/in-plant-vehicle-movement-and-optimization.webp";
-import Section1Image from "../../assets/Solutions/InPlantVehicleMovement/maximize-facility-efficiency.webp";
-import StageWiseMonitoring from "../../assets/Solutions/InPlantVehicleMovement/stage-wise-process-monitoring.webp";
-import StayInformedAtEveryStep from "../../assets/Solutions/InPlantVehicleMovement/stay-informed-at-every-step.webp";
-import TurnAroundTime from "../../assets/Solutions/InPlantVehicleMovement/turnaround-time-optimization.webp";
-
 const InPlantVehicleMovement = () => {
   const heading = (
     <>
@@ -72,6 +65,23 @@ const InPlantVehicleMovement = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
       <Navbar />
       <HeroSection
@@ -89,13 +99,13 @@ const InPlantVehicleMovement = () => {
             turnaround time optimization.
           </>
         }
-        image={HeroImge} // Adjust the path as necessary
+        image="/images/Solutions/InPlantVehicleMovement/in-plant-vehicle-movement-and-optimization.webp"
         buttonLabel="Schedule Demo"
         onButtonClick={() => alert("Demo Scheduled!")}
       />
       <TrustedBy />
       <SolutionsSection1
-        imageSrc={Section1Image}
+        imageSrc="/images/Solutions/InPlantVehicleMovement/maximize-facility-efficiency.webp"
         heading={heading}
         text={text}
       />
@@ -117,7 +127,7 @@ const InPlantVehicleMovement = () => {
           </>
         }
         points={StageWiseProcessMonitoringPoints}
-        mainImage={StageWiseMonitoring}
+        mainImage="/images/Solutions/InPlantVehicleMovement/stage-wise-process-monitoring.webp"
       />
       <SolutionsSection2
         heading={
@@ -127,7 +137,7 @@ const InPlantVehicleMovement = () => {
           </>
         }
         points={TurnAroundTimePoints}
-        imageSrc={TurnAroundTime}
+        imageSrc="/images/Solutions/InPlantVehicleMovement/turnaround-time-optimization.webp"
       />
       <SolutionsSection3
         heading={
@@ -137,7 +147,7 @@ const InPlantVehicleMovement = () => {
           </>
         }
         points={StayInformedAtEveryStepPoints}
-        mainImage={StayInformedAtEveryStep}
+        mainImage="/images/Solutions/InPlantVehicleMovement/stay-informed-at-every-step.webp"
       />
       <CargoProBookDemo
         heading={
@@ -162,4 +172,3 @@ const InPlantVehicleMovement = () => {
 };
 
 export default InPlantVehicleMovement;
-// This component can be used in your main application file or routed as needed.

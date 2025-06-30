@@ -12,19 +12,13 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-10/blog-10-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-10/blog-10-image.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-10/weight-and-volume.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-10/specialized-handling-and-equipment.webp";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-10/raw-material-sourcing.webp";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-10/distance-and-location.webp";
-import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-10/industry-specific-challenges.webp";
 
 const Blog10 = () => {
   const sections = [
     {
       heading: "Weight and Volume",
-      image: RevolutionizingLogisticsImage1,
+      image: "/images/Blogs/blog-10/weight-and-volume.webp",
       paragraph: (
         <>
           Steel is known for its density and durability—but those same qualities
@@ -49,7 +43,7 @@ const Blog10 = () => {
     },
     {
       heading: "Specialized Handling and Equipment",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-10/specialized-handling-and-equipment.webp",
       paragraph: (
         <>
           Steel requires non-standard handling techniques, making logistics more
@@ -70,7 +64,7 @@ const Blog10 = () => {
     },
     {
       heading: "Raw Material Sourcing and Distribution",
-      image: RevolutionizingLogisticsImage3,
+      image: "/images/Blogs/blog-10/raw-material-sourcing.webp",
       paragraph: (
         <>
           Steel production starts with bulk raw materials like:
@@ -94,7 +88,7 @@ const Blog10 = () => {
     },
     {
       heading: "Distance and Location",
-      image: RevolutionizingLogisticsImage4,
+      image: "/images/Blogs/blog-10/distance-and-location.webp",
       paragraph: (
         <>
           The geographical gap between steel plants and end users significantly
@@ -117,7 +111,7 @@ const Blog10 = () => {
     },
     {
       heading: "Industry-Specific Challenges",
-      image: RevolutionizingLogisticsImage5,
+      image: "/images/Blogs/blog-10/industry-specific-challenges.webp",
       paragraph: (
         <>
           Steel logistics come with their own set of unique issues:
@@ -162,25 +156,23 @@ const Blog10 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
-      heading:
-        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
-      date: "January 10, 2025",
-      link: "/blogs/revolutionizing-logistics",
+      image: "/images/Blogs/blogs-cover-images/blog-11-cover-image.webp",
+      heading: "National Logistics Policy 2022 – Explained",
+      date: "January 26, 2025",
+      link: "/blogs/national-logistics-policy-2022",
     },
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-12-cover-image.webp",
       heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
+        "Efficiency at Every Step – Automated Invoicing and Simplifying Logistics with CargoPro",
+      date: "January 26, 2025",
+      link: "/blogs/automated-invoicing-and-simplifying-logistics",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-      date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+      image: "/images/Blogs/blogs-cover-images/blog-13-cover-image.webp",
+      heading: "The Benefits of Automated Indent Management for Procurement",
+      date: "January 26, 2025",
+      link: "/blogs/benifits-of-automated-indent-management",
     },
   ];
 
@@ -200,12 +192,29 @@ const Blog10 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
 
       <Navbar />
       <BlogsHero
         heading="Why Freight Cost is Higher in the Steel Industry?"
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/blog-10/blog-10-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}

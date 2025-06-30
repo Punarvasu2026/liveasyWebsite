@@ -1,167 +1,130 @@
 import React from "react";
-import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
-import CargoProLogo from "../assets/CargoProLogoWhite.webp"; // Adjust the path as necessary
+import { Link } from "react-router-dom"; // <-- import Link
+import { FaLinkedinIn, FaYoutube, FaTimes } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#304DAF] text-white px-4 pt-10 pb-10 md:px-20 md:pt-20 md:pb-20">
-      <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row gap-10">
-        {/* Left Section */}
-        <div className="md:w-[450px] flex flex-col gap-6 w-full">
-          {/* added w-full for mobile full width */}
+    <footer className="bg-[#304DAF] text-white px-6 md:px-20 py-10 md:py-20 text-sm">
+      <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-[1.2fr_1fr_0.9fr_1.6fr] gap-10">
+        {/* Logo + Contact Section */}
+        <div className="flex flex-col gap-6">
           <div>
             <div className="flex items-center gap-3">
               <img
-                src={CargoProLogo} // <-- Replace with your logo path or import
+                src="/images/CargoProLogoWhite.webp"
                 alt="CargoPro Logo"
                 loading="lazy"
                 className="w-8 h-8 object-contain"
               />
               <h2 className="text-xl font-semibold">CargoPro</h2>
             </div>
-            <p className="text-sm leading-6 mt-2">
+            <p className="text-sm mt-2 leading-6">
               Unlock Seamless Real-Time Insights <br />
               Across Your Business with Our Unified <br />
-              TMS Platform
+              Platform
             </p>
           </div>
-
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-[17px]">Get in Touch</h3>
-            <p className="text-sm">+91 89052 46537</p>
+          <div>
+            <h3 className="font-bold text-[15px] mb-1">Get in Touch</h3>
+            <p className="mb-1">+91 89052 46537</p>
             <a
               href="mailto:&#105;&#110;&#102;&#111;&#64;&#99;&#97;&#114;&#103;&#111;&#112;&#114;&#111;&#46;&#97;&#105;"
-              className="text-sm hover:underline hover:text-gray-200 no-underline"
+              className="hover:underline hover:text-gray-200"
             >
               &#105;&#110;&#102;&#111;&#64;&#99;&#97;&#114;&#103;&#111;&#112;&#114;&#111;&#46;&#97;&#105;
             </a>
           </div>
         </div>
 
-        {/* Link Sections */}
-        <div className="flex flex-col md:grid md:grid-cols-3 gap-8 md:gap-[80px] flex-1 text-sm w-full">
-          {/* Company */}
-          <div className="flex flex-col gap-5 md:gap-5">
-            <h4 className="font-bold text-[17px]">Company</h4>
-            <ul className="[&>li]:mb-0 [&>li+li]:mt-[16px]">
-              <li>
-                Why CargoPro
-                {/* <a href="#" className="hover:underline">
-                  Why CargoPro?
-                </a> */}
-              </li>
-              <li>
-                Contact Us
-                {/* <a href="#" className="hover:underline">
-                  Contact Us
-                </a> */}
-              </li>
-              <li>
-                Blog
-                {/* <a href="#" className="hover:underline">
-                  Blog
-                </a> */}
-              </li>
-              <li>
-                FAQ
-                {/* <a href="#" className="hover:underline">
-                  FAQ
-                </a> */}
-              </li>
-            </ul>
-          </div>
+        {/* Company */}
+        <div className="flex flex-col gap-3">
+          <h4 className="font-bold text-[15px] mb-2">Company</h4>
+          <Link to="/#whyChooseCargoPro" className="hover:underline">
+            Why CargoPro?
+          </Link>
 
-          {/* Solutions */}
-          <div className="flex flex-col gap-5 md:gap-5">
-            <h4 className="font-bold text-[17px]">Solutions</h4>
-            <ul className="[&>li]:mb-0 [&>li+li]:mt-[16px]">
-              <li>
-                Services
-                {/* <a href="#" className="hover:underline">
-                  Services
-                </a> */}
-              </li>
-              <li>
-                Support
-                {/* <a href="#" className="hover:underline">
-                  Support
-                </a> */}
-              </li>
-              <li>
-                Free Demo
-                {/* <a href="#" className="hover:underline">
-                  Free Demo
-                </a> */}
-              </li>
-              <li>
-                Testimonals
-                {/* <a href="#" className="hover:underline">
-                  Testimonials
-                </a> */}
-              </li>
-              <li>
-                Download Brochure
-                {/* <a href="#" className="hover:underline">
-                  Download Brochure
-                </a> */}
-              </li>
-            </ul>
-          </div>
+          <Link to="/careers#contact-us" className="hover:underline">
+            Contact Us
+          </Link>
+          <Link to="/blogs" className="hover:underline">
+            Blog
+          </Link>
+          {/* For external or no-route links, keep anchor or handle appropriately */}
+          <Link to="/about" className="hover:underline">
+            About
+          </Link>
+          <a href="#" className="hover:underline">
+            Download Brochure
+          </a>
+        </div>
 
-          {/* Legal */}
-          <div className="flex flex-col gap-5 md:gap-5">
-            <h4 className="font-bold text-[17px]">Legal</h4>
-            <ul className="[&>li]:mb-0 [&>li+li]:mt-[16px]">
-              <li>
-                Terms of Services
-                {/* <a href="#" className="hover:underline">
-                  Terms of Service
-                </a> */}
-              </li>
-              <li>
-                Privacy Policy
-                {/* <a href="#" className="hover:underline">
-                  Privacy Policy / GDPR
-                </a> */}
-              </li>
-              <li>
-                Cookie Policy
-                {/* <a href="#" className="hover:underline">
-                  Cookie Policy
-                </a> */}
-              </li>
-            </ul>
+        {/* Legal */}
+        <div className="flex flex-col gap-3">
+          <h4 className="font-bold text-[15px] mb-2">Legal</h4>
+          <a href="#" className="hover:underline">
+            Terms of Service
+          </a>
+          <a href="#" className="hover:underline">
+            Privacy Policy / GDPR
+          </a>
+          <a href="#" className="hover:underline">
+            Cookie Policy
+          </a>
+        </div>
+
+        {/* Newsletter */}
+        <div className="flex flex-col gap-3">
+          <h4 className="font-bold text-[15px]">Subscribe to our newsletter</h4>
+
+          <div className="bg-[#405EDB] rounded-md p-4 w-full max-w-full">
+            <form
+              onSubmit={(e) => e.preventDefault()}
+              className="flex items-center border border-white/30 rounded-md overflow-hidden bg-[#405EDB]"
+              style={{ gap: 0 }}
+            >
+              <input
+                type="email"
+                name="email"
+                aria-label="Email address"
+                placeholder="Enter Your Email"
+                className="flex-1 px-4 py-2 text-white bg-transparent placeholder-white text-sm outline-none focus:outline-none focus:ring-0 border-none rounded-none m-0"
+              />
+              <button
+                type="submit"
+                className="bg-white text-[#304DAF] text-sm font-medium px-6 py-2 hover:bg-gray-100 transition-colors border-none rounded-none flex-shrink-0 m-0"
+                style={{ minWidth: "80px" }}
+              >
+                Submit
+              </button>
+            </form>
           </div>
         </div>
       </div>
 
       {/* Social Icons */}
-      <div className="max-w-[1440px] mx-auto mt-10 flex justify-end gap-4 px-4 md:px-0">
+      <div className="max-w-[1440px] mx-auto flex justify-end gap-4 mt-10 px-6 md:px-20">
         {[
+          { icon: FaYoutube, link: "#" },
           {
             icon: FaLinkedinIn,
             link: "https://www.linkedin.com/company/cargopro-ai/",
           },
-          {
-            icon: FaWhatsapp,
-            link: "https://wa.me/+918905246537", // Replace with your WhatsApp number
-          },
-        ].map(({ icon: Icon, link }, idx) => (
+          { icon: FaTimes, link: "#" },
+        ].map(({ icon: Icon, link }, index) => (
           <a
-            key={idx}
+            key={index}
             href={link}
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="w-8 h-8 bg-black rounded-full flex items-center justify-center cursor-pointer hover:scale-105 transition-transform"
+            className="w-8 h-8 bg-black rounded-full flex items-center justify-center hover:scale-105 transition-transform"
           >
             <Icon className="text-white text-sm" />
           </a>
         ))}
       </div>
 
-      {/* Divider */}
-      <div className="max-w-[1440px] mx-auto mt-6 border-t border-white/30 pt-4 px-4 md:px-0">
-        {/* added px-4 for mobile spacing */}
+      {/* Bottom Divider */}
+      <div className="max-w-[1440px] mx-auto border-t border-white/30 mt-6 pt-4 px-6 md:px-20">
         <p className="text-center text-sm">
           ©CargoPro 2025. All rights reserved
         </p>

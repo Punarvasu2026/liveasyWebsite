@@ -1,8 +1,8 @@
-//External Libraries
+// External Libraries
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-//Components
+// Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
 import BlogsSection1 from "../../components/Blogs/ReusableComponents/blogs-section-1";
 import ContentSection from "../../components/Blogs/ReusableComponents/blogs-content-section";
@@ -11,37 +11,32 @@ import Footer from "../../components/footer";
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
-//Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-4/blog-4-bg.webp";
+// Images
 import logisticsImage from "../../assets/Blogs/blog-4/blog-4-image.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-4/cost-conundrum.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-4/resistance-to-change.webp";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-4/data-security-concerns.webp";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-4/overcoming-complexity.webp";
 
 const Blog4 = () => {
   const sections = [
     {
       heading: "The Cost Conundrum: Making Digital Affordable",
-      image: RevolutionizingLogisticsImage1,
+      image: "/images/Blogs/blog-4/cost-conundrum.webp",
       paragraph:
         "For many logistics SMEs, the initial cost of implementing digital logistics tools like a TMS can feel daunting. CargoPro solves this with modular, pay-as-you-scale pricing — so you invest only in what you need. Over time, the savings from automation, fewer errors, and faster operations far outweigh the upfront expense, making digital transformation both feasible and profitable.",
     },
     {
       heading: "Overcoming Resistance to Change",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-4/resistance-to-change.webp",
       paragraph:
         "Operational teams often hesitate when switching from manual to digital workflows. CargoPro eases this transition with user-friendly, role-based dashboards tailored for shippers, carriers, and admins. Add onboarding support and dedicated success managers to the mix, and change becomes not a threat — but a competitive advantage.",
     },
     {
       heading: "Securing Your Supply Chain Data",
-      image: RevolutionizingLogisticsImage4,
+      image: "/images/Blogs/blog-4/overcoming-complexity.webp",
       paragraph:
         "Digital logistics success hinges on protecting sensitive cargo and bidding data. CargoPro ensures top-tier security with end-to-end encryption, GDPR compliance, regular audits, and strict access controls. From POD storage to contract data, security is embedded across our platform to build trust with every stakeholder.",
     },
     {
       heading: "Collaboration Over Complexity",
-      image: RevolutionizingLogisticsImage3,
+      image: "/images/Blogs/blog-4/data-security-concerns.webp",
       paragraph:
         "Logistics isn’t a solo operation — it’s an ecosystem. CargoPro acts as your collaborative platform, connecting all supply chain players. With integrated features like live tracking, reverse auctions, and automated invoicing, we streamline coordination between teams, vendors, and carriers — reducing complexity and accelerating adoption.",
     },
@@ -56,25 +51,24 @@ const Blog4 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-5-cover-image.webp",
       heading:
-        "Breaking Barriers: Overcoming Challenges in Implementing Digital Logistics Solutions with CargoPro",
-      date: "February 5, 2025",
-      link: "/blogs/breaking-barriers-digital-logistics",
+        "Digital Transformation Strategies for Logistics Companies: The CargoPro Edge",
+      date: "January 9, 2025",
+      link: "/blogs/digital-transformation-strategies",
     },
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-6-cover-image.webp",
       heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
+        "Optimizing Resources and Safety: The Role of Automation in In-Plant Vehicle Movement with CargoPro",
+      date: "January 26, 2025",
+      link: "/blogs/in-plant-automation",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-      date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+      image: "/images/Blogs/blogs-cover-images/blog-7-cover-image.webp",
+      heading: "How Digitization Helps in Cutting Down Freight Cost",
+      date: "January 26, 2025",
+      link: "/blogs/digitization-helps-cutting-down-freight-cost",
     },
   ];
 
@@ -94,12 +88,29 @@ const Blog4 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
 
       <Navbar />
       <BlogsHero
         heading="Breaking Barriers: Overcoming Challenges in Implementing Digital Logistics Solutions with CargoPro"
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/blog-4/blog-4-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}

@@ -1,8 +1,6 @@
 import React from "react";
 import { Clock, HelpCircle } from "lucide-react";
 
-import ContactUsImage from "../../assets/Careers/contact-us.webp";
-
 const ContactSection = () => {
   return (
     <section className="w-full bg-gradient-to-br from-[#191818] to-[#14204A] px-10 lg:px-40 py-32 overflow-x-hidden">
@@ -21,7 +19,12 @@ const ContactSection = () => {
               We’re here to help—share your thoughts or inquiGet our exclusive
               offers and latest updates about our products. You can reach us out
               anytime via <br />
-              <span className="underline">hello@cargopro.ai</span>
+              <a
+                href="mailto:&#105;&#110;&#102;&#111;&#64;&#99;&#97;&#114;&#103;&#111;&#112;&#114;&#111;&#46;&#97;&#105;"
+                className="underline hover:text-gray-200"
+              >
+                &#105;&#110;&#102;&#111;&#64;&#99;&#97;&#114;&#103;&#111;&#112;&#114;&#111;&#46;&#97;&#105;
+              </a>
             </p>
           </div>
 
@@ -30,7 +33,7 @@ const ContactSection = () => {
             style={{ border: "1px solid #FFFFFF14" }}
           >
             <img
-              src={ContactUsImage}
+              src="/images/Careers/contact-us.webp"
               alt="Contact Illustration"
               loading="lazy"
               className="object-contain h-full"

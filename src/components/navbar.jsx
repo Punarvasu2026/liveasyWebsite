@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import CargoProLogo from "../assets/CargoProLogo.webp";
 import SolutionsDropdown from "./solutions-dropdown";
 import SignUpDropdown from "./SignUpDropdown";
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
@@ -36,7 +35,7 @@ const Navbar = () => {
           onClick={closeMobileMenu}
         >
           <img
-            src={CargoProLogo}
+            src="/images/CargoProLogo.webp"
             alt="CargoPro Logo"
             loading="lazy"
             className="h-8 w-auto"
@@ -114,7 +113,7 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link to="/contacts#contact-us" className="hover:text-primaryBlue">
+            <Link to="/careers#contact-us" className="hover:text-primaryBlue">
               Contacts
             </Link>
           </li>

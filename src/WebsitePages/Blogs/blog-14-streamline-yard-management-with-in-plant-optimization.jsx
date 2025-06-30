@@ -12,19 +12,13 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-14/blog-14-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-14/blog-14-image.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-14/reduces-turnaround-time.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-14/improves-resource-allocation.webp";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-14/real-time-visibility.webp";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-14/enhance-safety-and-compliance.webp";
-import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-14/support-freight-sourcing.webp";
 
 const Blog14 = () => {
   const sections = [
     {
       heading: "Reduces Turnaround Time",
-      image: RevolutionizingLogisticsImage1,
+      image: "/images/Blogs/blog-14/reduces-turnaround-time.webp",
       paragraph: (
         <>
           One of the biggest issues in logistics yards is high turnaround time.
@@ -36,7 +30,7 @@ const Blog14 = () => {
     },
     {
       heading: "Improves Resource Allocation",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-14/improves-resource-allocation.webp",
       paragraph: (
         <>
           CargoPro’s system enables logistics teams to allocate dock doors,
@@ -48,7 +42,7 @@ const Blog14 = () => {
     },
     {
       heading: "Real-Time Visibility",
-      image: RevolutionizingLogisticsImage3,
+      image: "/images/Blogs/blog-14/real-time-visibility.webp",
       paragraph: (
         <>
           With real-time tracking of vehicles and assets, plant managers can
@@ -60,7 +54,7 @@ const Blog14 = () => {
     },
     {
       heading: "Enhances Safety and Compliance",
-      image: RevolutionizingLogisticsImage4,
+      image: "/images/Blogs/blog-14/enhance-safety-and-compliance.webp",
       paragraph: (
         <>
           By digitizing yard entries and exits, maintaining logs, and
@@ -72,7 +66,7 @@ const Blog14 = () => {
     },
     {
       heading: "Supports Freight Sourcing with Reverse Auctions",
-      image: RevolutionizingLogisticsImage5,
+      image: "/images/Blogs/blog-14/support-freight-sourcing.webp",
       paragraph: (
         <>
           CargoPro also offers a reverse auction platform for freight sourcing,
@@ -100,25 +94,23 @@ const Blog14 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-15-cover-image.webp",
       heading:
-        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
-      date: "January 10, 2025",
-      link: "/blogs/revolutionizing-logistics",
+        "Achieving End-to-End Visibility with Logistics Tracking Solutions",
+      date: "January 26, 2025",
+      link: "/blogs/achieving-end-to-end-visibility-with-logistics-tracking-solutions",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
+      image: "/images/Blogs/blogs-cover-images/blog-16-cover-image.webp",
+      heading: "The Power of Data-Driven Logistics Analytics and Insights",
+      date: "January 26, 2025",
+      link: "/blogs/the-power-of-data-driven-logistics-analytics-and-insights",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-      date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+      image: "/images/Blogs/blogs-cover-images/blog-17-cover-image.webp",
+      heading: "How to Leverage Digital Proof of Delivery for Faster Invoicing",
+      date: "January 26, 2025",
+      link: "/blogs/digital-proof-of-delivery",
     },
   ];
 
@@ -139,12 +131,29 @@ const Blog14 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
 
       <Navbar />
       <BlogsHero
         heading="How to Streamline Yard Management with In-Plant Optimization"
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/blog-14/blog-14-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}

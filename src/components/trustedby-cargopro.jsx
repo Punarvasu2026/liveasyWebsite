@@ -1,5 +1,4 @@
 import React from "react";
-import TrustedByLogos from "../assets/CargoProIndexPage/cargopro-companies-logos.webp"; // Replace with actual path
 
 const TrustedBy = () => {
   return (
@@ -23,12 +22,12 @@ const TrustedBy = () => {
         <div className="relative w-full max-w-[1220px] h-[50px] mx-auto overflow-hidden px-[0.04px]">
           <div className="flex md:justify-center gap-[100px]">
             <img
-              src={TrustedByLogos}
+              src="/images/CargoProIndexPage/cargopro-companies-logos.webp"
               alt="Trusted by company logos"
               className="h-[50px] w-auto object-contain"
             />
             <img
-              src={TrustedByLogos}
+              src="/images/CargoProIndexPage/cargopro-companies-logos.webp"
               alt="Duplicate logos"
               loading="lazy"
               className="h-[50px] w-auto object-contain"

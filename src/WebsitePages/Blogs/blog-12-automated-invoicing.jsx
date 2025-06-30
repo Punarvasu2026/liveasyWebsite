@@ -12,19 +12,13 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-12/blog-12-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-12/blog-12-image.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-12/enhancing-accuracy.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-12/real-time-tracking.webp";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-12/facilities-seamless-integration.webp";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-12/centralized-visibility.webp";
-import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-12/proactive-shipmemt-management.webp";
 
 const Blog12 = () => {
   const sections = [
     {
       heading: "Enhancing Accuracy and Reducing Errors",
-      image: RevolutionizingLogisticsImage1,
+      image: "/images/Blogs/blog-12/enhancing-accuracy.webp",
       paragraph: (
         <>
           Manual data entry is a common source of errors in billing. CargoPro
@@ -41,7 +35,7 @@ const Blog12 = () => {
     },
     {
       heading: "Real-Time Tracking and Monitoring",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-12/real-time-tracking.webp",
       paragraph: (
         <>
           With real-time invoice tracking, CargoPro offers a complete view of
@@ -60,7 +54,7 @@ const Blog12 = () => {
     },
     {
       heading: "Facilitates Seamless Integration",
-      image: RevolutionizingLogisticsImage3,
+      image: "/images/Blogs/blog-12/facilities-seamless-integration.webp",
       paragraph: (
         <>
           CargoPro isn’t just about invoicing. It’s built for integration with
@@ -78,7 +72,7 @@ const Blog12 = () => {
     },
     {
       heading: "Centralized Visibility for Smarter Operations",
-      image: RevolutionizingLogisticsImage4,
+      image: "/images/Blogs/blog-12/centralized-visibility.webp",
       paragraph: (
         <>
           CargoPro offers real-time visibility into:
@@ -94,7 +88,7 @@ const Blog12 = () => {
     },
     {
       heading: "Proactive Shipment Management",
-      image: RevolutionizingLogisticsImage5,
+      image: "/images/Blogs/blog-12/proactive-shipmemt-management.webp",
       paragraph: (
         <>
           With predictive alerts and dashboard insights, logistics managers can:
@@ -146,24 +140,23 @@ const Blog12 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
-      heading:
-        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
-      date: "January 10, 2025",
-      link: "/blogs/revolutionizing-logistics",
+      image: "/images/Blogs/blogs-cover-images/blog-13-cover-image.webp",
+      heading: "The Benefits of Automated Indent Management for Procurement",
+      date: "January 26, 2025",
+      link: "/blogs/benifits-of-automated-indent-management",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
+      image: "/images/Blogs/blogs-cover-images/blog-14-cover-image.webp",
+      heading: "How to Streamline Yard Management with In-Plant Optimization",
+      date: "January 26, 2025",
+      link: "/blogs/how-to-streamline-yard-management-with-in-plant-optimization",
     },
     {
-      image: logisticsImage,
-      heading: "National Logistics Policy 2022 – Explained",
-      date: "February 2, 2025",
-      link: "/blogs/national-logistics-policy",
+      image: "/images/Blogs/blogs-cover-images/blog-15-cover-image.webp",
+      heading:
+        "Achieving End-to-End Visibility with Logistics Tracking Solutions",
+      date: "January 26, 2025",
+      link: "/blogs/achieving-end-to-end-visibility-with-logistics-tracking-solutions",
     },
   ];
 
@@ -174,6 +167,23 @@ const Blog12 = () => {
         <meta
           name="description"
           content="Discover how CargoPro automates invoicing and simplifies logistics management for greater efficiency, accuracy, and profitability."
+        />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
         />
       </Helmet>
 
@@ -189,7 +199,7 @@ const Blog12 = () => {
             invoicing and streamline operations, unlocking new levels of
             efficiency and profitability. This blog explores how automation and
             simplified logistics management can redefine operational excellence."
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/blog-12/blog-12-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}

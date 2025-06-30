@@ -1,5 +1,4 @@
 import React from "react";
-import TeamImage from "../../assets/AboutCargoPro/who-are-we.webp"; // Update path if needed
 
 const WhoAreWeSection = () => {
   return (
@@ -14,7 +13,7 @@ const WhoAreWeSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
           {/* Image */}
           <img
-            src={TeamImage}
+            src="/images/AboutCargoPro/who-are-we.webp"
             alt="Who Are We (CargoPro)"
             loading="lazy"
             className="w-full max-w-[618px] h-auto rounded-[12px]"

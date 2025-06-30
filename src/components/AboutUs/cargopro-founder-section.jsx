@@ -1,5 +1,4 @@
 import React from "react";
-import founderImage from "../../assets/AboutCargoPro/cargopro-founder.webp"; // Update path as needed
 
 const FounderSection = () => {
   return (
@@ -14,7 +13,7 @@ const FounderSection = () => {
         {/* Content Row */}
         <div className="w-full flex flex-col md:flex-row gap-[32px] md:gap-[60px]">
           {/* Paragraph Container */}
-          <div className="w-full md:w-[800px] bg-[#1A2A60] rounded-[12px] pt-[30px] pr-[24px] pb-[30px] pl-[24px] md:pt-[41px] md:pr-[40px] md:pb-[40px] md:pl-[40px] flex flex-col justify-between h-auto md:h-[472px]">
+          <div className="w-full md:flex-1 bg-[#1A2A60] rounded-[12px] pt-[30px] pr-[24px] pb-[30px] pl-[24px] md:pt-[41px] md:pr-[40px] md:pb-[40px] md:pl-[40px] flex flex-col justify-between">
             {/* Text Box */}
             <div className="w-full pr-0 md:pr-[12px]">
               <p className="text-white font-dm-sans text-[16px] md:text-[18px] leading-[28px] md:leading-[30px] font-normal">
@@ -42,13 +41,13 @@ const FounderSection = () => {
             </p>
           </div>
 
-          {/* Image aligned with paragraph container */}
-          <div className="w-full md:w-[340px] h-[auto] md:h-[472px]">
+          {/* Responsive Image */}
+          <div className="w-full md:max-w-[340px]">
             <img
-              src={founderImage}
+              src="/images/AboutCargoPro/cargopro-founder.webp"
               alt="CargoPro Founder (Pranav Gupta)"
               loading="lazy"
-              className="w-full h-full object-cover rounded-[12px]"
+              className="w-full h-auto object-cover rounded-[12px]"
             />
           </div>
         </div>

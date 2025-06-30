@@ -14,14 +14,6 @@ import CargoProAdvantage from "../../components/Solutions/DadhboardAndAnalytics/
 import Footer from "../../components/footer";
 import TakeControlOfYourLogistics from "../../components/Solutions/DadhboardAndAnalytics/take-control-of-your-logistics";
 
-// Images
-import DashboardAndAnalyticsHero from "../../assets/Solutions/DashboardAndAnalytics/dashboard-and-analytics.webp";
-import DashboardAndAnalyticsImage from "../../assets/Solutions/DashboardAndAnalytics/see-everything-miss-nothing.webp";
-import CentralizedLogisticsOverviewImage from "../../assets/Solutions/DashboardAndAnalytics/centralized-logistics-overview.webp";
-import FreightAndLoadAnalysisImage from "../../assets/Solutions/DashboardAndAnalytics/freight-and-load-analysis.webp";
-import FullAuditTrailAndTeamLogsImage from "../../assets/Solutions/DashboardAndAnalytics/full-audit-trail-and-team-logs.webp";
-import TransporterAndVendorAnalysisImage from "../../assets/Solutions/DashboardAndAnalytics/transporter-and-vendor-insights.webp";
-
 const DashboardAndAnalytics = () => {
   const heading = (
     <>
@@ -75,6 +67,23 @@ const DashboardAndAnalytics = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
       <Navbar />
       <HeroSection
@@ -91,13 +100,13 @@ const DashboardAndAnalytics = () => {
             and downloadable reports — all in one place.
           </>
         }
-        image={DashboardAndAnalyticsHero} // Adjust the path as necessary
+        image="/images/Solutions/DashboardAndAnalytics/dashboard-and-analytics.webp"
         buttonLabel="Schedule Demo"
         onButtonClick={() => alert("Demo Scheduled!")}
       />
       <TrustedBy />
       <SolutionsSection1
-        imageSrc={DashboardAndAnalyticsImage}
+        imageSrc="/images/Solutions/DashboardAndAnalytics/see-everything-miss-nothing.webp"
         heading={heading}
         text={text}
       />
@@ -108,13 +117,13 @@ const DashboardAndAnalytics = () => {
           </>
         }
         points={centralizedLogisticsOverview}
-        imageSrc={CentralizedLogisticsOverviewImage}
+        imageSrc="/images/Solutions/DashboardAndAnalytics/centralized-logistics-overview.webp"
       />
 
       <SolutionsSection3
         heading={<>Freight & Load Analysis</>}
         points={freightAndLoadAnalysis}
-        mainImage={FreightAndLoadAnalysisImage}
+        mainImage="/images/Solutions/DashboardAndAnalytics/freight-and-load-analysis.webp"
       />
       <SolutionsSection2
         heading={
@@ -123,7 +132,7 @@ const DashboardAndAnalytics = () => {
           </>
         }
         points={transporterAndVendorInsights}
-        imageSrc={TransporterAndVendorAnalysisImage}
+        imageSrc="/images/Solutions/DashboardAndAnalytics/transporter-and-vendor-insights.webp"
       />
       <SolutionsSection3
         heading={
@@ -133,7 +142,7 @@ const DashboardAndAnalytics = () => {
           </>
         }
         points={fullAuditTrailAndTeamLogs}
-        mainImage={FullAuditTrailAndTeamLogsImage}
+        mainImage="/images/Solutions/DashboardAndAnalytics/full-audit-trail-and-team-logs.webp"
       />
       <TakeControlOfYourLogistics />
       <CargoProAdvantage />
@@ -154,4 +163,3 @@ const DashboardAndAnalytics = () => {
 };
 
 export default DashboardAndAnalytics;
-// This component can be used in your main application file or routed as needed.

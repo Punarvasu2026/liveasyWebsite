@@ -1,7 +1,4 @@
 import React from "react";
-import missionImage from "../../assets/AboutCargoPro/our-mission.webp";
-import icon from "../../assets/AboutCargoPro/cargopro-mission-icon.webp";
-import linesBg from "../../assets/Solutions/FreightSourcing/design-pattern-1.webp"; // <- NEW LINE DESIGN IMAGE
 
 const MissionSection = () => {
   return (
@@ -15,7 +12,7 @@ const MissionSection = () => {
     >
       {/* Decorative Lines Bottom Right */}
       <img
-        src={linesBg}
+        src="/images/Solutions/FreightSourcing/design-pattern-1.webp"
         alt="Decorative Lines (Design)"
         loading="lazy"
         className="absolute bottom-0 right-0 w-[500px] pointer-events-none z-0"
@@ -36,7 +33,7 @@ const MissionSection = () => {
               </p>
             </div>
             <img
-              src={missionImage}
+              src="/images/AboutCargoPro/our-mission.webp"
               alt="CargoPro mission"
               className="w-[640px] h-[356px] object-contain"
             />
@@ -68,7 +65,7 @@ const MissionSection = () => {
                 >
                   <div className="flex gap-[24px]">
                     <img
-                      src={icon}
+                      src="/images/AboutCargoPro/cargopro-mission-icon.webp"
                       alt={`Icon ${index + 1}`}
                       className="w-[30px] h-[30px]"
                     />

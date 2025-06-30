@@ -11,20 +11,14 @@ import Footer from "../../components/footer";
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
-//Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-8/blog-8-bg.webp";
+//Image (Only keeping logisticsImage as per instruction)
 import logisticsImage from "../../assets/Blogs/blog-8/blog-8-bg.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-8/access-your-business-needs.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-8/choose-a-user-friendly-interface.webp";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-8/real-time-visibility.webp";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-8/powerfull-analytics.webp";
-import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-8/integration-and-scalability.webp";
 
 const Blog8 = () => {
   const sections = [
     {
       heading: "Assess Your Business Needs",
-      image: RevolutionizingLogisticsImage1,
+      image: "/images/Blogs/blog-8/access-your-business-needs.webp",
       paragraph: (
         <>
           Every business has unique logistics pain points. Start by identifying
@@ -32,11 +26,11 @@ const Blog8 = () => {
           <ul className="list-disc list-inside ml-4 mt-2">
             <li>
               Are you struggling with manual dispatching or inefficient route
-              planning?{" "}
+              planning?
             </li>
             <li>
               Do you need better real-time tracking or reverse auction features
-              for freight rates?{" "}
+              for freight rates?
             </li>
           </ul>
           Also consider your shipment volume, transport modes (road, rail, air,
@@ -51,7 +45,7 @@ const Blog8 = () => {
     },
     {
       heading: "Choose a User-Friendly Interface",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-8/choose-a-user-friendly-interface.webp",
       paragraph: (
         <>
           Even the most powerful system fails if it’s hard to use. <br />A great
@@ -70,7 +64,7 @@ const Blog8 = () => {
     },
     {
       heading: "Real-Time Visibility and Reporting",
-      image: RevolutionizingLogisticsImage3,
+      image: "/images/Blogs/blog-8/real-time-visibility.webp",
       paragraph: (
         <>
           A strong TMS must offer real-time visibility into every shipment,
@@ -90,7 +84,7 @@ const Blog8 = () => {
     },
     {
       heading: "Powerful Analytics for Smarter Decisions",
-      image: RevolutionizingLogisticsImage4,
+      image: "/images/Blogs/blog-8/powerfull-analytics.webp",
       paragraph: (
         <>
           Your TMS should not only track — it should analyze. <br />
@@ -109,7 +103,7 @@ const Blog8 = () => {
     },
     {
       heading: "Integration & Scalability",
-      image: RevolutionizingLogisticsImage5,
+      image: "/images/Blogs/blog-8/integration-and-scalability.webp",
       paragraph: (
         <>
           Your chosen TMS must integrate easily with existing systems — ERPs,
@@ -151,25 +145,23 @@ const Blog8 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-9-cover-image.webp",
       heading:
-        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
-      date: "January 10, 2025",
-      link: "/blogs/revolutionizing-logistics",
+        "Big Data and Predictive Analytics in Logistics: A Game Changer for Achieving End-to-End Supply Chain Visibility",
+      date: "January 26, 2025",
+      link: "/blogs/big-data-and-predictive-analytics-in-logistics",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
+      image: "/images/Blogs/blogs-cover-images/blog-10-cover-image.webp",
+      heading: "Why Freight Cost is Higher in the Steel Industry?",
+      date: "January 26, 2025",
+      link: "/blogs/why-freight-cost-is-higher-in-the-steel-industry",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-      date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+      image: "/images/Blogs/blogs-cover-images/blog-11-cover-image.webp",
+      heading: "National Logistics Policy 2022 – Explained",
+      date: "January 26, 2025",
+      link: "/blogs/national-logistics-policy-2022",
     },
   ];
 
@@ -187,12 +179,29 @@ const Blog8 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
 
       <Navbar />
       <BlogsHero
         heading="How to Choose the Right TMS: A Buyer’s Guide"
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/blog-8/blog-8-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}
@@ -200,7 +209,7 @@ const Blog8 = () => {
           <>
             In the dynamic world of logistics, a robust Transportation
             Management System (TMS) is not just a digital tool — it’s a
-            strategic enabler.The right TMS software helps streamline
+            strategic enabler. The right TMS software helps streamline
             operations, reduce costs, and give logistics leaders real-time
             visibility across their supply chain. <br />
             But with countless TMS solutions on the market, choosing the right

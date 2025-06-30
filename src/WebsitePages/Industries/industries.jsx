@@ -9,9 +9,6 @@ import IndustriesChallenges from "../../components/Industries/industries-challen
 import Footer from "../../components/footer";
 import BlogsHeroSection from "../../components/Blogs/Blog/blogs-hero-section";
 
-//Images
-import BackgroundImage from "../../assets/Industries/industries-bg.webp";
-
 const Industries = () => {
   return (
     <>
@@ -27,6 +24,23 @@ const Industries = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
       <Navbar />
       <BlogsHeroSection
@@ -38,7 +52,7 @@ const Industries = () => {
             optimize their operations
           </>
         }
-        backgroundImage={BackgroundImage}
+        backgroundImage="/images/Industries/industries-bg.webp"
       />
       <IndustriesWeServe />
       <IndustriesChallenges />

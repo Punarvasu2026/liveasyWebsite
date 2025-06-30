@@ -12,13 +12,6 @@ import SolutionsSection1 from "../../components/Solutions/ReusableComponents/Sec
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import Footer from "../../components/footer";
 
-// Images
-import PodHero from "../../assets/Solutions/pod/proof-of-delivery.webp";
-import PodSectionImage from "../../assets/Solutions/pod/digital-proof.webp";
-import InstantUploads from "../../assets/Solutions/pod/instant-pod-uploads.webp";
-import SeamlessInvoiceIntegrationImage from "../../assets/Solutions/pod/seamless-invoice-integration.webp";
-import ShipperAndVendorVisibilityImage from "../../assets/Solutions/pod/shipper-and-vendor-visibility.webp";
-
 const Pod = () => {
   const heading = <>Digital Proof, Zero Delays.</>;
 
@@ -60,6 +53,23 @@ const Pod = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
       <Navbar />
       <HeroSection
@@ -77,20 +87,20 @@ const Pod = () => {
             keeping your invoicing and compliance on track.
           </>
         }
-        image={PodHero} // Adjust the path as necessary
+        image="/images/Solutions/pod/proof-of-delivery.webp"
         buttonLabel="Schedule Demo"
         onButtonClick={() => alert("Demo Scheduled!")}
       />
       <TrustedBy />
       <SolutionsSection1
-        imageSrc={PodSectionImage}
+        imageSrc="/images/Solutions/pod/digital-proof.webp"
         heading={heading}
         text={text}
       />
       <SolutionsSection2
         heading={<>Instant POD Uploads</>}
         points={instantPodUploads}
-        imageSrc={InstantUploads}
+        imageSrc="/images/Solutions/pod/instant-pod-uploads.webp"
       />
 
       <SolutionsSection3
@@ -101,12 +111,12 @@ const Pod = () => {
           </>
         }
         points={SeamlessInvoiceIntegration}
-        mainImage={SeamlessInvoiceIntegrationImage}
+        mainImage="/images/Solutions/pod/seamless-invoice-integration.webp"
       />
       <SolutionsSection2
         heading={<>Shipper & Vendor Visibility</>}
         points={ShipperAndVendorVisibility}
-        imageSrc={ShipperAndVendorVisibilityImage}
+        imageSrc="/images/Solutions/pod/shipper-and-vendor-visibility.webp"
       />
       <CargoProBookDemo
         heading={<>Ready to Go Paperless?</>}
@@ -125,4 +135,3 @@ const Pod = () => {
 };
 
 export default Pod;
-// This component can be used in your main application file or routed as needed.

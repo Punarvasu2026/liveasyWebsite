@@ -11,37 +11,31 @@ import Footer from "../../components/footer";
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
-//Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-16/blog-16-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-17/blog-17-image.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-17/real-time-data-capture.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-17/reduced-errors.webp";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-17/improved-customer-satisfaction.webp";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-17/regulatory-compliance.webp";
 
 const Blog17 = () => {
   const sections = [
     {
       heading: "Real-Time Data Capture",
-      image: RevolutionizingLogisticsImage1,
+      image: "/images/Blogs/blog-17/real-time-data-capture.webp",
       paragraph:
         "CargoPro captures delivery data at the point of delivery using mobile devices. This includes signatures, photos, timestamps, and GPS coordinates, instantly updating the system.",
     },
     {
       heading: "Reduced Errors",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-17/reduced-errors.webp",
       paragraph:
         "By eliminating manual entry, CargoPro reduces the likelihood of billing errors, ensuring invoices match delivery records precisely.",
     },
     {
       heading: "Improved Customer Satisfaction",
-      image: RevolutionizingLogisticsImage3,
+      image: "/images/Blogs/blog-17/improved-customer-satisfaction.webp",
       paragraph:
         "Customers receive immediate delivery confirmation and tracking updates, improving transparency and communication.",
     },
     {
       heading: "Regulatory Compliance",
-      image: RevolutionizingLogisticsImage4,
+      image: "/images/Blogs/blog-17/regulatory-compliance.webp",
       paragraph:
         "Digital POD ensures a clear, auditable trail of each delivery, helping businesses stay compliant with industry and legal requirements.",
     },
@@ -56,25 +50,24 @@ const Blog17 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
-      heading:
-        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
-      date: "January 10, 2025",
-      link: "/blogs/revolutionizing-logistics",
+      image: "/images/Blogs/blogs-cover-images/blog-18-cover-image.webp",
+      heading: "Top Techniques for Optimizing Last Mile Delivery Logistics",
+      date: "January 26, 2025",
+      link: "/blogs/last-mile-delivery",
     },
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-19-cover-image.webp",
       heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
+        "Elevating Warehouse Efficiency – The Path to Digital Transformation",
+      date: "January 26, 2025",
+      link: "/blogs/elevating-warehouse-efficiency",
     },
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-20-cover-image.webp",
       heading:
-        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-      date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+        "Seamless Integration of Transportation and Warehouse Management Systems",
+      date: "January 26, 2025",
+      link: "/blogs/seamless-integration-of-transportation-and-warehouse-management",
     },
   ];
 
@@ -95,13 +88,30 @@ const Blog17 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
 
       <Navbar />
       <BlogsHero
         heading="How to Leverage Digital Proof of Delivery for Faster Invoicing"
         text="In logistics, timely and accurate invoicing is essential for healthy cash flow. However, traditional invoicing methods—often involving physical documents and manual data entry—are slow, error-prone, and delay payment cycles."
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/blog-16/blog-16-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}

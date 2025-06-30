@@ -1,8 +1,8 @@
-//External Libraries
+// External Libraries
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-//Components
+// Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
 import BlogsSection1 from "../../components/Blogs/ReusableComponents/blogs-section-1";
 import ContentSection from "../../components/Blogs/ReusableComponents/blogs-content-section";
@@ -11,18 +11,14 @@ import Footer from "../../components/footer";
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
-//Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-7/blog-7-bg.webp";
+// Image (only kept this imported as per your instructions)
 import logisticsImage from "../../assets/Blogs/blog-7/blog-7-image.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-7/real-time-tracking-and-visibility.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-7/route-optimization-and-fuel-efficiency.webp";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-7/data-driven-decision-making.webp";
 
 const Blog7 = () => {
   const sections = [
     {
       heading: "Real-Time Tracking and Visibility",
-      image: RevolutionizingLogisticsImage1,
+      image: "/images/Blogs/blog-7/real-time-tracking-and-visibility.webp",
       paragraph: (
         <>
           CargoPro introduces real-time tracking solutions that provide complete
@@ -45,7 +41,7 @@ const Blog7 = () => {
     },
     {
       heading: "Route Optimization and Fuel Efficiency",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-7/route-optimization-and-fuel-efficiency.webp",
       paragraph: (
         <>
           With the help of advanced analytics and AI algorithms, CargoPro helps
@@ -67,7 +63,7 @@ const Blog7 = () => {
     },
     {
       heading: "Data-Driven Decision Making",
-      image: RevolutionizingLogisticsImage3,
+      image: "/images/Blogs/blog-7/data-driven-decision-making.webp",
       paragraph: (
         <>
           Digitization empowers logistics teams with actionable data at every
@@ -88,7 +84,7 @@ const Blog7 = () => {
     },
     {
       heading: "Paperless Processes and Administrative Efficiency",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-7/route-optimization-and-fuel-efficiency.webp", // reused image
       paragraph: (
         <>
           Manual documentation and paperwork lead to delays, errors, and
@@ -109,7 +105,7 @@ const Blog7 = () => {
     },
     {
       heading: "Enhanced Collaboration and Communication",
-      image: RevolutionizingLogisticsImage3,
+      image: "/images/Blogs/blog-7/data-driven-decision-making.webp", // reused image
       paragraph: (
         <>
           Integrated digital platforms foster real-time collaboration among
@@ -151,25 +147,23 @@ const Blog7 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
-      heading:
-        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
-      date: "January 10, 2025",
-      link: "/blogs/revolutionizing-logistics",
+      image: "/images/Blogs/blogs-cover-images/blog-8-cover-image.webp",
+      heading: "How to Choose the Right TMS: A Buyer’s Guide",
+      date: "January 26, 2025",
+      link: "/blogs/how-to-choose-the-right-tms",
     },
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-9-cover-image.webp",
       heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
+        "Big Data and Predictive Analytics in Logistics: A Game Changer for Achieving End-to-End Supply Chain Visibility",
+      date: "January 26, 2025",
+      link: "/blogs/big-data-and-predictive-analytics-in-logistics",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-      date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+      image: "/images/Blogs/blogs-cover-images/blog-10-cover-image.webp",
+      heading: "Why Freight Cost is Higher in the Steel Industry?",
+      date: "January 26, 2025",
+      link: "/blogs/why-freight-cost-is-higher-in-the-steel-industry",
     },
   ];
 
@@ -189,12 +183,29 @@ const Blog7 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
 
       <Navbar />
       <BlogsHero
         heading="How Digitization Helps in Cutting Down Freight Cost"
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/blog-7/blog-7-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}
