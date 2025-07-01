@@ -11,44 +11,38 @@ import Footer from "../../components/footer";
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
-//Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.webp";
 import logisticsImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-1/centralized-procurement-and-indent.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-1/smart-vendor-and-transport-management.webp";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-1/automated-indent-generation.webp";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.webp";
-import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-1/advanced-reporting-and-spend-analysis.webp";
 
 const Blog1 = () => {
   const sections = [
     {
       heading: "Centralized Procurement & Indent System",
-      image: RevolutionizingLogisticsImage1,
+      image: "/images/Blogs/blog-1/centralized-procurement-and-indent.webp",
       paragraph:
         "CargoPro consolidates your procurement and indent management into one smart dashboard. No more juggling spreadsheets or manual entries — all freight, vendor, and indent data is digitized and structured for real-time access. With every update visible to your team and vendors, you unlock full transparency and accountability across your entire logistics operation.",
     },
     {
       heading: "Smart Vendor & Transporter Management",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-1/smart-vendor-and-transport-management.webp",
       paragraph:
         "Manage your vendor ecosystem like never before. With CargoPro, you maintain a verified database of transporters and vendors, track their past performance, automate communication via WhatsApp/email, and even evaluate bids through reverse auctions. The system ensures seamless onboarding, real-time visibility, and lasting partnerships with high-performing logistics providers.",
     },
     {
       heading: "Automated Indents & PO Generation",
-      image: RevolutionizingLogisticsImage3,
+      image: "/images/Blogs/blog-1/automated-indent-generation.webp",
       paragraph:
         "Forget manual indent creation or back-and-forth emails. CargoPro uses your pre-fed contract rates and shipment data to auto-assign indents to the most cost-effective transporter. For procurement, Purchase Orders (POs) can be automatically generated based on approved requisitions — saving hours of effort and minimizing data-entry errors. Through this automation, companies move toward a future where freight bidding and sourcing is seamless, digital, and optimized.",
     },
     {
       heading: "Real-Time Budget Control & Spend Visibility",
-      image: RevolutionizingLogisticsImage4,
+      image:
+        "/images/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-image-4.webp",
       paragraph:
         "Logistics and finance teams can now control spend like never before. Set contract rates, configure budget thresholds, and get alerts when spending crosses limits. CargoPro’s TMS platform brings budget discipline into your transport and procurement process — ensuring that every indent and order stays within planned costs.",
     },
     {
       heading: "Advanced Reporting & Spend Analytics",
-      image: RevolutionizingLogisticsImage5,
+      image: "/images/Blogs/blog-1/advanced-reporting-and-spend-analysis.webp",
       paragraph:
         "CargoPro gives you deep insights through detailed freight analytics, procurement KPIs, and audit logs. Identify trends in spending, evaluate vendor reliability, and unlock process optimizations. Whether it’s knowing which transporter wins the most bids, or tracking average freight cost per route, CargoPro helps you make data-driven logistics decisions.",
     },
@@ -63,25 +57,25 @@ const Blog1 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-2-cover-image.webp",
       heading:
-        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
+        "Eco-Friendly Logistics: Reducing Carbon Footprint Through Digital Innovation with CargoPro",
       date: "January 10, 2025",
-      link: "/blogs/revolutionizing-logistics",
+      link: "/blogs/eco-friendly-logistics",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
-    },
-    {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-3-cover-image.webp",
       heading:
         "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
       date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+      link: "/blogs/say-goodbye-to-invoicing-hassles",
+    },
+    {
+      image: "/images/Blogs/blogs-cover-images/blog-4-cover-image.webp",
+      heading:
+        "Breaking Barriers: Overcoming Challenges in Implementing Digital Logistics Solutions with CargoPro",
+      date: "January 15, 2025",
+      link: "/blogs/digital-solution-challenges",
     },
   ];
 
@@ -139,11 +133,29 @@ const Blog1 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
       <Navbar />
       <BlogsHero
         heading="Revolutionizing Procurement and Indent Management with CargoPro’s Automated TMS Platform"
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}

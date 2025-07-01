@@ -14,14 +14,6 @@ import Footer from "../../components/footer";
 import IdealFor from "../../components/Solutions/FreightSourcingAndReverseAuction/ideal-for";
 import BusinessImpactSection from "../../components/Solutions/FreightSourcingAndReverseAuction/bussiness-impact";
 
-// Images
-import AutomatedFreightSourcingImage from "../../assets/Solutions/FreightSourcing/automated-freight-sourcing.webp";
-import desktopImage from "../../assets/Solutions/FreightSourcing/smart-price-sourcing.webp";
-import FreightPricing from "../../assets/Solutions/FreightSourcing/transperency-in-freight-sourcing.webp";
-import FreightSourcingHeroImage from "../../assets/Solutions/FreightSourcing/freight-sourcing-and-reverse-auction-hero.webp";
-import reverseAuctionImage from "../../assets/Solutions/FreightSourcing/reverse-auction-for-competitive-pricing.webp";
-import TruckImage from "../../assets/Solutions/FreightSourcing/digitize-your-freight-procurement.webp";
-
 const FreightSourcingAndReverseAuction = () => {
   const heading = (
     <>
@@ -77,6 +69,23 @@ const FreightSourcingAndReverseAuction = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
       <Navbar />
       <HeroSection
@@ -96,22 +105,21 @@ const FreightSourcingAndReverseAuction = () => {
             CargoPro's Reverse Auction.
           </>
         }
-        image={FreightSourcingHeroImage} // Adjust the path as necessary
+        image="/images/Solutions/FreightSourcing/freight-sourcing-and-reverse-auction-hero.webp"
         buttonLabel="Schedule Demo"
         onButtonClick={() => alert("Demo Scheduled!")}
       />
       <TrustedBy />
       <FreightSourcingSection1
-        imageSrc={TruckImage}
+        imageSrc="/images/Solutions/FreightSourcing/digitize-your-freight-procurement.webp"
         heading={heading}
         text={text}
       />
       <SmartFreightSourcing
         heading="Smart Freight Sourcing"
         points={smartFreightSoucingpoints}
-        imageSrc={desktopImage}
+        imageSrc="/images/Solutions/FreightSourcing/smart-price-sourcing.webp"
       />
-
       <ReverseAuctionSection
         heading={
           <>
@@ -119,7 +127,7 @@ const FreightSourcingAndReverseAuction = () => {
           </>
         }
         points={reverseAuctionPoints}
-        mainImage={reverseAuctionImage}
+        mainImage="/images/Solutions/FreightSourcing/reverse-auction-for-competitive-pricing.webp"
       />
       <SmartFreightSourcing
         heading={
@@ -128,12 +136,12 @@ const FreightSourcingAndReverseAuction = () => {
           </>
         }
         points={freightPricingPoints}
-        imageSrc={FreightPricing}
+        imageSrc="/images/Solutions/FreightSourcing/transperency-in-freight-sourcing.webp"
       />
       <ReverseAuctionSection
         heading={<>Automated Freight Sourcing</>}
         points={automatedFreightSourcingPoints}
-        mainImage={AutomatedFreightSourcingImage}
+        mainImage="/images/Solutions/FreightSourcing/automated-freight-sourcing.webp"
       />
       <BusinessImpactSection />
       <IdealFor />
@@ -160,4 +168,3 @@ const FreightSourcingAndReverseAuction = () => {
 };
 
 export default FreightSourcingAndReverseAuction;
-// This component can be used in your main application file or routed as needed.

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import SolutionCard from "./solution-card";
 
 import icon1Active from "../assets/ActiveIconSolutions.webp";

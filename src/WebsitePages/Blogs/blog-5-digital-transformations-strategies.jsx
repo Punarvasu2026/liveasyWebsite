@@ -1,8 +1,8 @@
-//External Libraries
+// External Libraries
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-//Components
+// Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
 import BlogsSection1 from "../../components/Blogs/ReusableComponents/blogs-section-1";
 import ContentSection from "../../components/Blogs/ReusableComponents/blogs-content-section";
@@ -11,20 +11,14 @@ import Footer from "../../components/footer";
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
-//Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-5/blog-5-bg.webp";
+// Image (kept local import as per instruction)
 import logisticsImage from "../../assets/Blogs/blog-5/blog-5-image.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-5/data-driven-decision-making.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-5/intelligent-automation.webp";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-5/seamless-collaboration-and-connectivity.webp";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-5/prioritizing-sustainability.webp";
-import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-5/enhancing-customer-experience.webp";
 
 const Blog5 = () => {
   const sections = [
     {
       heading: "Data-Driven Decision Making",
-      image: RevolutionizingLogisticsImage1,
+      image: "/images/Blogs/blog-5/data-driven-decision-making.webp",
       paragraph: (
         <>
           Smart logistics starts with smart data. With massive amounts of
@@ -43,7 +37,7 @@ const Blog5 = () => {
     },
     {
       heading: "Intelligent Automation",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-5/intelligent-automation.webp",
       paragraph: (
         <>
           Automation is the cornerstone of operational excellence. Repetitive
@@ -59,7 +53,8 @@ const Blog5 = () => {
     },
     {
       heading: "Seamless Collaboration & Connectivity",
-      image: RevolutionizingLogisticsImage3,
+      image:
+        "/images/Blogs/blog-5/seamless-collaboration-and-connectivity.webp",
       paragraph: (
         <>
           Digital transformation is as much about connectivity as it is about
@@ -74,7 +69,7 @@ const Blog5 = () => {
     },
     {
       heading: "Sustainability as a Strategic Advantage",
-      image: RevolutionizingLogisticsImage4,
+      image: "/images/Blogs/blog-5/prioritizing-sustainability.webp",
       paragraph: (
         <>
           As environmental responsibility becomes a key business KPI,
@@ -99,7 +94,7 @@ const Blog5 = () => {
     },
     {
       heading: "Enhanced Customer Experience",
-      image: RevolutionizingLogisticsImage5,
+      image: "/images/Blogs/blog-5/enhancing-customer-experience.webp",
       paragraph: (
         <>
           Customer expectations have evolved — they now demand real-time
@@ -134,25 +129,23 @@ const Blog5 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-6-cover-image.webp",
       heading:
-        "Digital Transformation Strategies for Logistics Companies: The CargoPro Edge",
-      date: "February 19, 2025",
-      link: "/blogs/digital-transformation-logistics",
+        "Optimizing Resources and Safety: The Role of Automation in In-Plant Vehicle Movement with CargoPro",
+      date: "January 26, 2025",
+      link: "/blogs/in-plant-automation",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
+      image: "/images/Blogs/blogs-cover-images/blog-7-cover-image.webp",
+      heading: "How Digitization Helps in Cutting Down Freight Cost",
+      date: "January 26, 2025",
+      link: "/blogs/digitization-helps-cutting-down-freight-cost",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-      date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+      image: "/images/Blogs/blogs-cover-images/blog-8-cover-image.webp",
+      heading: "How to Choose the Right TMS: A Buyer’s Guide",
+      date: "January 26, 2025",
+      link: "/blogs/how-to-choose-the-right-tms",
     },
   ];
 
@@ -173,12 +166,29 @@ const Blog5 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
 
       <Navbar />
       <BlogsHero
         heading="Digital Transformation Strategies for Logistics Companies: The CargoPro Edge"
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/blog-5/blog-5-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}

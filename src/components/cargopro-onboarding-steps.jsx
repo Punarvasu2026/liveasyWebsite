@@ -1,5 +1,4 @@
 import React from "react";
-import StepImage from "../assets/CargoProIndexPage/cargopro-operations-four-easy-steps.webp"; // Replace with actual path
 
 const steps = [
   {
@@ -70,7 +69,7 @@ const CargoProSteps = () => {
           {/* Image */}
           <div className="flex-1 max-w-full md:max-w-[638px]">
             <img
-              src={StepImage}
+              src="/images/CargoProIndexPage/cargopro-operations-four-easy-steps.webp"
               alt="CargoPro Steps to onboard"
               className="w-full h-auto md:h-[516px] rounded-[12px] shadow"
             />

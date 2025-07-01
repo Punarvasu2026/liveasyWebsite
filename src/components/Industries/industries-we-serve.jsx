@@ -1,17 +1,30 @@
 import React from "react";
 
-// Replace these with your actual image imports
-import metalIcon from "../../assets/Industries/industries-we-serve-image-1.webp";
-import fmcgIcon from "../../assets/Industries/industries-we-serve-image-2.webp";
-import chemicalIcon from "../../assets/Industries/industries-we-serve-image-3.webp";
-
 const industries = [
-  { title: "Metal & Pipes Logistics", icon: metalIcon },
-  { title: "FMCG, FMCD & FMEG Logistics", icon: fmcgIcon },
-  { title: "Chemicals Logistics", icon: chemicalIcon },
-  { title: "EPC & Construction Logistics", icon: metalIcon },
-  { title: "Engineering & Heavy Machinery Logistics", icon: fmcgIcon },
-  { title: "Agriculture & Animal Feeds Logistics", icon: chemicalIcon },
+  {
+    title: "Metal & Pipes Logistics",
+    icon: "/images/Industries/industries-we-serve-image-1.webp",
+  },
+  {
+    title: "FMCG, FMCD & FMEG Logistics",
+    icon: "/images/Industries/industries-we-serve-image-2.webp",
+  },
+  {
+    title: "Chemicals Logistics",
+    icon: "/images/Industries/industries-we-serve-image-3.webp",
+  },
+  {
+    title: "EPC & Construction Logistics",
+    icon: "/images/Industries/industries-we-serve-image-1.webp",
+  },
+  {
+    title: "Engineering & Heavy Machinery Logistics",
+    icon: "/images/Industries/industries-we-serve-image-2.webp",
+  },
+  {
+    title: "Agriculture & Animal Feeds Logistics",
+    icon: "/images/Industries/industries-we-serve-image-3.webp",
+  },
 ];
 
 const IndustriesWeServe = () => {

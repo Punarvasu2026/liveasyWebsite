@@ -1,5 +1,4 @@
 import React from "react";
-import designPatternImage from "../../../assets/Solutions/FreightSourcing/design-pattern-1.webp"; // use your uploaded design
 
 const SmartFreightManagement = ({ heading, points, imageSrc }) => {
   return (
@@ -19,7 +18,6 @@ const SmartFreightManagement = ({ heading, points, imageSrc }) => {
         </div>
 
         {/* Image Box */}
-        {/* Image Box */}
         <div className="w-full flex justify-center items-center">
           <img
             src={imageSrc}
@@ -32,7 +30,7 @@ const SmartFreightManagement = ({ heading, points, imageSrc }) => {
 
       {/* Design Pattern Image at Bottom Right */}
       <img
-        src={designPatternImage}
+        src="/images/Solutions/FreightSourcing/design-pattern-1.webp"
         alt="Design Pattern"
         className="absolute bottom-0 right-0 w-[400px] md:w-[540px] z-0"
       />

@@ -1,29 +1,22 @@
 import React from "react";
 
-// Images
-import Arrow from "../../../assets/Pointer_Arrow.webp";
-import BottomShape from "../../../assets/Vector_3.webp";
-
 const BlogsHeroSection = ({
   heading,
   content,
   buttonLabel = "Schedule Demo",
   onButtonClick,
-  backgroundImage, // <-- Accept background image here
+  backgroundImage,
 }) => {
   return (
     <div
-      className="relative overflow-hidden"
+      className="relative overflow-hidden bg-cover bg-center bg-no-repeat min-h-[60vh] md:min-h-[80vh] flex items-start"
       style={{
-        height: "660px",
         backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
       }}
     >
       {/* Optional Vector Decoration */}
       <img
-        src={BottomShape}
+        src="/images/Vector_3.webp"
         alt="Vector Background (Design)"
         loading="lazy"
         className="absolute pointer-events-none z-0 hidden lg:block"
@@ -36,29 +29,13 @@ const BlogsHeroSection = ({
         }}
       />
 
-      <section className="relative z-10 pb-20 px-6 sm:px-10 lg:px-20 h-full flex items-start pt-40">
+      <section className="relative z-10 px-6 sm:px-10 lg:px-20 py-20 md:py-32 w-full">
         <div className="max-w-7xl mx-auto w-full">
           <div className="w-full lg:w-1/2 text-left text-white">
-            <h1
-              className="mb-6"
-              style={{
-                fontFamily: "Sora, sans-serif",
-                fontWeight: 700,
-                fontSize: "48px",
-                lineHeight: "120%",
-              }}
-            >
+            <h1 className="mb-6 text-[32px] md:text-[48px] font-bold leading-[120%] font-sora">
               {heading}
             </h1>
-            <p
-              className="mb-6"
-              style={{
-                fontFamily: "DM Sans, sans-serif",
-                fontWeight: 400,
-                fontSize: "24px",
-                lineHeight: "130%",
-              }}
-            >
+            <p className="mb-6 text-[18px] md:text-[24px] leading-[130%] font-dm-sans">
               {content}
             </p>
 
@@ -74,7 +51,7 @@ const BlogsHeroSection = ({
 
               {/* Arrow for Desktop */}
               <img
-                src={Arrow}
+                src="/images/Pointer_Arrow.webp"
                 alt="Arrow"
                 className="absolute hidden sm:block"
                 style={{
@@ -90,7 +67,7 @@ const BlogsHeroSection = ({
 
               {/* Arrow for Mobile */}
               <img
-                src={Arrow}
+                src="/images/Pointer_Arrow.webp"
                 alt="Arrow Mobile"
                 className="absolute block sm:hidden"
                 style={{

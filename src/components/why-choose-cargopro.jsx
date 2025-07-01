@@ -1,14 +1,13 @@
 import React from "react";
-import WhyChooseCargoProGraphics from "../assets/CargoProIndexPage/why-choose-cargopro.webp";
 
 const WhyChooseCargoPro = () => {
   return (
     <section className="flex flex-col md:flex-row items-start justify-between gap-12 px-6 md:px-12 py-12 bg-white">
-      {/* Left Image Section (comes first in mobile) */}
+      {/* Left Image Section */}
       <div className="w-full md:w-1/2 flex justify-center md:justify-start">
         <img
-          src={WhyChooseCargoProGraphics}
-          alt="why choose cargo pro"
+          src="/images/CargoProIndexPage/why-choose-cargopro.webp"
+          alt="Why Choose CargoPro"
           loading="lazy"
           className="max-w-full h-auto"
         />
@@ -31,17 +30,26 @@ const WhyChooseCargoPro = () => {
             efficiency — from order to delivery.
           </p>
 
-          <ul className="text-[#2B2829] font-sofiaSans font-semibold italic text-[20px] md:text-[24px] leading-[1.4] space-y-2">
-            <li>All-in-One Platform</li>
-            <li>Automation First</li>
-            <li>Industry Expertise</li>
-            <li>End-to-End Visibility</li>
+          <ul className="text-[#2B2829] font-sofiaSans font-semibold italic text-[20px] md:text-[24px] leading-[1.4] space-y-2 list-disc list-inside">
+            <li>
+              <span>All-in-One Platform</span>
+            </li>
+            <li>
+              <span>Automation First</span>
+            </li>
+            <li>
+              <span>Industry Expertise</span>
+            </li>
+            <li>
+              <span>End-to-End Visibility</span>
+            </li>
           </ul>
 
           <a
             href="https://calendly.com/pranav-cargopro/30min"
             target="_blank"
             rel="noopener noreferrer nofollow"
+            aria-label="Schedule a demo with CargoPro via Calendly"
             className="bg-[#2d55fb] text-white px-6 py-3 rounded-full hover:bg-[#1c3ec9] transition mt-4 md:mt-6 inline-block"
           >
             Schedule a Demo

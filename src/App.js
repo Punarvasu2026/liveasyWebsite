@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import "./App.css";
 import Home from "./WebsitePages/cargopro-home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FreightSourcingAndReverseAuction from "./WebsitePages/Solutions/freight-sourcing-and-reverse-auction";
 import IndentAutomation from "./WebsitePages/Solutions/indent-automation";
 import Blog from "./WebsitePages/Blogs/Blog";
@@ -33,15 +38,37 @@ import Blog17 from "./WebsitePages/Blogs/blog-17-digital-proof-of-dilivery";
 import Blog18 from "./WebsitePages/Blogs/blog-18-last-mile-delivery-logistics";
 import Blog19 from "./WebsitePages/Blogs/blog-19--elevating-warehoouse-efficiency";
 import Blog20 from "./WebsitePages/Blogs/blog-20-warehouse-management-system";
+import Blog21 from "./WebsitePages/Blogs/blog-21-slreamlining-logistics-operations";
+import Blog22 from "./WebsitePages/Blogs/blog-22-seamless-integration-of-transportation";
+import Blog23 from "./WebsitePages/Blogs/blog-23-mastering-multi-carrier-shipments";
+import Blog24 from "./WebsitePages/Blogs/blog-24-revolutionizing-freight-transport";
 import RevolutionizingLogisticsBlog from "./WebsitePages/Blogs/blog-revolutionizing-logistics";
 import NotFoundPage from "./404";
 //import NotFoundPage from "./404NotFound";
 
 import Tracking from "./WebsitePages/Solutions/tracking";
 
+function ScrollHandler() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "auto" });
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
+      <ScrollHandler />
       <Routes>
         <Route path="/" element={<Home />} />
 
@@ -137,6 +164,23 @@ function App() {
           path="/blogs/seamless-integration-of-transportation-and-warehouse-management"
           element={<Blog20 />}
         />
+        <Route
+          path="/blogs/seamless-logistics-operations"
+          element={<Blog21 />}
+        />
+        <Route
+          path="/blogs/how-automated-invoicing-in-simplifying-logistics"
+          element={<Blog22 />}
+        />
+        <Route
+          path="/blogs/mastering-multi-carrier-shipments-and-orders"
+          element={<Blog23 />}
+        />
+        <Route
+          path="/blogs/revolutionizing-freight-transport"
+          element={<Blog24 />}
+        />
+
         <Route
           path="/blogs/revolutionizing-logistics"
           element={<RevolutionizingLogisticsBlog />}

@@ -1,5 +1,4 @@
 import React from "react";
-import TrackingImage from "../../../assets/Solutions/Tracking/live-tracking-with-cargopro.webp"; // Adjust path as needed
 
 const points = [
   {
@@ -76,7 +75,7 @@ const LiveTrackingSection = () => {
         {/* Right Image */}
         <div className="w-full max-w-[694px] h-auto overflow-hidden rounded-lg">
           <img
-            src={TrackingImage}
+            src="/images/Solutions/Tracking/live-tracking-with-cargopro.webp"
             alt="Live Tracking"
             loading="lazy"
             className="w-full h-full object-cover"

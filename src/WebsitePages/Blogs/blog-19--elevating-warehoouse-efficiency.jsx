@@ -12,36 +12,31 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-19/blog-19-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-19/blog-19-image.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-19/smart-inventory-management.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-19/embrace-warehouse-automation.webp";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-19/optimize-warehouse-layouts.webp";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-19/data-analytics.webp";
 
 const Blog19 = () => {
   const sections = [
     {
       heading: "Implement Smart Inventory Management",
-      image: RevolutionizingLogisticsImage1,
+      image: "/images/Blogs/blog-19/smart-inventory-management.webp",
       paragraph:
         "The foundation of digital warehouse efficiency lies in powerful inventory management software. With real-time stock tracking, automated alerts, and predictive demand analytics, CargoPro’s platform ensures: \n- Reduced stockouts and overstocking\n- Better order accuracy\n- Enhanced customer service through reliable fulfillment",
     },
     {
       heading: "Embrace Warehouse Automation",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-19/embrace-warehouse-automation.webp",
       paragraph:
         "Automation is key to eliminating repetitive manual tasks. Technologies such as barcode scanning, RFID tagging, and automated conveyors streamline operations, reducing human error and accelerating processes like picking, packing, and order sorting.",
     },
     {
       heading: "Optimize Warehouse Layouts and Workflows",
-      image: RevolutionizingLogisticsImage3,
+      image: "/images/Blogs/blog-19/optimize-warehouse-layouts.webp",
       paragraph:
         "A well-organized layout minimizes travel time and improves staff productivity. Key strategies include:\n- Placing high-frequency items in accessible zones\n- Designing clear aisles and pick paths\n- Eliminating bottlenecks to enhance flow and throughput\nThese changes, though simple, have a profound impact on operational speed and accuracy.",
     },
     {
       heading: "Use Data Analytics to Drive Continuous Improvement",
-      image: RevolutionizingLogisticsImage4,
+      image: "/images/Blogs/blog-19/data-analytics.webp",
       paragraph:
         "Data is essential to modern warehouse performance. By analyzing metrics such as order processing times, picking accuracy, and inventory turnover, CargoPro enables businesses to identify trends, uncover inefficiencies, and make informed decisions.",
     },
@@ -56,25 +51,25 @@ const Blog19 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-20-cover-image.webp",
       heading:
-        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
-      date: "January 10, 2025",
-      link: "/blogs/revolutionizing-logistics",
+        "Seamless Integration of Transportation and Warehouse Management Systems",
+      date: "January 26, 2025",
+      link: "/blogs/seamless-integration-of-transportation-and-warehouse-management",
     },
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-21-cover-image.webp",
       heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
+        "Streamlining Logistics Operations – The Benefits of Automated Indent Management",
+      date: "January 26, 2025",
+      link: "/blogs/seamless-logistics-operations",
     },
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-22-cover-image.webp",
       heading:
-        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-      date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+        "Efficiency at Every Step – How Automated Invoicing is Simplifying Logistics",
+      date: "January 26, 2025",
+      link: "/blogs/how-automated-invoicing-in-simplifying-logistics",
     },
   ];
 
@@ -95,6 +90,23 @@ const Blog19 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
 
       <Navbar />
@@ -110,7 +122,7 @@ const Blog19 = () => {
             management—driving accuracy, speed, and operational excellence.
           </>
         }
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/blog-19/blog-19-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}

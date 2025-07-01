@@ -1,5 +1,5 @@
 import React from "react";
-import designImage from "../../../assets/Solutions/FreightSourcing/design-pattern-2.webp"; // use your uploaded design
+import designImage from "../../../assets/design-pattern-2.webp"; // use your uploaded design
 
 const ReverseAuctionSection = ({ heading, points = [], mainImage }) => {
   return (
@@ -7,7 +7,7 @@ const ReverseAuctionSection = ({ heading, points = [], mainImage }) => {
       {/* Design Pattern Image */}
       {designImage && (
         <img
-          src={designImage}
+          src="/images/Solutions/FreightSourcing/design-pattern-2.webp"
           alt="Design Pattern"
           className="absolute bottom-0 left-0 w-[300px] md:w-[420px] z-0 translate-x-[-50%] md:translate-x-0"
         />

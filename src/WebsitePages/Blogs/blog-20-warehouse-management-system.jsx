@@ -12,18 +12,13 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 // Images
-import Blog20Bg from "../../assets/Blogs/blog-20/blog-20-bg.webp";
 import Blog20Image from "../../assets/Blogs/blog-20/blog-20-image.webp";
-import Step1Image from "../../assets/Blogs/blog-20/real-time-data-sharing.webp";
-import Step2Image from "../../assets/Blogs/blog-20/coordinate-planning.webp";
-import Step3Image from "../../assets/Blogs/blog-20/streamline-order-fullfillment.webp";
-import Step4Image from "../../assets/Blogs/blog-20/enhance-customer-satisfaction.webp";
 
 const Blog20 = () => {
   const sections = [
     {
       heading: "Enable Real-Time Data Sharing",
-      image: Step1Image,
+      image: "/images/Blogs/blog-20/real-time-data-sharing.webp",
       paragraph: (
         <>
           The first step in integration is establishing live data communication
@@ -40,7 +35,7 @@ const Blog20 = () => {
     },
     {
       heading: "Coordinate Planning Across Systems",
-      image: Step2Image,
+      image: "/images/Blogs/blog-20/coordinate-planning.webp",
       paragraph: (
         <>
           Integrated systems facilitate unified planning. When an order is
@@ -56,7 +51,7 @@ const Blog20 = () => {
     },
     {
       heading: "Streamline Order Fulfillment",
-      image: Step3Image,
+      image: "/images/Blogs/blog-20/streamline-order-fullfillment.webp",
       paragraph: (
         <>
           With TMS and WMS integration, order fulfillment becomes automated and
@@ -75,7 +70,7 @@ const Blog20 = () => {
     },
     {
       heading: "Enhance Customer Satisfaction",
-      image: Step4Image,
+      image: "/images/Blogs/blog-20/enhance-customer-satisfaction.webp",
       paragraph: (
         <>
           Customers today expect timely deliveries and visibility. Integrated
@@ -113,25 +108,25 @@ const Blog20 = () => {
 
   const insightsData = [
     {
-      image: Blog20Image,
+      image: "/images/Blogs/blogs-cover-images/blog-21-cover-image.webp",
       heading:
-        "Elevating Warehouse Efficiency – The Path to Digital Transformation",
-      date: "February 2, 2025",
-      link: "/blogs/elevating-warehouse-efficiency",
+        "Streamlining Logistics Operations – The Benefits of Automated Indent Management",
+      date: "January 26, 2025",
+      link: "/blogs/seamless-logistics-operations",
     },
     {
-      image: Blog20Image,
+      image: "/images/Blogs/blogs-cover-images/blog-22-cover-image.webp",
       heading:
-        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
-      date: "January 10, 2025",
-      link: "/blogs/revolutionizing-logistics",
+        "Efficiency at Every Step – How Automated Invoicing is Simplifying Logistics",
+      date: "January 26, 2025",
+      link: "/blogs/how-automated-invoicing-in-simplifying-logistics",
     },
     {
-      image: Blog20Image,
+      image: "/images/Blogs/blogs-cover-images/blog-23-cover-image.webp",
       heading:
-        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-      date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+        "Mastering Multi-Carrier Shipments and Orders – Best Practices for Modern Logistics",
+      date: "January 26, 2025",
+      link: "/blogs/mastering-multi-carrier-shipments-and-orders",
     },
   ];
 
@@ -153,6 +148,23 @@ const Blog20 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
 
       <BlogsHero
@@ -169,7 +181,7 @@ const Blog20 = () => {
             smarter operations.
           </>
         }
-        bgImage={Blog20Bg}
+        bgImage="/images/Blogs/blog-20/blog-20-bg.webp"
       />
       <BlogsSection1
         imageSrc={Blog20Image}

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import About_Us_Image from "../assets/CargoProIndexPage/cargopro-about-us.webp";
 
 const AboutUs = () => {
   return (
@@ -50,7 +49,7 @@ const AboutUs = () => {
       {/* Right Section */}
       <div className="flex justify-center items-center">
         <img
-          src={About_Us_Image}
+          src="/images/CargoProIndexPage/cargopro-about-us.webp"
           alt="CargoPro Features"
           loading="lazy"
           className="w-full max-w-[618px] h-auto object-contain"

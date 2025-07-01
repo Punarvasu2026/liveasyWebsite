@@ -12,19 +12,13 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-9/blog-9-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-9/blog-9-bg.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-9/leverage-big-data.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-9/predictive-analytics.webp";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-9/smarter-route-optimization.webp";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-9/inventory-management.webp";
-import RevolutionizingLogisticsImage5 from "../../assets/Blogs/blog-9/risk-detection.webp";
 
 const Blog9 = () => {
   const sections = [
     {
       heading: "Leverage Big Data Across Touchpoints",
-      image: RevolutionizingLogisticsImage1,
+      image: "/images/Blogs/blog-9/leverage-big-data.webp",
       paragraph: (
         <>
           Modern logistics systems generate vast amounts of data — from IoT
@@ -43,7 +37,7 @@ const Blog9 = () => {
     },
     {
       heading: "Predictive Analytics for Proactive Planning",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-9/predictive-analytics.webp",
       paragraph: (
         <>
           Predictive analytics uses machine learning models to forecast what’s
@@ -61,7 +55,7 @@ const Blog9 = () => {
     },
     {
       heading: "Smarter Route Optimization & ETA Accuracy",
-      image: RevolutionizingLogisticsImage3,
+      image: "/images/Blogs/blog-9/smarter-route-optimization.webp",
       paragraph: (
         <>
           Static route planning is outdated. You need tools that adjust
@@ -82,7 +76,7 @@ const Blog9 = () => {
     },
     {
       heading: "Accurate Demand Forecasting & Inventory Management",
-      image: RevolutionizingLogisticsImage4,
+      image: "/images/Blogs/blog-9/inventory-management.webp",
       paragraph: (
         <>
           Balancing supply and demand is crucial for both cost control and
@@ -102,7 +96,7 @@ const Blog9 = () => {
     },
     {
       heading: "Risk Detection and Disruption Management",
-      image: RevolutionizingLogisticsImage5,
+      image: "/images/Blogs/blog-9/risk-detection.webp",
       paragraph: (
         <>
           The supply chain is vulnerable to many disruptions — weather,
@@ -146,25 +140,23 @@ const Blog9 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
-      heading:
-        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
-      date: "January 10, 2025",
-      link: "/blogs/revolutionizing-logistics",
+      image: "/images/Blogs/blogs-cover-images/blog-10-cover-image.webp",
+      heading: "Why Freight Cost is Higher in the Steel Industry?",
+      date: "January 26, 2025",
+      link: "/blogs/why-freight-cost-is-higher-in-the-steel-industry",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
+      image: "/images/Blogs/blogs-cover-images/blog-11-cover-image.webp",
+      heading: "National Logistics Policy 2022 – Explained",
+      date: "January 26, 2025",
+      link: "/blogs/national-logistics-policy-2022",
     },
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-12-cover-image.webp",
       heading:
-        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-      date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+        "Efficiency at Every Step – Automated Invoicing and Simplifying Logistics with CargoPro",
+      date: "January 26, 2025",
+      link: "/blogs/automated-invoicing-and-simplifying-logistics",
     },
   ];
 
@@ -182,12 +174,29 @@ const Blog9 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
 
       <Navbar />
       <BlogsHero
         heading="Big Data and Predictive Analytics in Logistics: A Game Changer for Achieving End-to-End Supply Chain Visibility"
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/blog-9/blog-9-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}

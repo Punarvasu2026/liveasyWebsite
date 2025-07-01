@@ -1,5 +1,4 @@
 import React from "react";
-import TrackingImage from "../../../assets/Solutions/Tracking/integrated-tracking.webp"; // Adjust path as needed
 
 const IntegratedTrackingSection = () => {
   return (
@@ -8,7 +7,7 @@ const IntegratedTrackingSection = () => {
         {/* Image */}
         <div className="w-full max-w-[694px] h-auto">
           <img
-            src={TrackingImage}
+            src="/images/Solutions/Tracking/integrated-tracking.webp"
             alt="Tracking Dashboard"
             loading="lazy"
             className="rounded-lg w-full h-auto object-cover"

@@ -11,9 +11,6 @@ import WhoAreWeSection from "../../components/AboutUs/who-we-are-section";
 import WhyWorkWithUs from "../../components/AboutUs/why-work-with-us";
 import BlogsHeroSection from "../../components/Blogs/Blog/blogs-hero-section";
 
-//Images
-import BackgroundImage from "../../assets/AboutCargoPro/about-us-bg.webp";
-
 const AboutUs = () => {
   return (
     <>
@@ -28,6 +25,23 @@ const AboutUs = () => {
           rel="apple-touch-icon"
           sizes="180x180"
           href="/CargoProLogo.webp"
+        />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
         />
       </Helmet>
       <Navbar />
@@ -46,7 +60,7 @@ const AboutUs = () => {
             supply chain operations for businesses of all sizes.
           </>
         }
-        backgroundImage={BackgroundImage}
+        backgroundImage="/images/AboutCargoPro/about-us-bg.webp"
       />
       <WhoAreWeSection />
       <MissionSection />

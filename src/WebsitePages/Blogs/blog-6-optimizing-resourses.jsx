@@ -1,8 +1,8 @@
-//External Libraries
+// External Libraries
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-//Components
+// Components
 import BlogsHero from "../../components/Blogs/ReusableComponents/blogs-hero";
 import BlogsSection1 from "../../components/Blogs/ReusableComponents/blogs-section-1";
 import ContentSection from "../../components/Blogs/ReusableComponents/blogs-content-section";
@@ -11,18 +11,14 @@ import Footer from "../../components/footer";
 import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
-//Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-6/blog-6-bg.webp";
+// Image (only this one kept imported locally as per instructions)
 import logisticsImage from "../../assets/Blogs/blog-6/blog-6-image.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-6/enhanced-efficiency-with-automation.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-6/safety-first-vehicle-movement.webp";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-6/smart-use-of-data.webp";
 
 const Blog6 = () => {
   const sections = [
     {
       heading: "Enhanced Efficiency with Automation",
-      image: RevolutionizingLogisticsImage1,
+      image: "/images/Blogs/blog-6/enhanced-efficiency-with-automation.webp",
       paragraph: (
         <>
           Whether you're a plant manager or transporter, automation saves time
@@ -47,7 +43,7 @@ const Blog6 = () => {
     },
     {
       heading: "Safety-First Vehicle Movement",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-6/safety-first-vehicle-movement.webp",
       paragraph: (
         <>
           Safety risks rise when vehicle movement is uncontrolled.
@@ -70,7 +66,7 @@ const Blog6 = () => {
     },
     {
       heading: "Smart Use of Data",
-      image: RevolutionizingLogisticsImage4,
+      image: "/images/Blogs/blog-6/smart-use-of-data.webp",
       paragraph: (
         <>
           Every in-plant movement creates data — and smart systems use it to
@@ -103,7 +99,7 @@ const Blog6 = () => {
         <ul className="list-disc list-inside ml-4">
           <li>Real-time Vehicle control</li>
           <li>Automated routing and dispatch</li>
-          <li>Safer , Smarter logistics</li>
+          <li>Safer, Smarter logistics</li>
         </ul>
         As industries grow and transporter expectations evolve, CargoPro bridges
         the gap with a platform that’s both scalable and easy to adopt.
@@ -114,25 +110,23 @@ const Blog6 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
-      heading:
-        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
-      date: "January 10, 2025",
-      link: "/blogs/revolutionizing-logistics",
+      image: "/images/Blogs/blogs-cover-images/blog-7-cover-image.webp",
+      heading: "How Digitization Helps in Cutting Down Freight Cost",
+      date: "January 26, 2025",
+      link: "/blogs/digitization-helps-cutting-down-freight-cost",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
+      image: "/images/Blogs/blogs-cover-images/blog-8-cover-image.webp",
+      heading: "How to Choose the Right TMS: A Buyer’s Guide",
+      date: "January 26, 2025",
+      link: "/blogs/how-to-choose-the-right-tms",
     },
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-9-cover-image.webp",
       heading:
-        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-      date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+        "Big Data and Predictive Analytics in Logistics: A Game Changer for Achieving End-to-End Supply Chain Visibility",
+      date: "January 26, 2025",
+      link: "/blogs/big-data-and-predictive-analytics-in-logistics",
     },
   ];
 
@@ -153,12 +147,29 @@ const Blog6 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
 
       <Navbar />
       <BlogsHero
         heading="Optimizing Resources and Safety: The Role of Automation in In-Plant Vehicle Movement with CargoPro"
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/blog-6/blog-6-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}

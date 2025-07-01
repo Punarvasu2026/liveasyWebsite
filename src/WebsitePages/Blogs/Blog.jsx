@@ -9,9 +9,6 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import BlogsHeroSection from "../../components/Blogs/Blog/blogs-hero-section";
 import Footer from "../../components/footer";
 
-//images
-import BackgroundImage from "../../assets/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.webp";
-
 const Blog = () => {
   return (
     <>
@@ -26,6 +23,23 @@ const Blog = () => {
           rel="apple-touch-icon"
           sizes="180x180"
           href="/CargoProLogo.webp"
+        />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
         />
       </Helmet>
       <NavBar />
@@ -43,7 +57,7 @@ const Blog = () => {
             <br /> chain strategies powering the future of logistics.
           </>
         }
-        backgroundImage={BackgroundImage}
+        backgroundImage="/images/Blogs/Blog1-RevolutionizingLogistics/revolutionizing-logistics-bg.webp"
       />
       <RevolutionizingAutomation />
       <BlogReadMore />

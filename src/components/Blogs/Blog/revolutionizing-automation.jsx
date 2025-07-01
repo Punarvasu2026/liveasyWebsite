@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import AutomationImage from "../../../assets/Blogs/Blog/revolutionizing-automation.webp";
 
 const AutomationHighlightSection = () => {
   const navigate = useNavigate();
@@ -15,7 +14,7 @@ const AutomationHighlightSection = () => {
         {/* Image */}
         <div>
           <img
-            src={AutomationImage}
+            src="/images/Blogs/Blog/revolutionizing-automation.webp"
             alt="Automation in logistics"
             loading="lazy"
             className="w-[618px] h-[435px] rounded-[12px] object-cover"

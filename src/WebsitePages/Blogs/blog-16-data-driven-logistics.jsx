@@ -12,36 +12,31 @@ import CargoProBookDemo from "../../components/cargopro-book-demo";
 import RelatedBlogs from "../../components/Blogs/Blog/related-blogs";
 
 //Images
-import RevolutionzingLogisticsBg from "../../assets/Blogs/blog-16/blog-16-bg.webp";
 import logisticsImage from "../../assets/Blogs/blog-16/blog-16-image.webp";
-import RevolutionizingLogisticsImage1 from "../../assets/Blogs/blog-16/route-optimization.webp";
-import RevolutionizingLogisticsImage2 from "../../assets/Blogs/blog-16/inventory-management.webp";
-import RevolutionizingLogisticsImage3 from "../../assets/Blogs/blog-16/fraud-detection.webp";
-import RevolutionizingLogisticsImage4 from "../../assets/Blogs/blog-16/risk-metigation.webp";
 
 const Blog16 = () => {
   const sections = [
     {
       heading: "Route Optimization",
-      image: RevolutionizingLogisticsImage1,
+      image: "/images/Blogs/blog-16/route-optimization.webp",
       paragraph:
         "CargoPro uses intelligent algorithms to identify the most efficient delivery routes. This reduces fuel costs, improves delivery speed, and enhances overall fleet productivity.",
     },
     {
       heading: "Inventory Management",
-      image: RevolutionizingLogisticsImage2,
+      image: "/images/Blogs/blog-16/inventory-management.webp",
       paragraph:
         "By tracking inventory levels and demand trends, businesses can maintain the right stock at the right time. CargoPro helps prevent overstocking and stockouts, ensuring smooth operations and better service levels.",
     },
     {
       heading: "Fraud Detection",
-      image: RevolutionizingLogisticsImage3,
+      image: "/images/Blogs/blog-16/fraud-detection.webp",
       paragraph:
         "Our analytics engine detects unusual patterns that may indicate fraudulent activities, such as duplicate entries or route deviations, enabling companies to address issues proactively.",
     },
     {
       heading: "Risk Mitigation",
-      image: RevolutionizingLogisticsImage4,
+      image: "/images/Blogs/blog-16/risk-metigation.webp",
       paragraph:
         "CargoPro helps identify potential risks in the logistics chain, such as weather disruptions, carrier delays, or regulatory compliance issues. Businesses can take preventive action before risks escalate into costly problems.",
     },
@@ -56,25 +51,23 @@ const Blog16 = () => {
 
   const insightsData = [
     {
-      image: logisticsImage,
-      heading:
-        "Revolutionizing Logistics: How Automation is Transforming the Freight Transport Industry",
-      date: "January 10, 2025",
-      link: "/blogs/revolutionizing-logistics",
+      image: "/images/Blogs/blogs-cover-images/blog-17-cover-image.webp",
+      heading: "How to Leverage Digital Proof of Delivery for Faster Invoicing",
+      date: "January 26, 2025",
+      link: "/blogs/digital-proof-of-delivery",
     },
     {
-      image: logisticsImage,
-      heading:
-        "Eco-Friendly Logistics: Reducing Carbon Footprint through Digital Innovation",
-      date: "January 27, 2025",
-      link: "/insights/eco-friendly-logistics",
+      image: "/images/Blogs/blogs-cover-images/blog-18-cover-image.webp",
+      heading: "Top Techniques for Optimizing Last Mile Delivery Logistics",
+      date: "January 26, 2025",
+      link: "/blogs/last-mile-delivery",
     },
     {
-      image: logisticsImage,
+      image: "/images/Blogs/blogs-cover-images/blog-19-cover-image.webp",
       heading:
-        "Say Goodbye to Invoicing Hassles: How Automation Improves Logistics Management",
-      date: "January 18, 2025",
-      link: "/insights/invoicing-automation",
+        "Elevating Warehouse Efficiency – The Path to Digital Transformation",
+      date: "January 26, 2025",
+      link: "/blogs/elevating-warehouse-efficiency",
     },
   ];
 
@@ -94,6 +87,23 @@ const Blog16 = () => {
           sizes="180x180"
           href="/CargoProLogo.webp"
         />
+        {/* Load GA script asynchronously */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LQCDPXD2T3"
+        ></script>
+
+        {/* Inline GA initialization script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQCDPXD2T3');
+            `,
+          }}
+        />
       </Helmet>
 
       <Navbar />
@@ -105,7 +115,7 @@ const Blog16 = () => {
             partners, and moving parts. Traditional approaches to freight
             management, often manual and paper-based, result in inefficiencies,
             data silos, and delayed decision-making."
-        bgImage={RevolutionzingLogisticsBg}
+        bgImage="/images/Blogs/blog-16/blog-16-bg.webp"
       />
       <BlogsSection1
         imageSrc={logisticsImage}
